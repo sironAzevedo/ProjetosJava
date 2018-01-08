@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/nihil">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" name="nihilDS" password="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/nihil" username="root"/>
+</Context>

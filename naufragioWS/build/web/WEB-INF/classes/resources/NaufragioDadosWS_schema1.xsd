@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://naufragioWS.servidor.com.br/" xmlns:tns="http://naufragioWS.servidor.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="inserirUsuario" type="tns:inserirUsuario"/>
+
+  <xs:element name="inserirUsuarioResponse" type="tns:inserirUsuarioResponse"/>
+
+  <xs:complexType name="inserirUsuario">
+    <xs:sequence>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="inserirUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:naufragioVO" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="naufragioVO">
+    <xs:sequence>
+      <xs:element name="foto" type="xs:string" minOccurs="0"/>
+      <xs:element name="historia" type="xs:string" minOccurs="0"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element name="localiza&#231;&#227;o" type="xs:string" minOccurs="0"/>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+      <xs:element name="profundidade" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

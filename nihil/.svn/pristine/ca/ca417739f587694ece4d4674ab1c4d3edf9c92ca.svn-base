@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app='nihilapp'>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    </head>
+    <body>
+
+        <div ng-include="'partials/menu-navbar.html'"></div>
+        <div class="container">
+            <div ng-view>
+            </div>
+        </div>
+
+        <script src="js/lib/jquery/jquery-1.11.3.min.js"></script>
+        <script src="js/lib/angular/angular.js"></script>
+        <script src="js/lib/angular/angular-locale_pt-br.js"></script>
+        <script src="js/lib/angular/angular-routes.js"></script>
+        <script src="js/lib/angular/angular-resource.js"></script>
+        <script src="js/app/nihil.js"></script>
+        <script src="js/app/routes.js"></script>
+        <script src="js/app/filter/simNao.js"></script>
+        <script src="js/app/directive/onReadFile.js"></script>
+        <script src="js/app/controller/projetoController.js"></script>
+        <script src="js/app/controller/monitorController.js"></script>
+        <script src="js/app/controller/logController.js"></script>
+        <script src="js/app/controller/monitorResumoController.js"></script>
+        <script src="js/app/controller/empresa/empresaListController.js"></script>
+        <script src="js/app/controller/empresa/empresaEditController.js"></script>
+        <script src="js/app/entity/projeto.js"></script>
+        <script src="js/app/entity/monitor.js"></script>
+        <script src="js/app/entity/log.js"></script>
+        <script src="js/app/entity/empresa.js"></script>
+        <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+        <script src="js/lib/ui-bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+    </body>
+</html>
