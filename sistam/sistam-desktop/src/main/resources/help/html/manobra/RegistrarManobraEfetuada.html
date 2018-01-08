@@ -1,0 +1,83 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SISTAM - Agenciamento Marítimo</title>
+  </head>
+  <body>
+      
+      <h1>Registrar Manobra Efetuada </h1>      
+      <p>O registro de uma manobra efetuada, poderá ser incluído tanto a partir de uma manobra solicitada quanto de uma nova manobra</p>
+      <div>
+          <ul>
+              <li><a href="#rn1"> Como acessar?</a></li>
+              <li><a href="#rn2"> Como preencher?</a></li>
+              <li><a href="InformarServicoManobra.html"> Informar os Serviços da Manobra</a></li>
+              <li><a href="#rn3"> O que acontece depois?</a></li>
+          </ul>
+      </div> 
+      
+      <h2 id="rn1">Como acessar?</h2>
+      <p>Para incluir uma manobra, o usuário deverá acessar a aba <b>Manobras</b> e clicar no botão: <b>Registradas</b> 
+      </p>
+          <img src="../../imgs/btManobraRegistradas.jpg">
+         
+          <p>Na tela de manobras registradas, clicar no botão <b>Registrar</b> e selecionar as opção: <b>Manobra Efetuada</b></p>    
+          <img src="../../imgs/opcaoRegistrarManobraEfetuada.jpg" >
+          <h2 id="rn2">Como preencher?</h2>   
+          <p>Na tela a seguir, informar os dados da manobra e clicar no botão <b>Registrar</b> ou <b>Movimentar</b></p>
+     <img src="../../imgs/telaRegistrarManobraEfetuada.jpg">
+   
+          <h2 id="rn3">O que acontece depois?</h2>   
+          <ul>
+              <li>Ao <b>Registrar</b> manobra:
+                  <ul>
+                      <li>É obrigatório selecionar uma Finalidade;</li>
+                      <li>É obrigatório selecionar um Ponto Inicial;</li>
+                      <li>É obrigatório selecionar um Ponto Final;</li>
+                      <li>É obrigatório selecionar um Responsável pelo Custo;</li>
+                      <li>Caso o Responsável pelo Custo seja “Petrobras” ou “Transpetro” ou “Gás e Energia”:
+                          <ul>
+                              <li>É obrigatório informar o Calado a Vante (m);</li>
+                              <li>É obrigatório informar o Calado a Ré(m);</li>
+                              <li>É obrigatório informar a Data Partida (Ponto Inicial);</li>
+                              <li>É obrigatório informar a Data Chegada (Ponto Final);</li>
+                              <li>É obrigatório informar a Data Início Manobra;</li>
+                              <li>É obrigatório informar a Data Término Manobra;</li>
+                              <li>É obrigatório informar pelo menos um Serviço e um Responsável pelo Serviço;</li>
+                          </ul>
+                      </li>
+                      <li>A manobra ficará com o status de "Registrada".</li>
+                  </ul>
+              </li>
+          </ul>
+          <ul>
+              <li>Ao <b>Movimentar</b> a embarcação antes de encerrar a manobra:
+                  <ul>
+                      <li>É obrigatório selecionar uma Finalidade;</li>
+                      <li>É obrigatório selecionar um Ponto Inicial;</li>
+                      <li>É obrigatório selecionar um Ponto Final;</li>
+                      <li>É obrigatório informar a Data de Término da Manobra;</li>
+                      <li>A manobra ficará com o status de "Pré-registrada";</li>
+                      <li>De acordo com a Finalidade selecionada, realizar a movimentação da Embarcação para a posição adequada:
+                          <ul>
+                              <li>Fundeio de Entrada => Fundeado na Entrada</li>
+                              <li>Fundeio de Saída => Fundeado na Saída</li>
+                              <li>Fundeio para Reatracação => Fundeado para Reatracação</li>
+                              <li>Desatracação para Fundeio => Fundeado</li>
+                              <li>Troca de Fundeadouro => Fundeado</li>
+                              <li>Atracação => Atracado</li>
+                              <li>Troca de Píer => Atracado</li>
+                              <li>Troca de Ponto Operacional => Atracado</li>
+                              <li>Desatracação para Saída => Saído</li>
+                              <li>Saída de Fundeio => Saído</li>
+                              <li>Troca de Porto => Saído</li>
+                              <li>Ship to Ship => Não muda o status da embarcação</li>
+                              <li>Navegação => Não muda o status da embarcação</li>
+                          </ul>
+                      </li>
+                      <li>Não será gerada nenhuma pendência.</li>
+                  </ul>
+              </li>
+          </ul>
+  </body>
+</html>

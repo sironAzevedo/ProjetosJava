@@ -1,0 +1,67 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <h1>Cadastrar Manobras</h1>
+        
+        <p>
+            Como <b>Agente Marítimo</b>, gostaria de <b>cadastrar uma manobra e seus serviços</b> para <b> registrar a movimentação da embarcação no agenciamento</b>
+        </p>
+        
+        <div class="toc">
+            <h3>Regras de negócio:</h3>
+            <ul>
+                <li><a href="#rn1">Listar Manobras e seus Serviços</a></li>
+                <li><a href="#rn2">Registrar Manobra </a></li>
+                <li><a href="#rn3">Inserir Serviço da Manobra </a></li>
+                <li><a href="#rn4">Excluir Serviço da Manobra </a></li>
+                <li><a href="#rn5">Validar Porto do Ponto Final</a></li>
+                
+            </ul>
+        </div>
+        
+        <h3 id="rn1">Listar Manobras e seus Serviços</h3>
+        <p>
+            Devemos listar as manobras já cadastradas para o agenciamento, bem como, após selecionar uma manobra,  os respectivos serviços deverão ser exibidos.
+        </p>
+              
+        <h3 id="rn2">Registrar Manobra e seus serviços</h3>
+        <p>Para salvar uma Manobra, é necessário preencher obrigatoriamente as seguintes informações:  </p>
+        <ul >
+            <li>Finalidade Manobra</li>
+            <li>Ponto Inicial</li>
+            <li>Ponto Final </li>
+            <li>Data de Partida </li>
+            <li>Data de Chegada </li>
+            <li>Data de Início </li>
+            <li>Data de Término</li>
+            <li>Serviço e Responsavel pela manobra</li>
+        </ul>
+        <p>Quando o <b>Agente Marítimo</b> salvar sem um destes campos, então a mensagem de obrigatoriedade de campo é exibida</p>
+        
+        <h3 id="rn3">Inserir Serviços da Manobra</h3>           
+        <p>Para cada serviço, obrigatariamente deverão ser informados</p>
+        <ul>
+            <li>Nome</li>
+            <li>Data Início</li>
+            <li>Data Término</li>
+        </ul>
+        <p>Quando o <b>Agente Marítimo</b> salvar sem um destes campos, então a mensagem de obrigatoriedade de campo é exibida</p>
+        
+        <h3 id="rn4">Excluir Serviços da Manobra</h3>           
+        <p>Não é permitido excluir o último Responsável pela manobra</p>
+        
+        <h3 id="rn5">Validar Ponto Final da Manobra</h3>           
+        <p>Se a manobra  tem a finalidade "Troca de Porto", o Ponto Final deve ser de um porto diferente do Agenciamento</p>
+        <div  class="example">
+            <h3>Exemplo</h3>
+               
+            <p>Dado -- quando --então</p>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SISTAM - Agenciamento Marítimo</title>
+  </head>
+  <body>
+      
+      <h1>Relatório - Manobras</h1>      
+      
+      <div>
+          <ul>
+              <li><a href="#rn1">Como acessar?</a></li>
+              <li><a href="#rn2">Como preencher?</a></li>
+              <li><a href="#rn3">O que acontece depois?</a></li>
+          </ul>
+      </div> 
+      
+      <h2 id="rn1">Como acessar?</h2>
+      <p>Para gerar o Relatório de Manobras, o usuário deverá acessar o menu <b>Relatórios</b> e clicar na opção: <b>Relatório de Manobras</b>.</p>
+
+      <h2 id="rn2">Como preencher?</h2>
+      <p>O sistema deve abrir uma tela com os seguintes filtros:</p>
+      <ul>
+          <li>Agência Marítima: O usuário deve selecionar uma Agência dentre as que o mesmo está associado. Campo obrigatório.</li>
+          <li>Porto: Após selecionar uma Agência, o sistema vai filtrar os portos. O usuário pode escolher filtrar por um Porto específico ou todos. Campo não obrigatório.</li>
+          <li>Responsável pelo Custo: O usuário poderá selecionar um, ou mais de um ou por todos responsaveis pelo custo as opções: Todos,E&P, Petrobras, Transpetro,Gás e Energia e Sem Custo(nova opção da tela de manobra) para filtrar as manobras conforme o responsável pelo custo. Campo não obrigatório.</li>
+          <li>Período: Datas no formato dia/mês/ano para filtrar as Manobras Encerradas e as Canceladas Fora do Prazo pela Data de Início da Manobra. Campo obrigatório.</li>
+          <li>Tipo de Contrato: O usuário terá a opção de escolher um tipo de contrato ou todos.</li>
+      </ul>
+
+      <h2 id="rn3">O que acontece depois?</h2>
+      <p>Ao clicar no botão “Gerar”, o SISTAM abrir o relatório de Manobras no Microsoft Excel.</p>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FormularioTransporte" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f22e5c06-f67f-4622-a139-71496b927c13">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="IMAGEM_PETROBRAS" class="java.net.URL"/>
+	<parameter name="AGENCIA" class="java.lang.String"/>
+	<parameter name="TIPO_CONTRATO" class="java.lang.String"/>
+	<parameter name="PERIODO_INICIO" class="java.lang.String"/>
+	<parameter name="PERIODO_FIM" class="java.lang.String"/>
+	<parameter name="DATA_IMPRESSAO" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="servicoTransporte" class="br.com.petrobras.sistam.common.entity.ServicoTransporte">
+		<fieldDescription><![CDATA[servicoTransporte]]></fieldDescription>
+	</field>
+	<field name="agenciamento" class="br.com.petrobras.sistam.common.entity.Agenciamento">
+		<fieldDescription><![CDATA[agenciamento]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ff51895b-7742-47e0-9168-083f006f02f1" mode="Transparent" x="0" y="7" width="555" height="48"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Formulário de Transporte]]></text>
+			</staticText>
+			<image onErrorType="Icon">
+				<reportElement uuid="ac87973c-2e61-464a-9ed9-fcac92ba64b3" mode="Transparent" x="0" y="7" width="85" height="48"/>
+				<imageExpression><![CDATA[$P{IMAGEM_PETROBRAS}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="286" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="cc997730-f096-43cb-8811-27b120bb4dd0" x="0" y="0" width="555" height="279"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="14" width="247" height="14"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Solicitamos o transporte de empregado(s) como segue:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="29" width="84" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Transportadora:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="44" width="36" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Navio:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="60" width="35" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="75" width="29" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="90" width="35" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horas:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="105" width="27" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vôo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="120" width="45" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Origem:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="135" width="45" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Destino:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="151" width="63" height="14"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Autorização:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bca1854f-704f-4e81-836e-560918a2cc51" x="15" y="169" width="523" height="100"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Os documentos de cobrança devidamente discriminados com todos os comprovantes assinados pelo usuário deverão seremitidos em nome da:
+
+PETROBRAS TRANSPORTE S/A - TRANSPETRO
+AV. PRESIDENTE VARGAS, 328 CENTRO.
+CEP: 20.091-060
+CNPJ: 02.709.449/0001 e IE 75.795.572
+
+Qualquer dúvida contatar-nos pelos telefones (012) 3891-4126 / 4185 / 4187
+]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="254760f2-2ae2-4df3-9b58-aa7612b0e167" x="42" y="105" width="164" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicoTransporte}.getVoo()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c9165ffd-1a57-4dc4-8a87-46d8d1fb75e5" x="60" y="135" width="478" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicoTransporte}.getDestino()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="41b39b5c-51d1-40e4-84e1-e189205c1d75" x="60" y="120" width="478" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicoTransporte}.getOrigem()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="f4fe041f-2dfe-477a-8a04-ea36cce7271c" x="42" y="75" width="83" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicoTransporte}.getDataServico()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm:ss" isBlankWhenNull="true">
+				<reportElement uuid="f4fe041f-2dfe-477a-8a04-ea36cce7271c" x="50" y="90" width="83" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicoTransporte}.getDataServico()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="03a5374a-9a07-4f88-bc1f-2cc3c08719af" x="78" y="151" width="460" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicoTransporte}.getAutorizacao()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="71dfa1a8-5563-49c7-b46a-e98b5b7cf0a7" x="99" y="29" width="439" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicoTransporte}.getEmpresaServico().getEmpresa().getRazaoSocial()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4a8e1b59-6b85-4ad6-99f2-ebdaa378f0db" x="51" y="44" width="487" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{agenciamento}.getEmbarcacao().getApelido()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="24">
+			<staticText>
+				<reportElement uuid="e924086a-0882-45a3-a788-b83ed970abc6" mode="Transparent" x="0" y="0" width="99" height="23"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data de Impressão:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH:mm">
+				<reportElement uuid="d55fd3eb-7a1d-42f7-89f8-0c541cde0f11" mode="Transparent" x="99" y="0" width="121" height="23"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{DATA_IMPRESSAO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

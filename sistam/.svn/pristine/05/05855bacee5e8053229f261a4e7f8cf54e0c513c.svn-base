@@ -1,0 +1,75 @@
+table thead th {
+        font-family: arial, verdana, helvetica;
+        font-size:0.9em;
+        text-align: center;
+  }
+
+table tbody tr:nth-child(odd) td{
+}
+
+table tbody tr:nth-child(even) td{
+}
+
+#atracados table tbody tr td:nth-child(1), 
+#fundeados table tbody tr td:nth-child(2),
+#esperados table tbody tr td:nth-child(2),
+#saidos table tbody tr td:nth-child(1),
+#desviados table tbody tr td:nth-child(1){
+    font-weight:bold;
+}
+
+
+
+table tbody tr td {
+        font-family: arial narrow, arial, verdana, helvetica;
+        font-size: 0.8em;
+        text-align: left;
+}
+
+.texto {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.texto .titulo {
+    font-family: arial, verdana, helvetica;
+    font-size: 1.4em;
+    line-height:1.4em;
+    font-weight: bold;
+    display: block;
+}
+.texto .subtitulo {
+    font-family: arial, verdana, helvetica;
+    font-size:1.0em;
+    line-height:1.0em;
+    font-weight: bold;
+    display: block;
+}
+
+#select-estilo {
+    font-family: arial, verdana, helvetica;
+    font-size:1.0em;
+    line-height:1.0em;
+    font-weight: bold;
+    display: block;
+    color: white;
+}
+
+
+section.paines table caption {
+    font-family: arial, verdana, helvetica;
+    line-height:1.2em;
+    text-align: center;
+}
+
+.tituloTipoNavio{
+    font-size:1.0em;
+    font-weight: bold;
+}
+
+.paginacao{
+    float:right;
+    margin-right:10px;
+    font-size:0.6em;
+}

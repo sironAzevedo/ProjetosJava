@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.1.xsd">
+
+    <!-- Configuração de cache de métodos -->
+
+    <cache:annotation-driven />
+    
+    <bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+        <property name="configLocation" value="ehcache.xml"/>
+    </bean>
+    
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+        <property name="cacheManager" ref="ehcache"/>
+    </bean>
+
+    <!-- Configuração de perfis de operação do sistema -->
+
+    <beans profile="thin-client">
+        <bean id="sistamService" class="br.com.petrobras.fcorp.spring.remoting.SpringRemotingServiceFactory">
+            <constructor-arg index="0" value="SistamService.svlt"/>
+            <constructor-arg index="1" value="sistam"/>
+            <property name="serviceInterface" value="br.com.petrobras.sistam.common.business.SistamService"/>
+        </bean>
+    </beans>
+    
+    <beans profile="fat-client">
+        <import resource="applicationContext.xml"/>
+            
+        <!-- Data Source para o banco de desenvolvimento -->
+        <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+            <property name="url" value="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = assaracotvt.petrobras.com.br)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = des32g) ) )" />
+            <property name="username" value="STAM_APLICACAO" />
+            <property name="password" value="STAMD11" />
+            
+            <!--BANCO DE TESTE -->
+<!--            <property name="url" value="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = assaracotvt.petrobras.com.br)(PORT = 1521))  (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = tst11g) ) )" />
+            <property name="username" value="STAM_APLICACAO" />
+            <property name="password" value="STAMT11"/>-->
+        </bean>
+        
+        <!-- Redefinição do Locale para fora do session scope -->
+        <bean id="locale" class="br.com.petrobras.fcorp.i18n.LocaleHolder">
+            <property name="locale">
+                <bean class="java.util.Locale">
+                    <constructor-arg value="pt"/>
+                    <constructor-arg value="BR"/>
+                </bean>
+            </property>
+        </bean>
+        
+        <!-- Redefinição do beans para validação das permissões -->
+        <bean id="validadorPermissao" class="br.com.petrobras.sistam.common.validator.ValidadorPermissao"/>
+        
+    </beans>
+
+</beans>

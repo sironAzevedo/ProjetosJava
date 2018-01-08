@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/sistam">
+
+    <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" name="sistam.ds.default" password="STAMD11" type="javax.sql.DataSource" username="STAM_APLICACAO"
+        url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = assaracotvt.petrobras.com.br)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = des32g) ) )" />
+    
+    <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" name="jdbc.DataSource.siscac" password="Lo36Wgx2Z7" type="javax.sql.DataSource" username="PUBLICO_UE6CA"
+    url="jdbc:oracle:thin:@(DESCRIPTION= (ADDRESS=(PROTOCOL=TCP)(HOST=clisonimo-vip.petrobras.com.br)(PORT=1521)) (ADDRESS=(PROTOCOL=TCP)(HOST=drepano-vip.petrobras.com.br)(PORT=1521))(LOAD_BALANCE=yes) (CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=sp_acessod1)))" />
+
+</Context>

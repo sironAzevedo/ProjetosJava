@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+
+    <PESSOA
+        PESS_SQ_PESSOA="80"
+        PESS_NM_PESSOA="Joao"
+        PESS_CD_CPF="47008722338"
+        PESS_IN_PESSOA_ATIVA="S"
+    />
+
+    <PESSOA
+        PESS_SQ_PESSOA="90"
+        PESS_NM_PESSOA="Maria"
+        PESS_TX_DOCUMENTO="12312313"
+        PESS_DT_NASCIMENTO="1980-01-01"
+        EMPR_SQ_EMPRESA_PROTECAO="900"
+        PESS_IN_PESSOA_ATIVA="S"
+    />
+
+    <EMPRESA_PROTECAO
+            EMPR_SQ_EMPRESA_PROTECAO="900"
+            EMPR_NR_CNPJ="25285531000107"
+            EMPR_NM_RAZAO_SOCIAL="Transportes e Cia."
+            EMPR_TX_NR_TELEFONE="7199887766"
+            EMPR_TX_EMAIL="contato@transportesecia.com.br"
+            EMPR_TX_CIDADE="Salvador"
+            EMPR_CD_ESTADO="BA"
+    />
+    
+    <EMPRESA_PROTECAO_SERVICO
+        EMPS_SQ_EMP_PROTECAO_SERVICO="9000"
+        EMPR_SQ_EMPRESA_PROTECAO="900"
+        EMPS_IN_TIPO_SERVICO_PROTECAO="1"
+    />
+    
+</dataset>

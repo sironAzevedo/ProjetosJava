@@ -1,0 +1,174 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <h1>Emitir Registro de Movimentação da Embarcação </h1>
+        
+        <p>
+            Como <b>Agente Marítimo</b>, devo <b>registrar a movimentação da embarcação</b> para <b>que a autoridade tenha ciência da localização atual da embarcação</b> 
+        </p>
+        
+        <div class="toc">
+            <h3>Regras de negócio:</h3>
+            <ul>
+                <li><a href="#rn1">Validar Dados Obrigatórios</a></li>
+                <li><a href="#rn2">Listar Manobras para Registrar Movimentação</a></li>
+                <li><a href="#rn3">Encerrar a Manobra Registrada</a></li>
+                <li><a href="#rn4">Alterar o Status da Embarcação da Manobra dentro do Porto</a></li>
+                <li><a href="#rn5">Alterar o Status da Embarcação da Manobra Troca de Porto</a></li>
+                <li><a href="#rn6">Emitir Formulário :: REGISTRO DE MOVIMENTAÇÃO DA EMBARCAÇÃO (ANEXO 2-J)</a></li>
+            </ul>
+        </div>
+        <h3 id="rn1">Validar Dados Obrigatórios</h3>
+        <p>Para gerar o formulário é necessário informar os campos:         </p>
+        <ul>
+            <li>Classificação da Embarcação</li>
+            <li>Área de Navegação</li>
+            <li>Uma Manobra com a situação Registrada ou Encerrada</li>
+        </ul>
+        <p>Quando algum destes campos não forem informados, devemos exibir uma mensagem solicitando o preenchimento</p>
+       
+        <h3 id="rn2">Listar Manobras para Registrar Movimentação</h3>
+        <p>Devemos listar as manobras Registradas ou Encerradas e cuja Finalidade seja difernte de Atracação para Saída e Saída de Fundeio </p>
+        <div class="example">
+            <h3>Exemplos</h3>
+            <p>Dado que existem as seguintes manobras de uma embarcação</p>
+            <table>
+                <tr>
+                    <th>Finalidade</th>
+                    <th>Situação</th>
+                </tr>
+                <tr>
+                    <td>Desatracação para Saída</td>
+                    <td>Registrada</td>
+                </tr>
+                <tr>
+                    <td>Saída de Fundeio</td>
+                    <td>Registrada</td>                   
+                </tr>
+                <tr>
+                    <td>Atracação</td>
+                    <td>Registrada</td>                                      
+                </tr>
+                <tr>
+                    <td>Fundeio de Entrada</td>
+                    <td>Encerrada</td>                                      
+                </tr>
+                <tr>
+                    <td>Fundeio de Entrada</td>
+                    <td>Cancelada</td>                                      
+                </tr>
+            </table>
+            <p>Quando solicito o registro de movimentação então as manobras <b>Atracação</b> e <b>Fundeio de Entrada</b> </p>
+
+        </div>
+        <h3 id="rn3">Encerrar a Manobra Registrada</h3>
+        <p>Quando gerar o Registro de Movimentação de uma manobra na situação <b>Registrada</b> então a situação da Manobra </p>
+        <ul>
+            <li>Alterar a situação da Manobra para Encerrada</li>
+            <li>Gerar a pendência Registro de Movimentação</li>
+            <li>Alterar o Status da Embarcação conforme Finaliade </li>
+        </ul>
+        <p>Quando gerar o Registro de Movimentação de uma manobra com a situação <b>Encerrada</b> nada é feito pelo sistema</p>
+
+        <h3 id="rn4">Alterar o Status da Embarcação da Manobra dentro do Porto </h3>
+        <p>Quando uma Manobra é encerrada então o Status da Embarcação muda conforme a finlaidade</p>
+        <div class="example">
+            <h3>Exemplos</h3>
+            <table>
+                <tr>
+                    <th>Finalidade</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>FUNDEIO DE ENTRADA</td>
+                    <td>FUNDEADO_NA_ENTRADA</td>
+                </tr>
+                <tr>
+                    <td>ATRACAÇÃO</td>
+                    <td>ATRACADO</td>
+                </tr>
+                <tr>
+                    <td>DESATRACAÇÃO PARA FUNDEIO</td>
+                    <td>FUNDEADO</td>
+                </tr>
+                <tr>
+                    <td>TROCA DE PÍER</td>
+                    <td>ATRACADO</td>
+                </tr>
+                <tr>
+                    <td>FUNDEIO DE SAÍDA</td>
+                    <td>FUNDEADO_NA_SAIDA</td>
+                </tr>
+                <tr>
+                    <td>FUNDEIO PARA REATRACAÇÃO</td>
+                    <td>FUNDEADO_PARA_REATRACACAO</td>
+                </tr>
+                <tr>
+                    <td>TROCA DE FUNDEADOURO</td>
+                    <td>FUNDEADO</td>
+                </tr>
+                <tr>
+                    <td>TROCA DE PONTO OPERACIONAL</td>
+                    <td>ATRACADO</td>
+                </tr>
+                <tr>
+                    <td>SHIP TO SHIP</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <h3 id="rn5">Alterar o Status da Embarcação da Manobra Troca de Porto </h3>
+        <p>Quando a Finalidade da Manobra é <b>TROCA DE PORTO</b> então </p>
+        <p>devemos alterar o Status da Embarcação para Saído e alterar os dados de saída do agenciamento de acordo com a manobra</p>
+        <div class="example">
+            <h3>Exemplos</h3>
+            <p>Dada uma manobra com as características</p>
+                
+            <table>
+                <tr>
+                    <th>Finalidade</th>
+                    <th>Ponto Final</th>
+                    <th>Data Saida (ponto inicial)</th>
+                    <th>Data Chegada (ponto final)</th>
+                    <th>Calado à Vante</th>
+                    <th>Calado à Ré</th>
+                </tr>
+                <tr>
+                    <td>TROCA DE PORTO</td>
+                    <td>ARATU - PIER 5</td>
+                    <td>01/10/2013 10:00</td>
+                    <td>9,2</td>
+                    <td>9</td>
+                </tr>
+            </table>
+            <p>quando o registro de movimentação para esta manobra for gerado, então</p>
+            <p>o agenciamento ficará com as seguintes características</p>
+            <table>
+                <tr>
+                    <th>Status</th>
+                    <th>Porto Destino</th>
+                    <th>Eta Prox. Porto</th>
+                    <th>Calado de Saída à Vante</th>
+                    <th>Calado de Saída à Ré</th>
+                </tr>
+                <tr>
+                    <td>SAÍDO</td>
+                    <td>ARATU</td>
+                    <td>01/10/2013 10:00</td>
+                    <td>9,2</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </div>
+        
+        <h3 id="rn6">Emitir Formulário :: REGISTRO DE MOVIMENTAÇÃO DA EMBARCAÇÃO (ANEXO 2-J)</h3>
+        <p>
+            Para emitir o formulário devemos verificar que o Responsável e Órgão de Despacho da Agência foram selecionados.
+        </p>
+    </body>
+</html>

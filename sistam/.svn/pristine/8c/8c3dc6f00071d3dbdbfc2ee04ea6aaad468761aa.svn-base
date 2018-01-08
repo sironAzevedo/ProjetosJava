@@ -1,0 +1,33 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Glossário</h1>
+
+        <div class="toc">
+            <h3>Lista de Termos:</h3>
+            <ul>
+                <li><a href="#termo1">Termo 1</a></li>
+                <li><a href="#termo2">Termo 2</a></li>
+                <li><a href="#termo3">Termo 3</a></li>
+            </ul>
+        </div>
+        
+        <h3 id="termo1">Termo 1</h3>
+        <p>
+            [Descrição do termo]
+        </p>
+        
+        <h3 id="termo2">Termo 2</h3>
+        <p>
+            [Descrição do termo]
+        </p>
+        
+        <h3 id="termo3">Termo 3</h3>
+        <p>
+            [Descrição do termo]
+        </p>
+    </body>
+</html>

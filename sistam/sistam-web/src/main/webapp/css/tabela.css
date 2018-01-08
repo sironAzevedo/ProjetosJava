@@ -1,0 +1,61 @@
+table {
+        width:100%;
+        margin:0;
+        margin-top:5px;
+        padding:0;
+        border-spacing:0;
+}
+
+table caption{  
+}
+
+table thead th {
+        padding: 3px 3px 3px 3px;
+}
+table tbody tr{
+    height:25px;        
+}
+
+table tbody tr td {
+        padding: 3px 3px 3px 3px;
+        height:20px;
+        
+}
+
+.colLp{width:1%;}
+
+#atracados .colEmbarcacao{width:9%}
+#fundeados .colEmbarcacao,
+#esperados .colEmbarcacao{width:4%}
+
+.colViagem{width:7%}
+.colEta, .colHoraOficial, .colAtracao{width:4%}
+.colProcedencia{width:3%}
+
+#esperados .colResumoCarga{width:40%}
+
+.colLocalizacaoAtual,
+.colLocalizacaoAtual{width:10%}
+
+#fundeados .colResumoCarga,
+#atracados .colResumoCarga{width:28%}
+
+#fundeados .colCalado, 
+#atracados .colCalado,
+#esperados .colCalado{width:4%}
+
+.colResumoQuantidade{width:16%;}
+
+.colObservacao{width:15%}
+.colDestino{}
+
+
+.divNavioSaido .colEmbarcacao{width:16%;}
+.divNavioSaido .colViagem{width:11%;}
+.divNavioSaido .colSaida{width:13%;}
+.divNavioSaido .colEtaSaidos{width:10%;}
+.divNavioSaido .colDestino{}
+
+.divNavioDesviado .colEmbarcacao{width:90%;}
+.divNavioDesviado .colDestino{}
+

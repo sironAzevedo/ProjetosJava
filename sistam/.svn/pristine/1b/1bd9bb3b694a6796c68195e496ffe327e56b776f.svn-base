@@ -1,0 +1,34 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SISTAM - Agenciamento Marítimo</title>
+  </head>
+  <body>
+      
+      <h1>Operações - Adicionar Documentação</h1>      
+      
+      <div>
+          <ul>
+              <li><a href="#rn1">Como acessar?</a></li>
+              <li><a href="#rn2">Como preencher?</a></li>
+              <li><a href="#rn3">O que acontece depois?</a></li>
+          </ul>
+      </div> 
+      
+      <h2 id="rn1">Como acessar?</h2>
+      <p>Para incluir uma Documentação na Operação, o usuário deverá acessar a aba <b>Operações</b> e clicar no botão: <b>Documentação da Carga</b>.</p>
+
+      <h2 id="rn2">Como preencher?</h2>
+      <p>Para incluir documentação de carga deve existir pelo menos uma operação do tipo “Carga Cabotagem”.</p>
+      <p>Para incluir documentação de descarga deve existir pelo menos uma operação do tipo “Descarga Cabotagem”.</p>
+      <p>Para incluir documentação de longo curso deve ser selecionada uma operação do tipo “Carga Exportação” ou “Descarga Importação”.</p>
+      <p>Uma operação pode ter mais de uma documentação.</p>
+      <p>É obrigatório informar o porto destino e o manifesto eletrônico.</p>
+      <p>Não é obrigatório informar CE e CTAC.</p>
+      <p>O porto destino deverá ser nacional para as operações de “Carga Cabotagem” e “Descarga Cabotagem”.</p>
+      <p>O porto destino deverá ser estrangeiro para as operações de “Carga Exportação” e “Descarga Importação”.</p>
+
+      <h2 id="rn3">O que acontece depois?</h2>
+      <p>Documentação cadastrada para a operação.</p>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="br.com.petrobras.fcorp.swing.base.action.GenericAction" name="actionOk">
+      <Properties>
+        <Property name="methodName" type="java.lang.String" value="confirmar"/>
+        <Property name="target" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="this" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Ok"/>
+        <Property name="toolTipText" type="java.lang.String" value="Confirma os dados informados"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Informa&#xe7;&#xf5;es do agenciamento"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="0"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="pnlBotoes" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="painelInformacoesAgenciamento" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Component id="painelInformacoesAgenciamento" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="pnlBotoes" min="-2" pref="39" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlBotoes">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="pnlBotoes" noResource="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+      <SubComponents>
+        <Component class="br.com.petrobras.fcorp.swing.components.SButton" name="btnSalvar">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="actionOk"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="btnSalvar" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="painelInformacoesAgenciamento">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Informa&#xe7;&#xf5;es do Agenciamento"/>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="painelInformacoesAgenciamento" noResource="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="sLabel19" min="-2" max="-2" attributes="0"/>
+                      <Component id="sLabel37" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="dtEtaProxPorto" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="hrEtaProxPorto" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="125" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="portoDestino" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="sLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="portoDestino" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="sLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="dtEtaProxPorto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEtaProxPorto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel37">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Porto Destino:"/>
+            <Property name="name" type="java.lang.String" value="sLabel37" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="br.com.petrobras.sistam.desktop.components.lookups.porto.PortoLookup" name="portoDestino">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="portoDestino" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="value" source="Form" sourcePath="${model.portoDestino}" target="portoDestino" targetPath="value" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel19">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="ETA Pr&#xf3;x. Porto:"/>
+            <Property name="name" type="java.lang.String" value="sLabel19" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="br.com.petrobras.fcorp.swing.components.SDateChooser" name="dtEtaProxPorto">
+          <Properties>
+            <Property name="timeChooser" type="br.com.petrobras.fcorp.swing.components.STimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="hrEtaProxPorto"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="dtEtaProxPorto" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="date" source="Form" sourcePath="${model.eta}" target="dtEtaProxPorto" targetPath="date" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="br.com.petrobras.fcorp.swing.components.STimeChooser" name="hrEtaProxPorto">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="hrEtaProxPorto" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${model.habilitarEta}" target="hrEtaProxPorto" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

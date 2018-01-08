@@ -1,0 +1,74 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <h1>Emitir Formulário de Aviso de Saida</h1>
+
+        <br>
+            Como <b>agente marítimo</b>, pretendo emitir o formulário de Aviso de Saída de uma viagem de uma embarcação para informar a capitania sobre a saída da embarcação.
+        </br>
+
+        <br>O formulário de Aviso de Saída deve conter as informações: processo de despacho, DUV, porto de saída, nome da embarcação, nº IMO, destino, calado à vante(saída), calado à ré(saída), 
+            observação, local e data. 
+        </br>
+        
+         <br><br> O formulário será exibido com Nº do Aviso de Saida em branco.</br></br>
+        
+        <br>O formulário será emitido respeitando as regras abaixo:</br>
+        <br> </br>
+     
+        <b>Regras:</b>
+            <ul>
+                Para emitir o formulário de Aviso de Saída é necessário que estejam preenchidas obrigatoriamente as informações de calado de saída à  vante, calado de saída à ré, nº DUV , processo do despacho e o ponto final da movimentação.
+                Se o <b>agente marítimo</b> não preencher alguma informação obrigatória, é exibida mensagem informando sobre a necessidade do preenchimento.
+              
+            </ul>
+            
+
+            <div class="square">
+
+
+                <h3>Exemplo 1</h3>
+                <ul>
+                Seja a viagem DF 99 da embarcação ZUMBI DOS PALMARES.  
+                Se o <b>agente marítimo</b> não preencher o ponto final da movimentação para essa viagem, o sistema emitirá a mensagem: 
+                “Informe o ponto final da movimentação”.
+                <br><br></br></br>
+                Para cada informação obrigatória não preenchida, o sistema emitirá mensagem especificando qual precisa ser informada.
+                </ul>
+            </div>
+
+          <ul>
+               O <b> agente marítimo</b> tem a opção de informar uma data específica para gerar o formulário. Caso não deseje informar uma data específica, o sistema emitirá o formulário com a data atual.
+               <br>Pode também opcionalmente informar uma observação para o formulário. </br>
+          </ul>
+      
+
+            <div class="square">
+                <h3>Exemplo 2</h3>
+                <ul>
+                Hoje, é 04/11/2015. Se o <b>agente marítimo</b> desejar emitir o formulário de aviso de saída da viagem DF 99 da embarcação ZUMBI DOS PALMARES informando a data 03/11/2015 e a observação "É importante que seja verificado o horário de saída”, o formulário será impresso com a data 03/11/2015 e a observação “É importante que seja verificado o horário de saída”.  
+                               
+                </ul>
+            </div>
+
+
+            <div class="square">
+
+                <h3>Exemplo 3</h3>
+                <ul>
+               
+                Hoje, é 04/11/2015. Se o <b>agente marítimo</b> desejar emitir o formulário de aviso de saída da viagem DF 99 da embarcação ZUMBI DOS PALMARES sem preencher uma data específica nem preencher uma observação, o formulário será impresso com a data 04/11/2015 e sem observação.  
+                               
+                    
+                </ul>
+
+            </div>
+      
+
+    </body>
+</html>

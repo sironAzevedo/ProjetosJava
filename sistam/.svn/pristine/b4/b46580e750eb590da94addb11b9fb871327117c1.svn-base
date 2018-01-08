@@ -1,0 +1,5 @@
+@import url("bootstrap.css");
+@import url("estrutura.css");
+@import url("tabela.css");
+@import url("fonte.css");
+@import url("responsive.css");

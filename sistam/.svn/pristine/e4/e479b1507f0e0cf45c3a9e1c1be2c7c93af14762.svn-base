@@ -1,0 +1,27 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Capitania dos Portos</h1>
+        
+        <p>
+            Todo agenciamento deverá ser comunicado para a Capitania dos Portos.            
+        </p>
+
+        <div class="toc">
+            <h3>Lista das Funcionalidades:</h3>
+            <ul>
+                <li>Informar dados complementares da Embarcação</li>
+                <li>Emitir Parte de Entrada</li>
+                <li><a href="RegistrarMovimentacaoEmbarcacao.htlm">Emitir Registro de Movimentação</a></li>
+                <li>Emitir Declaração Geral - Entrada</li>
+                <li><a href="EmitirParteSaida.htlm">Emitir Parte de Saída</a></li>
+                <li>Emitir Registro de Alteração de Destino</li>
+          
+            </ul>            
+           
+        </div>
+    </body>
+</html>

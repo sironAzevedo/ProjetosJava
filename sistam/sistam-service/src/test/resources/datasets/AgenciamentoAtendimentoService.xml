@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+
+    <EMBARCACAO  EMBA_CD_ID="B915"
+                 EMBA_IN_CLASSIFICACAO="1"
+                 EMBA_IN_TEM_HELIPORTO="N"
+                 EMBA_NM_COMPLETO="GUARA" 
+                 EMBA_NM_APELIDO="GUARA" 
+                 EMBA_TX_IMO="9454010" 
+                 EMBA_IN_TIPO_EMBARCACAO="N"
+                 PAIS_CD_IBGE="073"
+                 PORT_CD_ID_REGISTRO = "MANA"
+                 PAIS_CD_ULTIMA_INSPECAO="073"
+    />
+
+    <EMBARCACAO  EMBA_CD_ID="0098"
+                 EMBA_IN_CLASSIFICACAO="1"
+                 EMBA_IN_TEM_HELIPORTO="N"
+                 EMBA_NM_COMPLETO="DEVON" 
+                 EMBA_NM_APELIDO="DEVON" 
+                 EMBA_TX_IMO="9454010" 
+                 EMBA_IN_TIPO_EMBARCACAO="N"
+                 PAIS_CD_IBGE="019"
+                 PORT_CD_ID_REGISTRO = "MANA"
+                 PAIS_CD_ULTIMA_INSPECAO="073"
+    />
+    
+        
+    <AGENCIA  AGEN_SQ_AGENCIA="2"
+              AGEN_NM_AGENCIA="Fortaleza"
+              AGEN_SG_AGENCIA="FOR"
+              AGEN_TX_ENDERECO="Av. Leite Barbosa, s/n , 60180-420   MUCURIPE" 
+              AGEN_TX_TELEFONE="77-88776659" 
+              AGEN_TX_EMAIL="agfortaleza@petrobras.com.br" 
+              AGEN_TX_CIDADE="FORTALEZA"
+              AGEN_CD_ESTADO="CE" 
+              AGEN_CD_TIMEZONE="America/Fortaleza" 
+    />
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="1"
+              AGEN_NM_AGENCIA="Salvador"
+              AGEN_SG_AGENCIA="SAL"
+              AGEN_TX_ENDERECO="Av. Antônio Carlos Magalhães, 1113   Sala 204 - Ed.  Ademar de Queiroz - Pituba - 41825-903" 
+              AGEN_TX_TELEFONE="7133483441" 
+              AGEN_TX_EMAIL="agsalvador@petrobras.com.br" 
+              AGEN_TX_CIDADE="SALVADOR"
+              AGEN_CD_ESTADO="BA"
+              AGEN_CD_TIMEZONE="America/Bahia" 
+    />
+
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="826"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098"    
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="1"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   PORT_CD_ID_DESTINO="MAUS"
+                   AGEC_DT_ETA="2014-12-30"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="MAUS" 
+                   AGEC_DT_INCLUSAO="2013-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+                   AGEC_DT_CHEGADA="2013-12-30 12:00:00" 
+                   AGEC_DT_SAIDA="2014-02-04 12:00:00" 
+    />
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="827"
+                   AGEC_CD_AGENCIAMENTO="2"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="5" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_TIPO_CONTRATO="TCP"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="1"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   PORT_CD_ID_DESTINO="MAUS"
+                   AGEC_DT_ETA="2014-01-20"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="MAUS" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+                   AGEC_DT_CHEGADA = "2014-01-20 12:00:00"
+                   AGEC_DT_SAIDA="2014-02-10 12:00:00"
+    />
+                      
+    <PAIS
+      PAIS_CD_IBGE="019"	
+      PAIS_NM_COMPLETO="BRASIL"
+    />
+
+    <PAIS
+      PAIS_CD_IBGE="135"	
+      PAIS_NM_COMPLETO="PORTO RICO"
+    />
+
+    <PAIS
+      PAIS_CD_IBGE="073"	
+      PAIS_NM_COMPLETO="PORTO"
+    />
+          
+   
+</dataset>

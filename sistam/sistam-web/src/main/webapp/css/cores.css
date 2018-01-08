@@ -1,0 +1,151 @@
+body {
+    background-color: #005197;
+}
+
+header{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003562', endColorstr='#005197')!important; /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#003562), to(#005197))!important; /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #003562,  #005197)!important; /* for firefox 3.6+ */
+}
+
+
+table caption{
+    border:1px solid #005197;    
+}
+
+table thead th {
+border: 1px solid #005197;
+}
+
+table tbody tr td {
+        color: black;
+        border:1px solid #005197;
+}
+
+section.paines table caption {
+    
+}
+
+
+.texto {
+    color: white;
+}
+
+/* Esperados */
+#esperados table caption{
+    background-color:#e5bd00;
+    color:#fff;
+    
+}
+
+#esperados table thead th{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5bd00), color-stop(1, #f5d648) );
+    background:-moz-linear-gradient( center top, #e5bd00 5%, #f5d648 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5bd00', endColorstr='#f5d648');
+    background-color:#ffb400;
+    color:#fff;
+}
+
+#esperados table tbody tr td {
+    color:#000;
+}
+
+#esperados table tbody tr:nth-child(odd) td {
+    background-color:#fff2c0;
+}
+
+#esperados table tbody tr:nth-child(even) td {
+    background-color:#fbe491;
+}
+
+/* Fundeados */
+#fundeados table caption{
+    background-color:#ff7800;
+    color:#fff;
+}
+
+#fundeados table thead th{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7800), color-stop(1, #ffa351) );
+    background:-moz-linear-gradient( center top, #ff7800 5%, #ffa351 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7800', endColorstr='#ffa351');
+    background-color:#ff7800;
+    color:#fff;
+    
+}
+
+#fundeados table tbody tr td {
+    color:#000;
+}
+
+#fundeados table tbody tr:nth-child(odd) td {
+    background-color:#ffd7bf;
+    
+}
+
+#fundeados table tbody tr:nth-child(even) td {
+    background-color:#fbba93;
+    
+}
+
+
+/* Atracados */
+#atracados table caption{
+    background-color:#a94108;
+    color:#fff;
+}
+
+#atracados table thead th{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a94108), color-stop(1, #c95516) );
+    background:-moz-linear-gradient( center top, #a94108 5%, #c95516 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a94108', endColorstr='#c95516');
+    background-color:#06ce3a;
+    color:#fff;
+}
+
+#atracados table tbody tr td {
+    color:#000;
+}
+
+#atracados table tbody tr:nth-child(odd) td {
+    background-color:#ffbc98;
+}
+
+#atracados table tbody tr:nth-child(even) td {
+    background-color:#f0905b;
+}
+
+/* Saidos e Desviados */
+#saidos table caption, #desviados table caption{
+    background-color:#631300;
+    color:#fff;
+}
+#saidos table thead th, #desviados table thead th{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #631300), color-stop(1, #7f2b17) );
+    background:-moz-linear-gradient( center top, #631300 5%, #7f2b17 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#631300', endColorstr='#7f2b17');
+    background-color:#06ce3a;
+    color:#fff;
+}
+
+#saidos table tbody tr td, #desviados table tbody tr td{
+    color:#000;
+}
+
+#saidos table tbody tr:nth-child(odd) td, #desviados table tbody tr:nth-child(odd) td{
+    background-color:#d08c7c;
+}
+
+#saidos table tbody tr:nth-child(even) td, #desviados table tbody tr:nth-child(even) td{
+    background-color:#aa5d4b;
+}
+
+/*
+#atracados table tbody tr.pp td:nth-child(1), 
+#saidos table tbody tr.pp td:nth-child(1),
+#desviados table tbody tr.pp td:nth-child(1),
+*/
+#fundeados table tbody tr.pp td:nth-child(1),
+#esperados table tbody tr.pp td:nth-child(1){
+    color:#f00;
+    font-weight:bold;
+}

@@ -1,0 +1,106 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <h1>Informar Certificados</h1>
+        
+        <p>
+            Como <b>Agente Marítimo</b>, gostaria de <b> emitir formulários </b> para <b>providenciar liberação da embarcação junto a ANVISA</b>
+            
+        </p>
+        
+        <div class="toc">
+            <h3>Regras de negócio:</h3>
+            <ul>
+                <li><a href="#rn1">Obter Certificados Válidos</a></li>
+                <li><a href="#rn2">Informar Certificados para Emissão de Formulários</a></li>
+                <li><a href="#rn3">Imprimir Certificado Livre Prática</a></li>
+                <li><a href="#rn4">Imprimir Comunicação de Chegada</a></li>
+            </ul>
+        </div>
+        
+        <h3 id="rn1">Obter Certificados Válidos</h3>
+        <p>Serão obtidos, as informações dos Certificados Válidos de uma Embarcação, sempre que for solicitado a emissão de <b>Formulários para Liberação ANVISA </b> para esta embarcação</p>
+        <p>
+            Devemos obter certificados com <b>Data de Validade</b> maior que a <b>Data Estimada de Saída</b> da embarcação.
+        </p>
+        <div class="example">
+            <h3>Exemplos</h3>
+            <p>Dado as embarcações e seus certificados abaixo</p>
+            <table>
+                <tr>
+                    <th>
+                        
+                    </th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Embarcação</th>
+                    <th>Tipo Certificado</th>
+                    <th>Data Validade</th>
+                    <th>Data Estimada de Saída</th>
+                 </tr>
+                <tr>
+                    <td>NAVION MARITA</td>
+                    <td>CCSB/CICSB</td>
+                    <td>31/09/2013</td>
+                    <td>31/09/2013</td>
+                </tr>
+                <tr>
+                    <td>NAVION MARITA</td>
+                    <td>CNCSB/CNICSB</td>
+                    <td>31/09/2013</td>
+                    <td>31/09/2013</td>
+                </tr>
+                <tr>
+                    <td>ELKA LEBLON</td>
+                    <td>CNCSB/CNICSB</td>
+                    <td>01/08/2013</td>
+                    <td>30/07/2013</td>
+                </tr>
+            </table>
+            <p>Quando o agente maritimo solicitar a liberação ANVISA da embarcação <b>NAVION MARITA</b></p>
+            <p>Então os Certificaos <b>CCSB/CICSB</b> e <b>CNCSB/CNICSB</b> estarão válidos </p>
+            <p>Quando o agente maritimo solicitar a liberação ANVISA da embarcação <b>ELKA LEBLON</b></p>
+            <p>Então será necessário emitir os certificados <b>CCSB/CICSB</b> e <b>CNCSB/CNICSB</b> </p>
+            
+        </div>  
+        <h3 id="rn2">Informar Certificados para Emissão de Formulários</h3>
+        <p>Para aproveitamento nos futuros agenciamentos, o <b>Agente Marítimo</b>, poderá salvar as informações dos certificados de  </p>
+        <ul>
+            <li>Livre Prática</li>
+            <li>Controle Sanitário de Bordo(CCSB/CICSB)</li>
+            <li>Controle Nacional de Sanitário de Bordo (CNCSB/CNICSB)</li>
+        </ul>
+        
+        <p>Obrigatoriamente, devemos informar a <b>Data e Porto de Emissão</b></p>
+        <p>As informações de Data de Depósito, Finalidade e Agente são utilizados apenas para a geração do Certificado de Livre Prática .</p>
+        
+        
+        <h3 id="rn3">Imprimir Certificado Livre Prática</h3>
+        <p>Após preenchimento de todos os campos do formulário devemos disponibilizar a impressão do <b>  Formulário de Certificado Livre Prática</b></p>
+        
+            <p>Para impressão do formulário devemos validar o preenchimento das informações </p>
+            <ul>
+                <li>Tipo de Certificado</li>
+                <li>Data de Deposito</li>
+                <li> Finalidade </li> 
+                <li> Representante  </li> 
+            </ul>
+            <p>Para cada Certificado Válido é necessário informar <b>Data e Porto de Emissão </b> </p>
+          
+        <h3 id="rn4">Imprimir Comunicação de Chegada</h3>
+        <p>Após preenchimento de todos os campos do formulário devemos disponibilizar a impressão da <b>Formulário de Comunicação de Chegada</b></p>
+        <p>Para este formulário é necessário informar para o <b>Certificado Livre Prática (CLP)</b> e <b>Controle Sanitário de Bordo(CCSB/CICSB)</b> os dados:</p>
+        <ul>
+            <li>Número do Certificado </li>
+            <li>Data de Validade </li>
+            <li>Data e Porto de Emissão</li>
+        </ul>
+    </body>
+</html>

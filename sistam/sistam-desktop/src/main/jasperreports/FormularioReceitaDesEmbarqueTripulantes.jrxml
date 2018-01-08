@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FormularioReceitaDesEmbarqueTripulantes" pageWidth="595" pageHeight="842" columnWidth="485" leftMargin="70" rightMargin="40" topMargin="60" bottomMargin="20" uuid="8e2928e5-a825-4e68-bc5d-e9890ec9470e">
+	<property name="ireport.zoom" value="1.331000000000003"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="358"/>
+	<parameter name="SUBREPORT_PATH" class="java.lang.String"/>
+	<parameter name="RECEITAFEDERAL_LOGO_PATH" class="java.net.URL"/>
+	<parameter name="MINSTERIOFAZENDA_LOGO_PATH" class="java.net.URL"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="embarque" class="java.lang.Boolean"/>
+	<field name="navio" class="java.lang.String"/>
+	<field name="escala" class="java.lang.String"/>
+	<field name="dataPrevista" class="java.lang.String"/>
+	<field name="horaPrevista" class="java.lang.String"/>
+	<field name="lancha" class="java.lang.String"/>
+	<field name="observacoes" class="java.lang.String"/>
+	<field name="tripulantes" class="java.util.List"/>
+	<field name="localEDataGeracao" class="java.lang.String"/>
+	<field name="numeroDocumento" class="java.lang.String"/>
+	<pageHeader>
+		<band height="265" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="fd0a71ff-986c-483e-8a51-35559545fafe" x="0" y="209" width="485" height="56"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fd0a71ff-986c-483e-8a51-35559545fafe" x="0" y="124" width="485" height="28"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="0" y="108" width="485" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLICITANTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="5" y="136" width="210" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PETROBRAS - AGÊNCIA SALVADOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="5" y="124" width="133" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NOME/RAZÃO SOCIAL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="340" y="136" width="145" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[71-33487527/33487538]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="220" y="136" width="116" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[33.000.167/0132-70]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="215" y="124" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="335" y="124" width="1" height="28"/>
+			</line>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="220" y="124" width="115" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CNPJ/CPF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="340" y="124" width="145" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TELEFONE:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="fd0a71ff-986c-483e-8a51-35559545fafe" x="0" y="166" width="121" height="16"/>
+			</rectangle>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="16" y="166" width="1" height="16"/>
+			</line>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="21" y="166" width="100" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMBARQUE]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="fd0a71ff-986c-483e-8a51-35559545fafe" x="161" y="166" width="121" height="16"/>
+			</rectangle>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="177" y="166" width="1" height="16"/>
+			</line>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="182" y="166" width="100" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESEMBARQUE]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="195" y="209" width="1" height="56"/>
+			</line>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="200" y="209" width="125" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ESCALA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="0" y="192" width="485" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS SOBRE A OPERAÇÃO]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="325" y="209" width="1" height="28"/>
+			</line>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="5" y="209" width="190" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NAVIO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="330" y="209" width="75" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DATA PREVISTA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="410" y="209" width="75" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[HORA PREVISTA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="5" y="237" width="190" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[LANCHA APOIO MARÍTIMO:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="0" y="237" width="485" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="405" y="209" width="1" height="28"/>
+			</line>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="200" y="237" width="285" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[OBS:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2906314-c459-43a8-bba6-1cae9dab6a5d" x="5" y="221" width="190" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{navio}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2906314-c459-43a8-bba6-1cae9dab6a5d" x="5" y="249" width="190" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lancha}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2906314-c459-43a8-bba6-1cae9dab6a5d" x="200" y="221" width="125" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{escala}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2906314-c459-43a8-bba6-1cae9dab6a5d" x="200" y="249" width="285" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{observacoes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2906314-c459-43a8-bba6-1cae9dab6a5d" x="330" y="221" width="75" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataPrevista}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2906314-c459-43a8-bba6-1cae9dab6a5d" x="410" y="221" width="75" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaPrevista}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="161" y="166" width="16" height="16">
+					<printWhenExpression><![CDATA[!$F{embarque}]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="0" y="166" width="16" height="16">
+					<printWhenExpression><![CDATA[$F{embarque}]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2906314-c459-43a8-bba6-1cae9dab6a5d" x="0" y="50" width="485" height="48"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["PEDIDO DE EMBARQUE E DESEMBARQUE DE TRIPULANTES \n" +
+"PROCEDENTES DO EXTERIOR OU A ELE DESTINADOS \n" +
+"Nº: " + $F{numeroDocumento}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="67e5fc80-967b-4b06-b634-b78dd1b00d60" x="0" y="0" width="202" height="40"/>
+				<imageExpression><![CDATA[$P{MINSTERIOFAZENDA_LOGO_PATH}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="abc08d6d-9464-4416-866e-4a6ffa5b1467" x="317" y="0" width="168" height="40"/>
+				<imageExpression><![CDATA[$P{RECEITAFEDERAL_LOGO_PATH}]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="256" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="0" y="10" width="485" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS SOBRE OS TRIPULANTES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="0" y="26" width="205" height="28"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="205" y="26" width="87" height="28"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSAPORTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="292" y="26" width="100" height="28"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NACIONALIDADE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="392" y="26" width="93" height="16"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QTD. BAGAGEM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="392" y="40" width="93" height="14"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(VOLUMES)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="0" y="80" width="485" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ANÁLISE DA RFB]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="fd0a71ff-986c-483e-8a51-35559545fafe" positionType="Float" x="0" y="97" width="485" height="60"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="0" y="167" width="485" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VERIFICAÇÃO FÍSICA DAS BAGAGENS]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="fd0a71ff-986c-483e-8a51-35559545fafe" positionType="Float" x="0" y="184" width="485" height="40"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="5" y="97" width="480" height="20"/>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(    ) Autorizado <b>com</b> verificação das Bagagens  Data: ___/___/______ Hora: ___:___ Local: ___________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="5" y="117" width="480" height="20"/>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(    ) Autorizado <b>sem</b> verificação das Bagagens]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="5" y="137" width="480" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(    ) Não Autorizado ________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="5" y="184" width="480" height="20"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(    ) Realizada a verificação das Bagagens, sendo uma parte da bagagem retida através do TR nº _______]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="5" y="204" width="480" height="20"/>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(    ) Realizada a verificação das Bagagens, <b>estando todas liberadas.</b>]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5d8f18b2-4f04-4bb5-961e-e1fcbf15fb36" positionType="Float" x="0" y="240" width="485" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{localEDataGeracao}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="393" y="212" width="87" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[carimbo e assinatura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" positionType="Float" x="393" y="145" width="87" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[carimbo e assinatura]]></text>
+			</staticText>
+			<subreport>
+				<reportElement uuid="c96639cb-e737-4fce-befc-f90c688616e2" x="0" y="54" width="485" height="16"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{tripulantes})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource($P{SUBREPORT_PATH})]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="0" y="26" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="392" y="26" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="292" y="26" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="205" y="26" width="1" height="28"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" x="485" y="26" width="1" height="28"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="12">
+			<staticText>
+				<reportElement uuid="85693f67-edc9-4f20-818f-ba457b705d1f" x="0" y="0" width="485" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1ª via: Unidade da RFB; 2ª via: Administrador do local alfandegado; 3ª via: Solicitante]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

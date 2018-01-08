@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context" 
+       xmlns:tx="http://www.springframework.org/schema/tx" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+    
+    <context:component-scan
+        base-package="br.com.petrobras.sistam.service">
+    </context:component-scan>
+    
+    <aop:aspectj-autoproxy />
+    
+    <!-- Carga dos arquivos de properties -->
+    <bean id="propertiesConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:sistam/config.properties</value>
+                <value>classpath:sistam/sistam.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+    
+    <!-- Datasource -->
+    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName">
+            <!--<value>java:comp/env/sistam.ds.default</value>-->
+            <value>${datasource.prefix.local}sistam.ds.default</value>
+            <!--<value>sistam.ds.default</value>-->
+        </property>
+    </bean>
+    
+    <!-- Proxy do datasource com interceptadores -->
+    <bean id="dataSourceProxy" class="br.com.petrobras.snarf.spring.datasource.ConfigurableDatasourceProxy">
+        <property name="targetDataSource" ref="dataSource"/>
+        <property name="interceptors">
+            <list>
+                <!-- Este interceptor pode é usado para identificar conexões Oracle usando o procedimento set_module -->
+                <bean class="br.com.petrobras.snarf.spring.datasource.interceptor.SetModuleConnectionInterceptor">
+                    <property name="moduleName" value="Sistam" />
+                </bean>
+                <bean class="br.com.petrobras.snarf.spring.datasource.interceptor.StatementConnectionInterceptor">
+                    <property name="requestStatement" value="call STAM.PCK_STAM_AUDITORIA.USP_DEFINE_USUARIO_METODO(?, ?, ?)" />
+                    <property name="requestParams">
+                        <list>
+                            <bean class="br.com.petrobras.snarf.spring.datasource.interceptor.CurrentUserLogonParameter" />
+                            <bean class="br.com.petrobras.sistam.service.interceptor.CurrentUserNameParameter" />
+                            <bean class="br.com.petrobras.snarf.spring.datasource.interceptor.MethodNameParameter" />
+                        </list>
+                    </property>
+                    <property name="releaseStatement" value="call STAM.PCK_STAM_AUDITORIA.USP_DEFINE_USUARIO_METODO(?, ?, ?)" />
+                    <property name="releaseParams">
+                        <list>
+                            <value>xxx</value>
+                            <value>xxx</value>
+                            <value>xxx</value>
+                        </list>
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- Hibernate SessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSourceProxy"/>
+        <property name="hibernateProperties">
+             <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+                <prop key="hibernate.use_sql_comments">${hibernate.use_sql_comments}</prop>
+            </props>
+        </property>
+        <property name="packagesToScan">
+        <list> 
+            <value>br.com.petrobras.sistam.common.entity</value>
+        </list>
+        </property>
+    </bean>
+
+    <!-- Transaction Manager -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- DAO -->
+    <bean id="dao" class="br.com.petrobras.snarf.persistence.GenericDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+        <property name="customTransactionHandler">
+            <bean class="br.com.petrobras.snarf.persistence.SpringBasedTransactionHandler">
+                <constructor-arg ref="transactionManager"/>
+            </bean>
+        </property>
+    </bean>
+    
+    <!-- Locale padrão de internacionalização -->
+    <bean id="locale" class="br.com.petrobras.fcorp.i18n.LocaleHolder" scope="session">
+        <aop:scoped-proxy/>
+        <property name="locale">
+            <bean class="java.util.Locale">
+                <constructor-arg value="pt"/>
+                <constructor-arg value="BR"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="geradorDeNumero" class="br.com.petrobras.sistam.service.dao.GeradorDeNumero">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- DAO Gerador de Número de Processo do Agenciamento -->
+    <bean id="geradorDeNumeroProcessoAgenciamento" class="br.com.petrobras.sistam.service.dao.GeradorDeNumeroProcessoAgenciamento">
+        <constructor-arg ref="geradorDeNumero"/>
+    </bean>
+
+    <!-- Serviço que encapsula o Controle de Acesso Corporativo -->
+    <bean id="CommonServiceImpl" class="br.com.petrobras.sistam.service.impl.CommonServiceImpl">
+        <property name="dao" ref="dao"/>
+    </bean>
+    
+    <!-- Serviço que encapsula o Controle de Acesso Corporativo -->
+    <bean id="AcessoServiceImpl" class="br.com.petrobras.sistam.service.impl.AcessoServiceImpl">
+        <property name="agenciaService" ref="AgenciaServiceImpl"/>
+    </bean>
+    
+    <!-- Serviço que disponibiliza as tarefas agendadas do sistema -->
+    <bean id="JobServiceImpl" class="br.com.petrobras.sistam.service.impl.JobServiceImpl">
+        <property name="notesWebService" ref="NotesWebServiceImpl"/>
+    </bean>
+
+    <bean id="AgenciamentoServiceImpl" class="br.com.petrobras.sistam.service.impl.AgenciamentoServiceImpl">
+        <constructor-arg  index="0" ref="dao"/>
+        <property name="pendenciaAgenciamentoService" ref="PendenciaServiceImpl"/>
+        <property name="embarcacaoService" ref="EmbarcacaoServiceImpl"/>    
+        <property name="geradorProcesso" ref="geradorDeNumeroProcessoAgenciamento"/>    
+        <property name="AcessoService" ref="AcessoServiceImpl"/>
+        <property name="documentoService" ref="DocumentoServiceImpl"/>
+        <property name="manobraService" ref="ManobraServiceImpl"/>
+        <property name="certificadoService" ref="CertificadoServiceImpl"/>
+    </bean>
+
+    <bean id="CertificadoServiceImpl" class="br.com.petrobras.sistam.service.impl.CertificadoServiceImpl">
+        <property name="dao" ref="dao"/>
+    </bean>
+
+    <bean id="EmbarcacaoServiceImpl" class="br.com.petrobras.sistam.service.impl.EmbarcacaoServiceImpl">
+        <property name="dao" ref="dao"/>
+        <property name="agenciamentoService" ref="AgenciamentoServiceImpl"/>
+    </bean>
+
+    <bean id="TaxaServiceImpl" class="br.com.petrobras.sistam.service.impl.TaxaServiceImpl">
+        <property name="dao" ref="dao"/>
+        <property name="pendenciaServie" ref="PendenciaServiceImpl"/>
+        <property name="acessoService" ref="AcessoServiceImpl"/>
+    </bean>
+
+    <bean id="AgenciaServiceImpl" class="br.com.petrobras.sistam.service.impl.AgenciaServiceImpl">
+        <property name="dao" ref="dao"/>        
+    </bean>
+
+    <bean id="PortoServiceImpl" class="br.com.petrobras.sistam.service.impl.PortoServiceImpl">
+        <property name="dao" ref="dao"/>
+        <property name="agenciaService" ref="AgenciaServiceImpl"/>
+    </bean>
+    
+    <bean id="OperacaoServiceImpl" class="br.com.petrobras.sistam.service.impl.OperacaoServiceImpl">
+        <property name="dao" ref="dao"/>
+        <property name="pendenciaService" ref="PendenciaServiceImpl"/>
+        <property name="documentoService" ref="DocumentoServiceImpl"/>
+    </bean>
+
+    <bean id="ManobraServiceImpl" class="br.com.petrobras.sistam.service.impl.ManobraServiceImpl">
+        <property name="dao" ref="dao"/>
+        <property name="notesWebService" ref="NotesWebServiceImpl"/>
+        <property name="pendenciaService" ref="PendenciaServiceImpl"/>
+    </bean>
+    
+    <bean id="PendenciaServiceImpl" class="br.com.petrobras.sistam.service.impl.PendenciaServiceImpl">
+        <constructor-arg  index="0"  ref="dao"/>
+        <property name="acessoService" ref="AcessoServiceImpl"/>
+    </bean>
+    
+    <bean id="DocumentoServiceImpl" class="br.com.petrobras.sistam.service.impl.DocumentoServiceImpl">
+        <constructor-arg  index="0" ref="dao"/>
+        <property name="acessoService" ref="AcessoServiceImpl"/>
+        <property name="pendenciaServie" ref="PendenciaServiceImpl"/>
+    </bean>
+    
+     <bean id="AnexoServiceImpl" class="br.com.petrobras.sistam.service.impl.AnexoServiceImpl">
+        <constructor-arg  index="0" ref="dao"/>
+        <property name="acessoService" ref="AcessoServiceImpl"/>
+    </bean>
+    
+    <bean id="VisitaServiceImpl" class="br.com.petrobras.sistam.service.impl.VisitaServiceImpl">
+        <constructor-arg  index="0" ref="dao"/>
+         <property name="acessoService" ref="AcessoServiceImpl"/>
+    </bean>
+    
+    <bean id="ServicoProtecaoServiceImpl" class="br.com.petrobras.sistam.service.impl.ServicoProtecaoServiceImpl">
+        <constructor-arg  index="0" ref="dao"/>
+        <property name="acessoService" ref="AcessoServiceImpl"/>
+        <property name="notesWebService" ref="NotesWebServiceImpl"/>
+        <property name="pessoaProtecaoService" ref="PessoaProtecaoServiceImpl"/>
+    </bean>
+    
+    <bean id="EmpresaServiceImpl" class="br.com.petrobras.sistam.service.impl.EmpresaServiceImpl">
+        <constructor-arg  index="0" ref="dao"/>
+    </bean>
+    
+    <bean id="EmpresaProtecaoServiceImpl" class="br.com.petrobras.sistam.service.impl.EmpresaProtecaoServiceImpl">
+        <constructor-arg index="0" ref="dao"/>
+    </bean>
+    
+    <bean id="PessoaProtecaoServiceImpl" class="br.com.petrobras.sistam.service.impl.PessoaProtecaoServiceImpl">
+        <constructor-arg index="0" ref="dao"/>
+    </bean>
+    
+    <bean id="NotesWebServiceImpl" class="br.com.petrobras.sistam.service.impl.NotesWebServiceImpl">
+        <constructor-arg index="0" value="${notesweb.usuario}"/>
+        <constructor-arg index="1" value="${notesweb.senha}"/>
+        <constructor-arg index="2" value="${notesweb.usemock}"/>
+        <constructor-arg index="3" value="${notesweb.testKeys}"/>
+        <constructor-arg index="4" value="${notesweb.mockkeys}"/>
+        <!--<property name="dao" ref="dao"/>-->
+        <property name="notesweb2" ref="notesweb2"/>
+        <property name="validadorPermissao" ref="validadorPermissao"/>
+        <property name="acessoService" ref="AcessoServiceImpl"/>
+        <property name="servicoProtecaoService" ref="ServicoProtecaoServiceImpl"/>
+        <property name="agenciamentoService" ref="AgenciamentoServiceImpl"/>
+        <property name="documentoService" ref="DocumentoServiceImpl"/>
+        <property name="certificadoService" ref="CertificadoServiceImpl"/>
+        <property name="manobraService" ref="ManobraServiceImpl"/>
+        <property name="operacaoService" ref="OperacaoServiceImpl"/>
+    </bean>
+                        
+    <bean id="notesweb2" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+        <property name="wsdlDocumentUrl" value="${notesweb.wsdl}"/>
+        <property name="serviceName" value="${notesweb.serviceName}"/>
+        <property name="portName" value="${notesweb.portName}"/>
+        <property name="serviceInterface" value="br.com.petrobras.sistam.common.business.Notesweb2Service"/>
+        <property name="namespaceUri" value="${notesweb.namespaceUri}"/>
+    </bean>
+
+    <!--<bean id="XmlServiceImpl" class="br.com.petrobras.sistam.service.impl.XmlServiceImpl">
+        <property name="agenciamentoService" ref="AgenciamentoServiceImpl"/>
+    </bean>-->
+
+    <!--<bean id="TransferServiceImpl" class="br.com.petrobras.sistam.service.impl.TransferServiceImpl">
+        <property name="xmlService" ref="XmlServiceImpl"/>
+    </bean>-->
+    
+    <!-- Beans para validação das permissões -->
+    <bean id="validadorPermissao" class="br.com.petrobras.sistam.common.validator.ValidadorPermissao" scope="session">
+        <aop:scoped-proxy/>
+    </bean>    
+    
+    <bean id="aspectValidator" class="br.com.petrobras.sistam.service.aspect.AspectValidator">
+        <property name="acessoService" ref="AcessoServiceImpl"/>
+        <property name="validadorPermissao" ref="validadorPermissao"/>
+    </bean>
+
+    <!-- Interceptadores -->                                                                                                                    
+    <bean id="callContextInterceptor" class="br.com.petrobras.snarf.spring.interceptor.CallContextInterceptor"/>
+    <bean id="securityInterceptor" class="br.com.petrobras.fcorp.business.service.support.interceptor.SecurityInterceptor"/>
+    <bean id="exceptionInterceptor" class="br.com.petrobras.fcorp.business.service.support.interceptor.ExceptionHandlerInterceptor"/>
+    <bean id="delegationInterceptor" class="br.com.petrobras.fcorp.business.service.support.interceptor.DelegationInterceptor"/>
+
+    <bean id="sistamService" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces">
+            <value>br.com.petrobras.sistam.common.business.SistamService</value>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>callContextInterceptor</value>
+                <value>securityInterceptor</value>
+                <value>exceptionInterceptor</value>
+                <value>delegationInterceptor</value>
+            </list>
+        </property>
+    </bean>
+    
+</beans>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="2"
+              AGEN_NM_AGENCIA="Fortaleza"
+              AGEN_SG_AGENCIA="FOR"
+              AGEN_TX_ENDERECO="Av. Leite Barbosa, s/n , 60180-420   MUCURIPE" 
+              AGEN_TX_TELEFONE="77-88776659" 
+              AGEN_TX_EMAIL="agfortaleza@petrobras.com.br" 
+              AGEN_TX_CIDADE="FORTALEZA"
+              AGEN_CD_ESTADO="CE" 
+              AGEN_CD_TIMEZONE="America/Fortaleza" 
+    />
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="827"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="5" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="2"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="MAUS" 
+                   AGEC_DT_SAIDA="2013-02-25"
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM"
+    />
+    
+    
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="828"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="2"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="COAR" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM"
+    />
+    
+    
+    <AGENCIAMENTO_PENDENCIA
+        AGPE_SQ_PENDENCIA="1" 
+        AGEC_SQ_AGENCIAMENTO="827"
+        AGPE_IN_TIPO_PENDENCIA="5"
+        AGDO_SQ_AGENCIAMENTO_DOC="1"
+        AGPE_IN_RESOLVIDA="N" />
+    
+     <AGENCIAMENTO_PENDENCIA
+        AGPE_SQ_PENDENCIA="2" 
+        AGEC_SQ_AGENCIAMENTO="827"
+        AGPE_IN_TIPO_PENDENCIA="1"
+        AGPE_IN_RESOLVIDA="N" />
+     
+     
+     <AGENCIAMENTO_PENDENCIA
+        AGPE_SQ_PENDENCIA="3" 
+        AGEC_SQ_AGENCIAMENTO="827"
+        AGPE_IN_TIPO_PENDENCIA="3"
+        AGPE_IN_RESOLVIDA="S" 
+        AGPE_NM_RESPONSAVEL_SOLUCAO="SISTAM"
+        AGPE_CD_CHAVE_RESPONSAVEL="STAM"
+        AGPE_DT_SOLUCAO="2013-01-01" />
+     
+      <AGENCIAMENTO_PENDENCIA
+        AGPE_SQ_PENDENCIA="4" 
+        AGEC_SQ_AGENCIAMENTO="828"
+        AGPE_IN_TIPO_PENDENCIA="1"
+        AGPE_IN_RESOLVIDA="N" />
+    
+     <AGENCIAMENTO_PENDENCIA
+        AGPE_SQ_PENDENCIA="5" 
+        AGEC_SQ_AGENCIAMENTO="828"
+        AGPE_IN_TIPO_PENDENCIA="12"
+        AGPE_IN_RESOLVIDA="S" />
+     
+      <PAIS
+        PAIS_CD_IBGE="019"	
+        PAIS_NM_COMPLETO="BRASIL"
+      />
+      
+       <AGENCIAMENTO_DOCUMENTO  
+            AGDO_SQ_AGENCIAMENTO_DOC = "1"
+            AGDO_IN_TIPO_DOCUMENTO = "4"                        
+            AGDO_CD_CHAVE_EMITENTE = "X4IJ"                        
+            AGDO_NM_EMITENTE = "ALESSANDRO"
+            AGDO_DT_EMISSAO = "2013-11-18"
+            AGEC_SQ_AGENCIAMENTO = "827"
+        />
+       
+       <AGENCIAMENTO_TAXA  
+           AGTA_SQ_AGENCIAMENTO_TAXA="1"
+           AGEC_SQ_AGENCIAMENTO="827"
+           AGTA_VL_TAXA="100" 
+           AGTA_DT_PAGAMENTO="2013-11-18" 
+           AGTA_NR_DOCUMENTO="10" 
+           RECU_SQ_RESP_CUSTO="1"
+           AGTA_NR_PEDIDO_SAP="12121"
+           AGTA_NR_FRS_SAP="121211"
+           AGTA_NR_NL_SAP="232323"
+           AGTA_IN_TIPO_TAXA="2"
+    />
+    
+    
+</dataset>

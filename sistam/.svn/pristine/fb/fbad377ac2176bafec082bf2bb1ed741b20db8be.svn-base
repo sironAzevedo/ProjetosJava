@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+   <AGENCIA  AGEN_SQ_AGENCIA="1"
+              AGEN_NM_AGENCIA="Salvador"
+              AGEN_SG_AGENCIA="SAL"
+              AGEN_TX_ENDERECO="Av. Antônio Carlos Magalhães, 1113   Sala 204 - Ed.  Ademar de Queiroz - Pituba - 41825-903" 
+              AGEN_TX_TELEFONE="7133483441" 
+              AGEN_TX_EMAIL="agsalvador@petrobras.com.br" 
+              AGEN_TX_CIDADE="SALVADOR"
+              AGEN_CD_ESTADO="BA" 
+              AGEN_CD_TIMEZONE="America/Bahia"
+    />
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="2"
+              AGEN_NM_AGENCIA="Fortaleza"
+              AGEN_SG_AGENCIA="FOR"
+              AGEN_TX_ENDERECO="Av. Leite Barbosa, s/n , 60180-420   MUCURIPE" 
+              AGEN_TX_TELEFONE="77-88776659" 
+              AGEN_TX_EMAIL="agfortaleza@petrobras.com.br" 
+              AGEN_TX_CIDADE="FORTALEZA"
+              AGEN_CD_ESTADO="CE" 
+              AGEN_CD_TIMEZONE="America/Fortaleza" 
+    />
+    
+    <EMPRESA_MARITIMA
+            EMMA_SQ_EMPRESA_MARITIMA="1"
+            EMMA_NR_CNPJ="333333"
+            EMMA_NM_RAZAO_SOCIAL="SISTAM RIO"
+            EMMA_TX_EMAIL="sistam@sistam.com"
+            EMMA_TX_NR_TELEFINE="71-11111111"
+            AGEN_SQ_AGENCIA="1"
+            EMMA_TX_CIDADE="Salvador"
+            EMMA_CD_ESTADO="BA" 
+    />
+    
+     <EMPRESA_MARITIMA
+            EMMA_SQ_EMPRESA_MARITIMA="2"
+            EMMA_NR_CNPJ="111111"
+            EMMA_NM_RAZAO_SOCIAL="SISTAM BONINAL"
+            EMMA_TX_EMAIL="sistam@sistam.com"
+            EMMA_TX_NR_TELEFINE="71-11111111"
+            AGEN_SQ_AGENCIA="1"
+            EMMA_TX_CIDADE="Salvador"
+            EMMA_CD_ESTADO="BA" 
+    />
+     
+      <EMPRESA_MARITIMA
+            EMMA_SQ_EMPRESA_MARITIMA="3"
+            EMMA_NR_CNPJ="2222222"
+            EMMA_NM_RAZAO_SOCIAL="SISTAM SALVADOR"
+            EMMA_TX_EMAIL="sistam@sistam.com"
+            EMMA_TX_NR_TELEFINE="71-11111111"
+            AGEN_SQ_AGENCIA="2"
+            EMMA_TX_CIDADE="Salvador"
+            EMMA_CD_ESTADO="BA" 
+    />
+    
+    <EMPRESA_SERVICO
+            EMSE_SQ_EMPRESA_SERVICO="1"
+            EMSE_IN_SERVICO="P"
+            EMSE_NM_SERVICO="SISTAM"
+            EMMA_SQ_EMPRESA_MARITIMA="1"
+    />
+    
+    <EMPRESA_SERVICO
+            EMSE_SQ_EMPRESA_SERVICO="2"
+            EMSE_IN_SERVICO="R"
+            EMSE_NM_SERVICO="SISTAM"
+            EMMA_SQ_EMPRESA_MARITIMA="1"
+    />
+    
+    
+        
+</dataset>

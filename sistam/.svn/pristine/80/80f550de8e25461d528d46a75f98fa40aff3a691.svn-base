@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="8"
+              AGEN_SG_AGENCIA="MAN"
+              AGEN_TX_ENDERECO="Av. Tancredo Neves, 1324 - Bairro Parque 10 de Novembro" 
+              AGEN_TX_TELEFONE="92 3643-4321" 
+              AGEN_TX_EMAIL="agmanaus@petrobras.com.br" 
+              AGEN_TX_CIDADE="MANAUS"
+              AGEN_CD_ESTADO="AM" 
+              AGEN_NM_AGENCIA="MANAUS"
+              AGEN_CD_TIMEZONE="America/Manaus" 
+    />
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="1"
+              AGEN_NM_AGENCIA="Salvador"
+              AGEN_SG_AGENCIA="SAL"
+              AGEN_TX_ENDERECO="Av. Antônio Carlos Magalhães, 1113   Sala 204 - Ed.  Ademar de Queiroz - Pituba - 41825-903" 
+              AGEN_TX_TELEFONE="7133483441" 
+              AGEN_TX_EMAIL="agsalvador@petrobras.com.br" 
+              AGEN_TX_CIDADE="SALVADOR"
+              AGEN_CD_ESTADO="BA"
+              AGEN_CD_TIMEZONE="America/Bahia" 
+    />
+    
+    
+    <AGENCIA_PORTO  AGPO_SQ_AGENCIA_PORTO="1"
+                    PORT_CD_ID="MAUS"
+                    AGEN_SQ_AGENCIA="8" 
+                    AGPO_TX_MUNICIPIO="MANAUS"
+    />
+    
+    <AGENCIA_PORTO  AGPO_SQ_AGENCIA_PORTO="2"
+                    PORT_CD_ID="SALV"
+                    AGEN_SQ_AGENCIA="1" 
+                    AGPO_TX_MUNICIPIO="SALVAODR"/>
+    
+    
+    <PONTO_ATRACACAO    POAT_SQ_PONTO_ATRACACAO = "11"
+                        POAT_NM_COMPLETO = "PORTO OPER. FLUTUANTE 3"                        
+                        POOP_CD_ID = "MANA"/>
+                        
+    <PONTO_ATRACACAO    POAT_SQ_PONTO_ATRACACAO = "2292"
+                        POAT_NM_COMPLETO = "P-1"                        
+                        POOP_CD_ID = "CODA"/>
+
+
+    <PONTO_ATRACACAO    POAT_SQ_PONTO_ATRACACAO = "115"
+                       POAT_NM_COMPLETO = "PORTO MADRE DEUS"                        
+                       POOP_CD_ID = "MADR"/>
+                        
+    <PONTO_ATRACACAO    POAT_SQ_PONTO_ATRACACAO = "116"
+                        POAT_NM_COMPLETO = "SALVADOR"                        
+                        POOP_CD_ID = "SALV"/>
+    
+    <PAIS
+        PAIS_CD_IBGE="019"	
+        PAIS_NM_COMPLETO="BRASIL"/>
+    
+    <PAIS
+        PAIS_CD_IBGE="011"	
+        PAIS_NM_COMPLETO="ARGENTINA"/>
+    
+    <PORTO_COMPLEMENTO 
+        PCOM_SQ_PORTO_COMPLEMENTO = "101"
+        PORT_CD_ID = "SALV"
+        PCOM_TX_ENDERECO="Rua A, 123"
+        PCOM_NM_CIDADE="Salvador"
+        PCOM_SG_ESTADO="BA"
+        PCOM_TX_INSCRICAO_ESTADUAL="123456"
+        PCOM_TX_NR_CNPJ="00000000000191"
+    />
+    
+     <PORTO_SIGO
+        PORT_CD_ID="MANA"
+        PORT_NM_COMPLETO="MANAUS"
+        PORT_NM_APELIDO="MANAUS"
+        PAIS_CD_IBGE="019"
+        PORT_NR_FUSO="-3"
+    />
+    
+    <PORTO_SIGO
+        PORT_CD_ID="SALV"
+        PORT_NM_COMPLETO="SALVADOR"
+        PORT_NM_APELIDO="SALVADOR"
+        PAIS_CD_IBGE="019"
+        PORT_NR_FUSO="-3"
+    />
+
+    <PORTO_SIGO
+        PORT_CD_ID="CODA"
+        PORT_NM_COMPLETO="AGUIRRE"
+        PORT_NM_APELIDO="AGUIRRE"
+        PAIS_CD_IBGE="035"
+        PORT_NR_FUSO="-4"
+    />
+    <PORTO_SIGO
+        PORT_CD_ID="MADR"
+        PORT_NM_COMPLETO="AGUIRRE"
+        PORT_NM_APELIDO="AGUIRRE"
+        PAIS_CD_IBGE="035"
+        PORT_NR_FUSO="-4"
+    />
+    <PORTO_SIGO
+        PORT_CD_ID="FLZA"
+        PORT_NM_COMPLETO="AGUIRRE"
+        PORT_NM_APELIDO="AGUIRRE"
+        PAIS_CD_IBGE="035"
+        PORT_NR_FUSO="-4"
+    />
+       <PORTO_SIGO
+        PORT_CD_ID="MAUS"
+        PORT_NM_COMPLETO="MANAUS"
+        PORT_NM_APELIDO="MANAUS"
+        PAIS_CD_IBGE="019"
+        PORT_NR_FUSO="-3"
+    />
+    
+   <PONTO_ATRACACAO_SIGO POAT_CD_ID ="6"
+                          POAT_NM_COMPLETO = "CAIS COMERCIAL"
+                          POOP_CD_ID = "SEAL"
+                          TPOA_CD_TIPO = "6"
+                          TPOA_NM_COMPLETO = "CAIS"
+                          POAT_MD_TPB = "50000"
+                          POAT_MD_CAL_MAX = "10,5"
+                          POAT_MD_COMPRIM =" 210"
+                          POAT_MD_LATITUDE = "09 - 40 - S"
+                          POAT_MD_LONGITUDE = "035 - 43 - W"
+                          POAT_MD_LATITUDE2 = "null"
+                          POAT_MD_LONGITUDE2 = "null"
+                          POOP_NM_COMPLETO = "SEAL"
+                          POOP_CD_ID_LOCAL_OPER = "MACEIO"
+                          CLPO_CD_ID = "DT"
+                          CLPO_NM_COMPLETO = "TERMINAL TRANSPETRO"
+                          POAT_NM_CURTO = "CAIS"
+                          POAT_TX_OBSERVACAO = "null"                          
+    />
+    
+    <PONTO_OPERACIONAL_SIGO POOP_CD_ID ="SALV"
+                            POOP_NM_COMPLETO="SALVADOR"
+                            PORT_CD_ID="SALV"
+                            CLPO_CD_ID="FD"
+                            POOP_CD_ID_LOCAL_OPER="null"
+                            POOP_MD_LATITUDE="null"
+                            POOP_MD_LONGITUDE="null"
+                            CLPO_NM_COMPLETO="FUNDEADOURO"
+                            PORT_NM_COMPLETO="SALVADOR"
+                            PORT_NR_FUSO="-3"
+                            ORGA_CD_CBI="300"
+                            ORGA_SG_ID="LOG E PLANEJ   "
+                            ORGA_NM_COMPLETO="LOGISTICA E PLANEJAMENTO                                                      "
+                            POOP_TX_OBSERVACAO="null"     />
+    
+    <PONTO_ATRACACAO_SIGO POAT_CD_ID = "76"
+                          POAT_NM_COMPLETO = "PIER SECUNDÁRIO 1"
+                          POOP_CD_ID = "MADR"
+                          TPOA_CD_TIPO ="1"
+                          TPOA_NM_COMPLETO = "BERÇO"
+                          POAT_MD_TPB = "10000"
+                          POAT_MD_CAL_MAX = "7,92"
+                          POAT_MD_COMPRIM = "145"
+                          POAT_MD_LATITUDE =  "null"
+                          POAT_MD_LONGITUDE = "null"
+                          POAT_MD_LATITUDE2 = "null"
+                          POAT_MD_LONGITUDE2 = "null"
+                          POOP_NM_COMPLETO = "MADRE DE DEUS"
+                          POOP_CD_ID_LOCAL_OPER = "MADRE DE DEUS"
+                          CLPO_CD_ID = "DT"
+                          CLPO_NM_COMPLETO = "TERMINAL TRANSPETRO"
+                          POAT_NM_CURTO = "PS1" 
+                          POAT_TX_OBSERVACAO = "null"   />
+    
+     <PONTO_OPERACIONAL_SIGO     POOP_CD_ID = "MADR"
+                                POOP_NM_COMPLETO= "MADRE DE DEUS"
+                                PORT_CD_ID = "SALV"
+                                CLPO_CD_ID = "DT"
+                                POOP_CD_ID_LOCAL_OPER = "MADRE DE DEUS"
+                                POOP_MD_LATITUDE = "null"
+                                POOP_MD_LONGITUDE = "null"
+                                CLPO_NM_COMPLETO = "TERMINAL TRANSPETRO"
+                                PORT_NM_COMPLETO = "SALVADOR"
+                                PORT_NR_FUSO = "-3"
+                                ORGA_CD_CBI = "320"
+                                ORGA_SG_ID = "TA MADRE DEUS"
+                                ORGA_NM_COMPLETO = "TERMINAL AQUAVIARIO DE MADRE DE DEUS"
+                                POOP_TX_OBSERVACAO = "null" />
+
+    
+  <PONTO_OPERACIONAL_SIGO     POOP_CD_ID = "MANA"
+                                POOP_NM_COMPLETO= "MANAUS"
+                                PORT_CD_ID = "MAUS"
+                                CLPO_CD_ID = "DT"
+                                POOP_CD_ID_LOCAL_OPER = "MANAUS"
+                                POOP_MD_LATITUDE = "null"
+                                POOP_MD_LONGITUDE = "null"
+                                CLPO_NM_COMPLETO = "TERMINAL TRANSPETRO "
+                                PORT_NM_COMPLETO = "MANAUS"
+                                PORT_NR_FUSO = "-4"
+                                ORGA_CD_CBI = "307"
+                                ORGA_SG_ID = "TA MANAUS"
+                                ORGA_NM_COMPLETO = "TERMINAL AQUAVIARIO DE MANAUS"
+                                POOP_TX_OBSERVACAO = "null" />
+
+ 
+
+   
+</dataset>

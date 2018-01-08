@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sistema de Agenciamento Marítimo</title>
+<link href="css/estiloForaDoAr.css" rel="stylesheet" type="text/css" media="all" charset="UTF-8" />
+<script language="javascript" type="text/javascript">
+        // Baixa o descritor jnlp a depender do ambiente (Servidor remoto, Servidor local, File System)
+        function iniciar(jnlp) {
+            if (document.location.href.indexOf('petrobras.com.br')>-1) {
+                document.location.href='/sistam/'+ jnlp +'.jsp';
+            } else if (document.location.href.indexOf('localhost')>-1 || document.location.href.indexOf('127.0.0.1')>-1) {
+                document.location.href=jnlp+'.jsp';
+            } else {
+                document.location.href=jnlp+'.jnlp';
+            }
+        }
+           function AcessoDocumentacao(){
+            var url = ""+ window.location;          
+            var urlparts = url.split('/');
+            var caminho = urlparts[0]+'//'+urlparts[2]+'/'+urlparts[3]+'/';	
+            document.location = caminho + 'specs/';
+	}
+    </script>
+</head>
+<body>
+<div id="div_pagina_acesso">
+	<div id="conteudo">
+		<div id="topo">
+        	<div id="div_marca_sistema"></div>
+  			<div id="div_marca_petro"></div>
+        </div>
+        <h1><span>Página Fora do Ar</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque urna, sollicitudin nec viverra ac, faucibus sed tellus. Integer mattis tempor turpis ac pellentesque. Proin auctor iaculis sodales. Maecenas a dignissim neque, non luctus dui. Quisque ultrices tortor eget ipsum imperdiet suscipit. Quisque sed pretium risus. Morbi fermentum nec est sed consectetur. 
+        </p>
+        <p>
+        Maecenas faucibus, est ut facilisis congue, elit ante ultricies nisl, eget rutrum diam lorem sed magna. Nulla urna urna, viverra eget massa sed, sodales pulvinar nisl. Nunc tempus posuere fermentum. Sed augue mauris, porta vel aliquam sed, euismod id nunc.</p>
+   		
+	</div>
+</div>
+</body>
+</html>

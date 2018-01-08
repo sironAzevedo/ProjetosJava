@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="br.com.petrobras.fcorp.swing.base.action.GenericAction" name="actionSalvar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icons/disk.png"/>
+        </Property>
+        <Property name="methodName" type="java.lang.String" value="salvar"/>
+        <Property name="target" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="this" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Salvar"/>
+        <Property name="toolTipText" type="java.lang.String" value="Salva as informa&#xe7;&#xf5;es do servi&#xe7;o de prote&#xe7;&#xe3;o"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Servi&#xe7;o de Prote&#xe7;&#xe3;o"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-45,0,0,3,32"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlSuprimentoAoNavio">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[2147483647, 2147483647]"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="pnlSuprimentoAoNavio" noResource="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[970, 740]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="pnlBotoes" pref="800" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="pnlSuprimentosAosNavios" pref="780" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="pnlSuprimentosAosNavios" pref="662" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="pnlBotoes" min="-2" pref="39" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlBotoes">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="pnlBotoes" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+          <SubComponents>
+            <Component class="br.com.petrobras.fcorp.swing.components.SButton" name="btnSalvar">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="actionSalvar"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="btnSalvar" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlSuprimentosAosNavios">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="pnlSuprimentosAosNavios" noResource="true"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[840, 790]"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelEmpresa9" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelAgente4" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="sntfValorServico" min="-2" pref="165" max="-2" attributes="0"/>
+                                      <EmptySpace min="476" pref="516" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="labelAgente" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbEMpresaRequeridas" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelEmpresaRespTransbordo" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelEmbarcacaoTransbordo" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelTranspRodoviaria" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelTipoResiduo" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelCaracteristica" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelEstadoFisico" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelCodigoAbnt" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelCodigoONU" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelUndMedida" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelQtdResiduos" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="sntfQtdResiduos" min="-2" pref="157" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="cboTipoResiduo" max="32767" attributes="0"/>
+                                          <Component id="cboTranspRodoviaria" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="txtServicoExecutado" max="32767" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lblDatasolicitacao" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="sistamDateChooserServicoExecutado" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="cboServico" max="32767" attributes="0"/>
+                                          <Component id="cboEmpresa" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="cboEmpresaRequerida" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtCaracterizacao" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtEstadoFisico" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="txtCodigoABNT" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtCodigoONU" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="cboUndMedida" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="pnlCustoDaOperacao1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="pnlCustoDaOperacao" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Component id="labelAgente1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="sistamDateChooserInicio" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="sistamTimeChooserInicio" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="labelAgente2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="sistamDateChooserTermino" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="sistamTimeChooserTermino" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelAgente" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtServicoExecutado" linkSize="5" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="sistamDateChooserServicoExecutado" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDatasolicitacao" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbEMpresaRequeridas" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboEmpresaRequerida" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelEmpresaRespTransbordo" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboEmpresa" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelEmbarcacaoTransbordo" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboServico" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelTranspRodoviaria" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboTranspRodoviaria" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelTipoResiduo" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboTipoResiduo" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelCaracteristica" linkSize="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCaracterizacao" linkSize="5" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelEstadoFisico" linkSize="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEstadoFisico" linkSize="5" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelCodigoAbnt" linkSize="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCodigoABNT" linkSize="5" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelCodigoONU" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCodigoONU" linkSize="5" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cboUndMedida" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelUndMedida" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelQtdResiduos" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sntfQtdResiduos" linkSize="5" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelAgente1" linkSize="3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sistamTimeChooserInicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sistamTimeChooserTermino" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sistamDateChooserTermino" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelAgente2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sistamDateChooserInicio" linkSize="5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="pnlCustoDaOperacao" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="pnlCustoDaOperacao1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelEmpresa9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sntfValorServico" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelAgente4" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="105" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="16" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Servi&#xe7;o Executado:"/>
+                <Property name="name" type="java.lang.String" value="labelAgente" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtServicoExecutado">
+              <Properties>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="txtServicoExecutado" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="text" source="Form" sourcePath="${model.servicoExecutado}" target="txtServicoExecutado" targetPath="text" updateStrategy="0" immediately="false">
+                  <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                </BindingProperty>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="lblDatasolicitacao">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Data da Solicita&#xe7;&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="lblDatasolicitacao" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.sistam.desktop.components.SistamDateChooser" name="sistamDateChooserServicoExecutado">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sistamDateChooserServicoExecutado" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="date" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.servicoProtecao.dataExecucao}" target="sistamDateChooserServicoExecutado" targetPath="date" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.sistam.desktop.components.SistamDateChooser" name="sistamDateChooserInicio">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sistamDateChooserInicio" noResource="true"/>
+                <Property name="timeChooser" type="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="sistamTimeChooserInicio"/>
+                </Property>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="date" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.dataInicioOperacao}" target="sistamDateChooserInicio" targetPath="date" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" name="sistamTimeChooserInicio">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sistamTimeChooserInicio" noResource="true"/>
+                <Property name="timeZone" type="java.util.TimeZone" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="model.getTimeZone()" type="code"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Data/Hora In&#xed;cio da Opera&#xe7;&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="labelAgente1" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Data/Hora T&#xe9;rmino da Opera&#xe7;&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="labelAgente2" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.sistam.desktop.components.SistamDateChooser" name="sistamDateChooserTermino">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sistamDateChooserTermino" noResource="true"/>
+                <Property name="timeChooser" type="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="sistamTimeChooserTermino"/>
+                </Property>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="date" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.dataFimOperacao}" target="sistamDateChooserTermino" targetPath="date" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" name="sistamTimeChooserTermino">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sistamTimeChooserTermino" noResource="true"/>
+                <Property name="timeZone" type="java.util.TimeZone" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="model.getTimeZone()" type="code"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlCustoDaOperacao">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Local de Armazenagem Tempor&#xe1;ria dos Res&#xed;duos"/>
+                  </Border>
+                </Property>
+                <Property name="name" type="java.lang.String" value="pnlCustoDaOperacao" noResource="true"/>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelAgente6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtLocal" min="-2" pref="259" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelAgente7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtLON" min="-2" pref="134" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelAgente8" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtCadri" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="labelAgente6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtLocal" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelAgente7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtLON" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelAgente8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCadri" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente6">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Local:"/>
+                    <Property name="name" type="java.lang.String" value="labelAgente6" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtLocal">
+                  <Properties>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(100)" type="code"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="txtLocal" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.localArmazenagem}" target="txtLocal" targetPath="text" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente7">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="L.O N&#xba;:"/>
+                    <Property name="name" type="java.lang.String" value="labelAgente7" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtLON">
+                  <Properties>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(20)" type="code"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="txtLON" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.lonArmazenagem}" target="txtLON" targetPath="text" updateStrategy="0" immediately="false">
+                      <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente8">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="CADRI:"/>
+                    <Property name="name" type="java.lang.String" value="labelAgente8" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtCadri">
+                  <Properties>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(30)" type="code"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="txtCadri" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.descCadri}" target="txtCadri" targetPath="text" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cboServico">
+              <Properties>
+                <Property name="displayProperty" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="Servico.PROP_NOME_SERVICO" type="code"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cboServico" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.servicos}" target="cboServico" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.empresaServico}" target="cboServico" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelEmbarcacaoTransbordo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Embarca&#xe7;&#xe3;o Transbordo:"/>
+                <Property name="name" type="java.lang.String" value="labelEmbarcacaoTransbordo" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelEmpresaRespTransbordo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Empresa Resp. Transbordo:"/>
+                <Property name="name" type="java.lang.String" value="labelEmpresaRespTransbordo" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cboEmpresa">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cboEmpresa" noResource="true"/>
+                <Property name="popupResizeEnabled" type="boolean" value="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.empresasMaritimas}" target="cboEmpresa" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.empresaMaritima}" target="cboEmpresa" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Observa&#xe7;&#xf5;es:"/>
+                <Property name="name" type="java.lang.String" value="labelAgente4" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jScrollPane1" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextArea" name="sTextArea1">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(500)" type="code"/>
+                    </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="name" type="java.lang.String" value="sTextArea1" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.servicoProtecao.observacao}" target="sTextArea1" targetPath="text" updateStrategy="0" immediately="false">
+                      <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="lbEMpresaRequeridas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Empresa Requerente:"/>
+                <Property name="name" type="java.lang.String" value="lbEMpresaRequeridas" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cboEmpresaRequerida">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cboEmpresaRequerida" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.listaResponsavelCustos}" target="cboEmpresaRequerida" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.responsavelCusto}" target="cboEmpresaRequerida" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelTranspRodoviaria">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Transportadora Rodovi&#xe1;ria:"/>
+                <Property name="name" type="java.lang.String" value="labelTranspRodoviaria" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cboTranspRodoviaria">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cboTranspRodoviaria" noResource="true"/>
+                <Property name="popupResizeEnabled" type="boolean" value="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.empresasMaritimasRodoviaria}" target="cboTranspRodoviaria" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.empresaMaritimaRodoviaria}" target="cboTranspRodoviaria" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelTipoResiduo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tipo de Res&#xed;duo:"/>
+                <Property name="name" type="java.lang.String" value="labelTipoResiduo" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cboTipoResiduo">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cboTipoResiduo" noResource="true"/>
+                <Property name="popupResizeEnabled" type="boolean" value="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.listaTipoResiduos}" target="cboTipoResiduo" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.tipoResiduo}" target="cboTipoResiduo" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelCaracteristica">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Caracteriza&#xe7;&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="labelCaracteristica" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtCaracterizacao">
+              <Properties>
+                <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new GenericDocument(45)" type="code"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="txtCaracterizacao" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.caracterizacao}" target="txtCaracterizacao" targetPath="text" updateStrategy="0" immediately="false">
+                  <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                </BindingProperty>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelEstadoFisico">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Estado F&#xed;sico:"/>
+                <Property name="name" type="java.lang.String" value="labelEstadoFisico" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtEstadoFisico">
+              <Properties>
+                <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new GenericDocument(12)" type="code"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="txtEstadoFisico" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.estadoFisico}" target="txtEstadoFisico" targetPath="text" updateStrategy="0" immediately="false">
+                  <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                </BindingProperty>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelCodigoAbnt">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Classif. C&#xf3;digo (ABNT NBR 10.004):"/>
+                <Property name="name" type="java.lang.String" value="labelCodigoAbnt" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtCodigoABNT">
+              <Properties>
+                <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new GenericDocument(25)" type="code"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="txtCodigoABNT" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.classificacao}" target="txtCodigoABNT" targetPath="text" updateStrategy="0" immediately="false">
+                  <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                </BindingProperty>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelCodigoONU">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="C&#xf3;digo ONU:"/>
+                <Property name="name" type="java.lang.String" value="labelCodigoONU" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtCodigoONU">
+              <Properties>
+                <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new GenericDocument(10)" type="code"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="txtCodigoONU" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.codigoOnu}" target="txtCodigoONU" targetPath="text" updateStrategy="0" immediately="false">
+                  <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                </BindingProperty>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelQtdResiduos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Quantidade de Res&#xed;duos:"/>
+                <Property name="name" type="java.lang.String" value="labelQtdResiduos" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SNumericTextField" name="sntfQtdResiduos">
+              <Properties>
+                <Property name="integerPlaces" type="java.lang.Short" value="8"/>
+                <Property name="name" type="java.lang.String" value="sntfQtdResiduos" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="integerValue" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.quantidadeResiduo}" target="sntfQtdResiduos" targetPath="integerValue" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelUndMedida">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Unidade de Medida:"/>
+                <Property name="name" type="java.lang.String" value="labelUndMedida" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cboUndMedida">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cboUndMedida" noResource="true"/>
+                <Property name="popupResizeEnabled" type="boolean" value="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.listaTipoUnidadeMedidas}" target="cboUndMedida" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.tipoUnidadeMedida}" target="cboUndMedida" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlCustoDaOperacao1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Destino Final do Res&#xed;duo"/>
+                  </Border>
+                </Property>
+                <Property name="name" type="java.lang.String" value="pnlCustoDaOperacao1" noResource="true"/>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelAgente9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtLocalFinal" min="-2" pref="259" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelAgente10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtLONFinal" min="-2" pref="134" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labelAgente11" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtCadriFinal" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="labelAgente9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtLocalFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelAgente10" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtLONFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelAgente11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCadriFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente9">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Local:"/>
+                    <Property name="name" type="java.lang.String" value="labelAgente9" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtLocalFinal">
+                  <Properties>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(100)" type="code"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="txtLocalFinal" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.localDestinoFinal}" target="txtLocalFinal" targetPath="text" updateStrategy="0" immediately="false">
+                      <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente10">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="L.O N&#xba;:"/>
+                    <Property name="name" type="java.lang.String" value="labelAgente10" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtLONFinal">
+                  <Properties>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(20)" type="code"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                    <Property name="name" type="java.lang.String" value="txtLONFinal" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.lonDestinoFinal}" target="txtLONFinal" targetPath="text" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente11">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="CADRI:"/>
+                    <Property name="name" type="java.lang.String" value="labelAgente11" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="txtCadriFinal">
+                  <Properties>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(20)" type="code"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="txtCadriFinal" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.cadriDestinoFinal}" target="txtCadriFinal" targetPath="text" updateStrategy="0" immediately="false">
+                      <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelEmpresa9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Valor do Servi&#xe7;o:"/>
+                <Property name="name" type="java.lang.String" value="labelEmpresa9" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SNumericTextField" name="sntfValorServico">
+              <Properties>
+                <Property name="integerPlaces" type="java.lang.Short" value="8"/>
+                <Property name="numberClass" type="java.lang.Class" value="java.math.BigDecimal"/>
+                <Property name="text" type="java.lang.String" value="sNumericTextField2"/>
+                <Property name="name" type="java.lang.String" value="sntfValorServico" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="bigDecimalValue" source="Form" sourcePath="${model.servicoRetiradaResiduoLixo.valorServico}" target="sntfValorServico" targetPath="bigDecimalValue" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

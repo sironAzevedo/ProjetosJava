@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="2"
+              AGEN_NM_AGENCIA="Fortaleza"
+              AGEN_SG_AGENCIA="FOR"
+              AGEN_TX_ENDERECO="Av. Leite Barbosa, s/n , 60180-420   MUCURIPE" 
+              AGEN_TX_TELEFONE="77-88776659" 
+              AGEN_TX_EMAIL="agfortaleza@petrobras.com.br" 
+              AGEN_TX_CIDADE="FORTALEZA"
+              AGEN_CD_ESTADO="CE" 
+              AGEN_CD_TIMEZONE="America/Fortaleza" 
+    />
+    
+        
+    <AGENCIA_PORTO  AGPO_SQ_AGENCIA_PORTO="1"
+                    PORT_CD_ID="FLZA"
+                    AGEN_SQ_AGENCIA="2"
+                    AGPO_TX_MUNICIPIO="FORTALEZA"
+    />
+
+    <EMBARCACAO  EMBA_CD_ID="0098"
+                 EMBA_IN_CLASSIFICACAO="1"
+                 EMBA_IN_TEM_HELIPORTO="N"
+                 EMBA_NM_COMPLETO="DEVON" 
+                 EMBA_NM_APELIDO="DEVON" 
+                 EMBA_TX_IMO="9454010" 
+                 EMBA_IN_TIPO_EMBARCACAO="N"
+                 PAIS_CD_IBGE="019"
+    />
+    
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="827"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEC_IN_TIPO_CONTRATO="TCP"
+                   AGEN_SQ_AGENCIA="2"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="FLZA" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM"
+    />
+    
+    <OPERACAO  OPER_SQ_OPERACAO = "8271"
+               PROD_CD_ID = "28W"
+               OPER_QN_ESTIMADA = "10"
+               AGEC_SQ_AGENCIAMENTO = "827"
+               OPER_IN_TIPO_OPERACAO = "1"
+    />
+
+    <DOCUMENTACAO_CABOTAGEM  DOCA_SQ_DOC_CABOTAGEM = "8271"
+                             AGEC_SQ_AGENCIAMENTO = "827"
+                             AGEN_CD_ID = "2"
+                             PORT_CD_ID = "SALV"
+                             DOCA_TX_MANIFESTO_ELETRONICO = "1234"
+                             DOCA_IN_TIPO_OPERACAO = "1"
+    />
+    
+    <DOCUMENTACAO_OPERACAO  DOOP_SQ_DOC_OPERACAO = "8271"
+                            DOCA_SQ_DOC_CABOTAGEM = "8271"
+                            OPER_SQ_OPERACAO = "8271"
+                            DOOP_TX_CONHECIMENTO_ELETRONIC = "12340"
+    />
+    
+    <OPERACAO OPER_SQ_OPERACAO = "8272"
+              PROD_CD_ID = "28Y"
+              OPER_QN_ESTIMADA = "5000"
+              AGEC_SQ_AGENCIAMENTO = "827"
+              OPER_IN_TIPO_OPERACAO = "1"
+    />
+    
+    <DOCUMENTACAO_CABOTAGEM  DOCA_SQ_DOC_CABOTAGEM = "8272"
+                             AGEC_SQ_AGENCIAMENTO = "827"
+                             AGEN_CD_ID = "2"
+                             PORT_CD_ID = "SALV"
+                             DOCA_TX_MANIFESTO_ELETRONICO = "4455"
+                             DOCA_IN_TIPO_OPERACAO = "1"
+    />
+
+    <DOCUMENTACAO_OPERACAO DOOP_SQ_DOC_OPERACAO= "8272"
+                           DOCA_SQ_DOC_CABOTAGEM= "8272"
+                           OPER_SQ_OPERACAO = "8272"
+                           DOOP_TX_CONHECIMENTO_ELETRONIC = "44551"
+    />
+
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="828"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_TIPO_CONTRATO="VCP"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="2"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="FLZA" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM"
+    />
+    
+    <OPERACAO OPER_SQ_OPERACAO = "8283"
+              PROD_CD_ID = "28W"
+              OPER_QN_ESTIMADA = "1050"
+              AGEC_SQ_AGENCIAMENTO = "828"
+              OPER_IN_TIPO_OPERACAO = "3"
+    />
+
+    <DOCUMENTACAO_CABOTAGEM  DOCA_SQ_DOC_CABOTAGEM = "8283"
+                             AGEC_SQ_AGENCIAMENTO = "828"
+                             AGEN_CD_ID = "2"
+                             PORT_CD_ID = "SALV"
+                             DOCA_TX_MANIFESTO_ELETRONICO = "A"
+                             DOCA_IN_TIPO_OPERACAO = "1"
+    />
+    
+    <DOCUMENTACAO_OPERACAO  DOOP_SQ_DOC_OPERACAO = "8283"
+                            DOCA_SQ_DOC_CABOTAGEM = "8283"
+                            OPER_SQ_OPERACAO = "8283"
+                            DOOP_TX_CONHECIMENTO_ELETRONIC = "A123"
+    />
+    
+    <OPERACAO OPER_SQ_OPERACAO = "8284"
+              PROD_CD_ID = "28Y"
+              OPER_QN_ESTIMADA = "10"
+              AGEC_SQ_AGENCIAMENTO = "828"
+              OPER_IN_TIPO_OPERACAO = "2"
+    />
+    
+    <OPERACAO OPER_SQ_OPERACAO = "8285"
+              PROD_CD_ID = "28Y"
+              OPER_QN_ESTIMADA = "10"
+              AGEC_SQ_AGENCIAMENTO = "828"
+              OPER_IN_TIPO_OPERACAO = "7"
+    />
+    
+    <OPERACAO OPER_SQ_OPERACAO = "8286"
+              PROD_CD_ID = "28Y"
+              OPER_QN_ESTIMADA = "10"
+              AGEC_SQ_AGENCIAMENTO = "828"
+              OPER_IN_TIPO_OPERACAO = "4"
+    />
+
+    <DOCUMENTACAO_CABOTAGEM  DOCA_SQ_DOC_CABOTAGEM = "8284"
+                             AGEC_SQ_AGENCIAMENTO = "828"
+                             AGEN_CD_ID = "2"
+                             PORT_CD_ID = "SALV"
+                             DOCA_TX_MANIFESTO_ELETRONICO = "B"
+                             DOCA_IN_TIPO_OPERACAO = "2"
+    />
+    
+    <DOCUMENTACAO_OPERACAO  DOOP_SQ_DOC_OPERACAO = "8284"
+                            DOCA_SQ_DOC_CABOTAGEM = "8284"
+                            OPER_SQ_OPERACAO = "8284"
+                            DOOP_TX_CONHECIMENTO_ELETRONIC = "B123"
+    />
+
+    <PAIS
+        PAIS_CD_IBGE="019"	
+        PAIS_NM_COMPLETO="BRASIL"
+    />
+
+    <PAIS
+        PAIS_CD_IBGE="012"	
+        PAIS_NM_COMPLETO="BRASIL"
+    />
+    
+    <DOCUMENTACAO_LONGO_CURSO
+        DOLC_SQ_DOC_LONGO_CURSO = "1"	
+        DOLC_TX_MANIFESTO_ELETRONICO = "TESTE"
+        DOLC_TX_CONHECIMENTO_ELETRONIC = "TESTE"
+        DOLC_NM_CIDADE = "TESTE"
+        DOLC_IN_BL_RECEBIDO = "N"
+        OPER_SQ_OPERACAO = "8271"
+        PORT_CD_ID = "SALV"
+    />
+     <PORTO_SIGO
+        PORT_CD_ID="SALV"
+        PORT_NM_COMPLETO="SALVADOR"
+        PORT_NM_APELIDO="SALVADOR"
+        PAIS_CD_IBGE="019"
+        PORT_NR_FUSO="-4"
+    />
+     <PORTO_SIGO
+        PORT_CD_ID="FLZA"
+        PORT_NM_COMPLETO="FORTALEZA"
+        PORT_NM_APELIDO="FORTALEZA"
+        PAIS_CD_IBGE="019"
+        PORT_NR_FUSO="-3"
+    />
+    <AGENCIA_SIGO
+        AGEN_CD_ID ="8450"
+        AGEN_NM_COMPLETO = "MARÍTIMA MERIDIAN S.A - BUENOS AIRES"
+    
+    />
+        
+</dataset>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SubFormularioReceitaPrestacaoServicoVeiculos" pageWidth="145" pageHeight="802" columnWidth="145" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="66380780-f8d3-4346-aca6-e7f77b1a7f5e">
+	<property name="ireport.zoom" value="1.6105100000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="modelo" class="java.lang.String"/>
+	<field name="placa" class="java.lang.String"/>
+	<detail>
+		<band height="17" splitType="Stretch">
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" stretchType="RelativeToTallestObject" x="145" y="0" width="1" height="17"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" stretchType="RelativeToTallestObject" x="90" y="0" width="1" height="17"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" stretchType="RelativeToTallestObject" x="0" y="0" width="1" height="17"/>
+			</line>
+			<line>
+				<reportElement uuid="52ed91ed-cb0f-42e1-843a-edacef70da09" positionType="FixRelativeToBottom" x="0" y="16" width="146" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="812479b9-596e-4467-9b3c-053fbf496436" stretchType="RelativeToTallestObject" x="5" y="0" width="85" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modelo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="812479b9-596e-4467-9b3c-053fbf496436" stretchType="RelativeToTallestObject" x="95" y="0" width="50" height="16"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{placa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

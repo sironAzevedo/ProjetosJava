@@ -1,0 +1,39 @@
+Tarefas agendadas do sistema Sistam
+========================================================
+versão: 1.0.0-SNAPSHOT
+
+Instruções
+----------
+
+A execução das tarefas agendadas é realizada através do snarf-invoker. Nenhuma aplicação
+cliente é necessária. A chamada deve ser feita a partir de um comando GET HTTP para um
+servlet disponibilizado pela aplicação. Ver instruções:
+
+        http://sistam.petrobras.com.br/sistam/SistamJob.svlt?job=<rotina>
+
+<rotina> deve ser substituído pelo nome do método a ser executado:
+
+        nome_do_metodo_1
+
+            descrição da rotina.
+
+        nome_do_metodo_2
+
+            descrição da rotina.
+
+Exemplos de chamadas:
+
+  (1) http://sistam.petrobras.com.br/sistam/SistamJob.svlt?job=nome_do_metodo_1
+        
+        descrição do exemplo.
+        
+  (2) http://sistam.petrobras.com.br/sistam/SistamJob.svlt?job=nome_do_metodo_1&arg=nome_do_argumento
+        
+        descrição do exemplo.
+            
+Agendamento das Rotinas
+----------------------------------------
+
+  (1) nome_do_metodo_1: Diariamente às 03:00hs
+  (2) nome_do_metodo_2: Toda quarta-feira às 00:00hs
+

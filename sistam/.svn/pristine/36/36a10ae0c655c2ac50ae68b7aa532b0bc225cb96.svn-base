@@ -1,0 +1,23 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Emitir Parte de Saída</h1>
+        
+        <br>
+            Como <b>Agente Marítimo</b>, gostaria de <b>emitir o formulário de Parte de Saída</b> para <b>avisar a capitania da Saída da Embarcação</b>
+        </br>
+
+        <div class="toc">
+            <h3>Lista das Funcionalidades:</h3>
+            <ul>
+                <li>Validar dados obrigatórios</li>
+                <li>Listar Manobras para Emitir Parte de Saída</li>               
+                <li>Emitir Formulário Parte de Saída</li>         
+            </ul>            
+        </div>
+        
+    </body>
+</html>

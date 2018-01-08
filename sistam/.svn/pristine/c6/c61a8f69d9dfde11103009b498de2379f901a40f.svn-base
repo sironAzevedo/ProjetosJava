@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="br.com.petrobras.fcorp.swing.base.action.GenericAction" name="actionAdicionar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icons/add.png"/>
+        </Property>
+        <Property name="methodName" type="java.lang.String" value="adicionarTransporte"/>
+        <Property name="target" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="model" type="code"/>
+        </Property>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="enabled" source="Form" sourcePath="${not empty model.novaOperacaoProduto.produto and not empty model.novaOperacaoProduto.quatidadeEstimada and not empty model.novaOperacaoProduto.tipoOperacao}" target="actionAdicionar" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="br.com.petrobras.fcorp.swing.base.action.GenericAction" name="actionSalvar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icons/disk.png"/>
+        </Property>
+        <Property name="methodName" type="java.lang.String" value="salvar"/>
+        <Property name="target" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="this" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Salvar"/>
+        <Property name="toolTipText" type="java.lang.String" value="Salva as informa&#xe7;&#xf5;es da visita"/>
+      </Properties>
+    </Component>
+    <Component class="br.com.petrobras.fcorp.swing.base.action.GenericAction" name="actionExcluir">
+      <Properties>
+        <Property name="confirm" type="java.lang.String" value="Confirma exclus&#xe3;o do transporte selecionado?"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icons/delete.png"/>
+        </Property>
+        <Property name="methodName" type="java.lang.String" value="excluirTransporte"/>
+        <Property name="target" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="model" type="code"/>
+        </Property>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="enabled" source="Form" sourcePath="${not empty model.transporteSelecionado}" target="actionExcluir" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="br.com.petrobras.sistam.desktop.components.SistamNumberCellRenderer" name="rendererCusto">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Visita"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,61,0,0,2,-15"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlCabecalho">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true"/>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="pnlCabecalho" noResource="true"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="First"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="sLabel7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="sLabel3" pref="233" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Component id="sLabel8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="sLabel9" pref="156" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Component id="sLabel10" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="timeZoneComboBox" min="-2" pref="156" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="sLabel8" alignment="2" max="32767" attributes="0"/>
+                      <Component id="sLabel9" alignment="2" min="-2" pref="14" max="-2" attributes="0"/>
+                      <Component id="sLabel10" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="timeZoneComboBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="2" attributes="0">
+                  <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
+                  <Component id="sLabel7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="2" attributes="0">
+                  <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                  <Component id="sLabel3" max="32767" attributes="0"/>
+                  <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nome:"/>
+            <Property name="name" type="java.lang.String" value="sLabel7" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Viagem:"/>
+            <Property name="name" type="java.lang.String" value="sLabel8" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="sLabel3" noResource="true"/>
+            <Property name="requiredField" type="boolean" value="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="text" source="Form" sourcePath="${model.visita.agenciamento.embarcacao.nomeCompleto}" target="sLabel3" targetPath="text" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel9">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="sLabel9" noResource="true"/>
+            <Property name="requiredField" type="boolean" value="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="text" source="Form" sourcePath="${model.visita.agenciamento.vgm}" target="sLabel9" targetPath="text" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fuso Hor&#xe1;rio:"/>
+            <Property name="name" type="java.lang.String" value="sLabel10" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="br.com.petrobras.sistam.desktop.components.TimeZoneComboBox" name="timeZoneComboBox">
+          <Properties>
+            <Property name="enabled" type="boolean" value="false"/>
+            <Property name="name" type="java.lang.String" value="timeZoneComboBox" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlEscalas">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="pnlEscalas" noResource="true"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="pnlManobras" alignment="1" max="32767" attributes="0"/>
+                      <Component id="pnlTipoServico" alignment="1" max="32767" attributes="0"/>
+                      <Component id="pnlBotoes" alignment="1" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="sCheckBox2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="pnlManobras" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="pnlTipoServico" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="sCheckBox2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="pnlBotoes" min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlTipoServico">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Lista de Transportes Utilizados na Visita"/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="pnlTipoServico" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="sLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="tfDescricao" max="32767" attributes="0"/>
+                                  <Component id="tfServico" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="sNumericTextField2" pref="206" max="32767" attributes="0"/>
+                                          <Component id="sComboBox1" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="sLabel14" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="sLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="cboResponsavelCusto" pref="206" max="32767" attributes="0"/>
+                                          <Component id="cbCondNavio" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jScrollPane1" pref="632" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnRemoverServico" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnAdicionarServico" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboResponsavelCusto" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="sLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sNumericTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cbCondNavio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfDescricao" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tfServico" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="70" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="btnAdicionarServico" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btnRemoverServico" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jScrollPane1" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="br.com.petrobras.fcorp.swing.components.STable" name="tblServicosManobra">
+                  <Properties>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="tblServicosManobra" noResource="true"/>
+                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                    </Property>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="elements" source="Form" sourcePath="${model.visita.transportes}" target="tblServicosManobra" targetPath="elements" updateStrategy="0" immediately="true">
+                      <Subbinding sourcePath="${tipoTransporte}">
+                        <BindingParameter name="NAME" value="Tipo Transporte"/>
+                        <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="br.com.petrobras.sistam.common.enums.TipoTransporte.class"/>
+                      </Subbinding>
+                      <Subbinding sourcePath="${descricao}">
+                        <BindingParameter name="NAME" value="Descricao"/>
+                        <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                      </Subbinding>
+                      <Subbinding sourcePath="${servico}">
+                        <BindingParameter name="NAME" value="Servico"/>
+                        <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                      </Subbinding>
+                      <Subbinding sourcePath="${responsavelCusto}">
+                        <BindingParameter name="NAME" value="Res. Pelo Custo"/>
+                        <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="br.com.petrobras.sistam.common.entity.ResponsavelCustoEntity.class"/>
+                      </Subbinding>
+                      <Subbinding sourcePath="${custo}">
+                        <BindingParameter name="NAME" value="Custo"/>
+                        <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Double.class"/>
+                      </Subbinding>
+                    </BindingProperty>
+                    <BindingProperty name="selectedElement" source="Form" sourcePath="${model.transporteSelecionado}" target="tblServicosManobra" targetPath="selectedElement" updateStrategy="0" immediately="false">
+                      <BindingParameter name="IGNORE_ADJUSTING" value="N"/>
+                    </BindingProperty>
+                  </BindingProperties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tipo de Transporte:"/>
+                <Property name="name" type="java.lang.String" value="sLabel1" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="sComboBox1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sComboBox1" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.listaTipoTransporte}" target="sComboBox1" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.novoTransporte.tipoTransporte}" target="sComboBox1" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Custo (R$):"/>
+                <Property name="name" type="java.lang.String" value="sLabel4" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SNumericTextField" name="sNumericTextField2">
+              <Properties>
+                <Property name="integerPlaces" type="java.lang.Short" value="8"/>
+                <Property name="numberClass" type="java.lang.Class" value="java.lang.Double"/>
+                <Property name="text" type="java.lang.String" value="sNumericTextField2"/>
+                <Property name="name" type="java.lang.String" value="sNumericTextField2" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="doubleValue" source="Form" sourcePath="${model.novoTransporte.custo}" target="sNumericTextField2" targetPath="doubleValue" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sNumericTextField2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sNumericTextField2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="sLabel5" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel11">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Servi&#xe7;o:"/>
+                <Property name="name" type="java.lang.String" value="sLabel11" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel12">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cond. Embarca&#xe7;&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="sLabel12" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="tfDescricao">
+              <Properties>
+                <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new GenericDocument(100) " type="code"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="tfDescricao" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="text" source="Form" sourcePath="${model.novoTransporte.descricao}" target="tfDescricao" targetPath="text" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STextField" name="tfServico">
+              <Properties>
+                <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new GenericDocument(100) " type="code"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="tfServico" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="text" source="Form" sourcePath="${model.novoTransporte.servico}" target="tfServico" targetPath="text" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cbCondNavio">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cbCondNavio" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.listaCondicoesNavio}" target="cbCondNavio" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.novoTransporte.condicaoNavio}" target="cbCondNavio" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel14">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Respons&#xe1;vel pelo custo:"/>
+                <Property name="name" type="java.lang.String" value="sLabel14" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="cboResponsavelCusto">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cboResponsavelCusto" noResource="true"/>
+                <Property name="popupResizeEnabled" type="boolean" value="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.listaResponsavelCusto}" target="cboResponsavelCusto" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.novoTransporte.responsavelCusto}" target="cboResponsavelCusto" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SButton" name="btnAdicionarServico">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="actionAdicionar"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="btnAdicionarServico" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SButton" name="btnRemoverServico">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="actionExcluir"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="btnRemoverServico" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlManobras">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Dados da Visita"/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="pnlManobras" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="sPanel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="sLabel6" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="labelAgente" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="comboAgentes" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelAgente" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="comboAgentes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="sLabel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="sPanel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Observa&#xe7;&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="sLabel6" noResource="true"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jScrollPane2" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="br.com.petrobras.fcorp.swing.components.STextArea" name="txtObservacao">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new GenericDocument(950) " type="code"/>
+                    </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
+                    <Property name="rows" type="int" value="4"/>
+                    <Property name="wrapStyleWord" type="boolean" value="true"/>
+                    <Property name="name" type="java.lang.String" value="txtObservacao" noResource="true"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="text" source="Form" sourcePath="${model.visita.observacao}" target="txtObservacao" targetPath="text" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="sPanel1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Data e Hora"/>
+                  </Border>
+                </Property>
+                <Property name="name" type="java.lang.String" value="sPanel1" noResource="true"/>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="sLabel2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblTermino" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="sistamDateChooserInicio" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="sistamTimeChooserInicio" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="sistamDateChooserTermino" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="sistamTimeChooserTermino" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="sLabel13" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="sistamDateChooserProgramada" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                  <Component id="sistamTimeChooserProgramada" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sistamTimeChooserProgramada" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sistamDateChooserProgramada" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sistamDateChooserInicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sistamTimeChooserInicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblTermino" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sistamDateChooserTermino" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sistamTimeChooserTermino" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="In&#xed;cio:"/>
+                    <Property name="name" type="java.lang.String" value="sLabel2" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="lblTermino">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="T&#xe9;rmino:"/>
+                    <Property name="name" type="java.lang.String" value="lblTermino" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.petrobras.sistam.desktop.components.SistamDateChooser" name="sistamDateChooserInicio">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="sistamDateChooserInicio" noResource="true"/>
+                    <Property name="timeChooser" type="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="sistamTimeChooserInicio"/>
+                    </Property>
+                    <Property name="timeZoneComboBox" type="br.com.petrobras.sistam.desktop.components.TimeZoneComboBox" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="timeZoneComboBox"/>
+                    </Property>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="date" source="Form" sourcePath="${model.visita.dataInicio}" target="sistamDateChooserInicio" targetPath="date" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="br.com.petrobras.sistam.desktop.components.SistamDateChooser" name="sistamDateChooserTermino">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="sistamDateChooserTermino" noResource="true"/>
+                    <Property name="timeChooser" type="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="sistamTimeChooserTermino"/>
+                    </Property>
+                    <Property name="timeZoneComboBox" type="br.com.petrobras.sistam.desktop.components.TimeZoneComboBox" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="timeZoneComboBox"/>
+                    </Property>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="date" source="Form" sourcePath="${model.visita.dataTermino}" target="sistamDateChooserTermino" targetPath="date" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+                <Component class="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" name="sistamTimeChooserInicio">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="sistamTimeChooserInicio" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" name="sistamTimeChooserTermino">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="sistamTimeChooserTermino" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="sLabel13">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Programada:"/>
+                    <Property name="name" type="java.lang.String" value="sLabel13" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" name="sistamTimeChooserProgramada">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="sistamTimeChooserProgramada" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="br.com.petrobras.sistam.desktop.components.SistamDateChooser" name="sistamDateChooserProgramada">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="sistamDateChooserProgramada" noResource="true"/>
+                    <Property name="timeChooser" type="br.com.petrobras.sistam.desktop.components.SistamTimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="sistamTimeChooserProgramada"/>
+                    </Property>
+                    <Property name="timeZoneComboBox" type="br.com.petrobras.sistam.desktop.components.TimeZoneComboBox" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                      <ComponentRef name="timeZoneComboBox"/>
+                    </Property>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="date" source="Form" sourcePath="${model.visita.dataProgramada}" target="sistamDateChooserProgramada" targetPath="date" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelAgente">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Agente:"/>
+                <Property name="name" type="java.lang.String" value="labelAgente" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SComboBox" name="comboAgentes">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="comboAgentes" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="elements" source="Form" sourcePath="${model.listaAgentes}" target="comboAgentes" targetPath="elements" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="Form" sourcePath="${model.agenteSelecionado}" target="comboAgentes" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="br.com.petrobras.fcorp.swing.components.SCheckBox" name="sCheckBox2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ap&#xf3;s salvar, continuar inserindo."/>
+            <Property name="name" type="java.lang.String" value="sCheckBox2" noResource="true"/>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="selected" source="Form" sourcePath="${model.continuarInserindo}" target="sCheckBox2" targetPath="selected" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="pnlBotoes">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="pnlBotoes" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+          <SubComponents>
+            <Component class="br.com.petrobras.fcorp.swing.components.SButton" name="btnSalvar">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="actionSalvar"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="btnSalvar" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

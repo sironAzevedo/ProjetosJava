@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="1"
+              AGEN_NM_AGENCIA="Salvador"
+              AGEN_SG_AGENCIA="SAL"
+              AGEN_TX_ENDERECO="Av. Antônio Carlos Magalhães, 1113   Sala 204 - Ed.  Ademar de Queiroz - Pituba - 41825-903" 
+              AGEN_TX_TELEFONE="7133483441" 
+              AGEN_TX_EMAIL="agsalvador@petrobras.com.br" 
+              AGEN_TX_CIDADE="SALVADOR"
+              AGEN_CD_ESTADO="BA" 
+              AGEN_CD_TIMEZONE="America/Bahia"
+    />
+    
+    <AGENCIAMENTO  
+        AGEC_SQ_AGENCIAMENTO="1"
+        AGEC_CD_AGENCIAMENTO="1"
+        AGEC_NR_ANO_PROCESSO="2013" 
+        EMBA_CD_ID="0098" 
+        AGEC_IN_STATUS_EMBARCACAO="1" 
+        AGEC_IN_SITUACAO_PROCESSO="2"
+        AGEC_IN_EXCLUIDO="N"
+        AGEN_SQ_AGENCIA="1"
+        PORT_CD_ID_ORIGEM="SALV"
+        AGEC_DT_ETA="2012-12-18"
+        AGEC_CD_VIAGEM="014 ST"
+        PORT_CD_ID="SALV" 
+        AGEC_DT_INCLUSAO="2012-12-18" 
+        AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+        AGEC_NM_CADASTRADOR="SISTAM" 
+        AGEC_NR_VERSAO_REGISTRO="1"
+    />
+    
+    <AGENCIAMENTO  
+        AGEC_SQ_AGENCIAMENTO="2"
+        AGEC_CD_AGENCIAMENTO="1"
+        AGEC_NR_ANO_PROCESSO="2013" 
+        EMBA_CD_ID="0098" 
+        AGEC_IN_STATUS_EMBARCACAO="1" 
+        AGEC_IN_SITUACAO_PROCESSO="2"
+        AGEC_IN_EXCLUIDO="N"
+        AGEN_SQ_AGENCIA="1"
+        PORT_CD_ID_ORIGEM="SALV"
+        AGEC_DT_ETA="2012-12-18"
+        AGEC_CD_VIAGEM="014 ST"
+        PORT_CD_ID="SALV" 
+        AGEC_DT_INCLUSAO="2012-12-18" 
+        AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+        AGEC_NM_CADASTRADOR="SISTAM" 
+        AGEC_NR_VERSAO_REGISTRO="1"
+    />
+    
+    <AGENCIAMENTO_ANEXO
+        AGAN_SQ_AGENCIAMENTO_ANEXO="1"
+        AGEC_SQ_AGENCIAMENTO="1"
+        AGAN_NM_ANEXO="Anexo1.pdf"
+        AGAN_QN_TAMANHO="1024"
+        AGAN_IN_PASTA="1"
+        AGAN_TX_EXTENSAO="pdf"
+        AGAN_DT_ANEXO="2013-11-27"
+        AGAN_NM_CADASTRADOR="SISTAM"
+        AGAN_CD_CHAVE_CADASTRADOR="STAM"
+    />
+    
+    <AGENCIAMENTO_ANEXO
+        AGAN_SQ_AGENCIAMENTO_ANEXO="2"
+        AGEC_SQ_AGENCIAMENTO="2"
+        AGAN_NM_ANEXO="Anexo2.pdf"
+        AGAN_QN_TAMANHO="1024"
+        AGAN_IN_PASTA="4"
+        AGAN_TX_EXTENSAO="pdf"
+        AGAN_DT_ANEXO="2013-12-25"
+        AGAN_NM_CADASTRADOR="SISTAM"
+        AGAN_CD_CHAVE_CADASTRADOR="STAM"
+    />
+    
+    <AGENCIAMENTO_ANEXO
+        AGAN_SQ_AGENCIAMENTO_ANEXO="3"
+        AGEC_SQ_AGENCIAMENTO="2"
+        AGAN_NM_ANEXO="Anexo3.pdf"
+        AGAN_QN_TAMANHO="2048"
+        AGAN_IN_PASTA="3"
+        AGAN_TX_EXTENSAO="pdf"
+        AGAN_DT_ANEXO="2013-11-27"
+        AGAN_NM_CADASTRADOR="SISTAM"
+        AGAN_CD_CHAVE_CADASTRADOR="STAM"
+    />
+    
+    <ANEXO
+        AGAN_SQ_AGENCIAMENTO_ANEXO="3"
+        ANEX_MM_ANEXO="0x01020304"
+    />
+    
+        
+        
+            
+</dataset>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="1"
+              AGEN_NM_AGENCIA="Salvador"
+              AGEN_SG_AGENCIA="SAL"
+              AGEN_TX_ENDERECO="Av. Antônio Carlos Magalhães, 1113   Sala 204 - Ed.  Ademar de Queiroz - Pituba - 41825-903" 
+              AGEN_TX_TELEFONE="7133483441" 
+              AGEN_TX_EMAIL="agsalvador@petrobras.com.br" 
+              AGEN_TX_CIDADE="SALVADOR"
+              AGEN_CD_ESTADO="BA" 
+              AGEN_CD_TIMEZONE="America/Bahia"
+    />
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="2"
+              AGEN_NM_AGENCIA="Fortaleza"
+              AGEN_SG_AGENCIA="FOR"
+              AGEN_TX_ENDERECO="Av. Leite Barbosa, s/n , 60180-420   MUCURIPE" 
+              AGEN_TX_TELEFONE="77-88776659" 
+              AGEN_TX_EMAIL="agfortaleza@petrobras.com.br" 
+              AGEN_TX_CIDADE="FORTALEZA"
+              AGEN_CD_ESTADO="CE" 
+              AGEN_CD_TIMEZONE="America/Fortaleza" 
+    />
+    
+    
+    <EMBARCACAO  EMBA_CD_ID="0098"
+                 EMBA_IN_CLASSIFICACAO="1"
+                 EMBA_IN_TEM_HELIPORTO="N"
+                 EMBA_NM_COMPLETO="DEVON" 
+                 EMBA_NM_APELIDO="DEVON" 
+                 EMBA_TX_IMO="9454010" 
+                 EMBA_IN_TIPO_EMBARCACAO="N"
+                 PAIS_CD_IBGE="019"
+    />
+    
+    <PAIS 
+        PAIS_CD_IBGE="019"
+        PAIS_NM_COMPLETO="BRASIL"	
+    />
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="855"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="1"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="SALV" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+    />
+
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="856"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="2"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="SALV" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+    />
+    
+        
+    
+    <VISITA 
+        VISI_SQ_VISITA = "1"
+        AGEC_SQ_AGENCIAMENTO = "855"
+        VISI_CD_CHAVE="XPTO"
+        VISI_CD_CHAVE_ALTERACAO="ABCD"
+        VISI_NM_USU_ALTERACAO="ABCD"
+        VISI_DT_ALTERACAO="2012-12-18"
+        VISI_DT_INICIO="2012-12-10"
+        VISI_DT_TERMINO="2012-12-20"
+    />
+  
+    <VISITA 
+        VISI_SQ_VISITA = "2"
+        AGEC_SQ_AGENCIAMENTO = "855"	
+        VISI_CD_CHAVE="XPTO"
+        VISI_CD_CHAVE_ALTERACAO="ABCD"
+        VISI_NM_USU_ALTERACAO="ABCD"
+        VISI_DT_ALTERACAO="2012-11-01"
+        VISI_DT_INICIO="2012-11-01"
+        VISI_DT_TERMINO="2012-11-02"
+    />
+      
+    <VISITA 
+        VISI_SQ_VISITA = "3"
+        AGEC_SQ_AGENCIAMENTO = "856"	
+        VISI_CD_CHAVE="XPTO"
+        VISI_CD_CHAVE_ALTERACAO="ABCD"
+        VISI_NM_USU_ALTERACAO="ABCD"
+        VISI_DT_ALTERACAO="2012-10-25"
+        VISI_DT_INICIO="2012-10-05"
+        VISI_DT_TERMINO="2012-11-02"
+    />
+    
+    <VISITA_TRANSPORTE
+        VITR_SQ_TRANSPORTE = "980"
+        VISI_SQ_VISITA = "1"
+        RECU_SQ_RESP_CUSTO = "1"
+        VITR_IN_TIPO_TRANSPORTE = "3"
+        VITR_VL_CUSTO = "100.00"
+    />
+    
+    <VISITA_TRANSPORTE
+        VITR_SQ_TRANSPORTE = "990"
+        VISI_SQ_VISITA = "1"
+        RECU_SQ_RESP_CUSTO = "2"
+        VITR_IN_TIPO_TRANSPORTE = "1"
+        VITR_VL_CUSTO = "100.00"
+    />
+     <PORTO_SIGO
+        PORT_CD_ID="SALV"
+        PORT_NM_COMPLETO="AGUIRRE"
+        PORT_NM_APELIDO="AGUIRRE"
+        PAIS_CD_IBGE="035"
+        PORT_NR_FUSO="-4"
+    />
+    <RESPONSAVEL_CUSTO  RECU_SQ_RESP_CUSTO="1"
+                        RECU_SG_RESP_CUSTO="P"
+                        RECU_TX_RESP_CUSTO="PETROBRAS"
+        
+    />
+    
+    <RESPONSAVEL_CUSTO  RECU_SQ_RESP_CUSTO="2"
+                        RECU_SG_RESP_CUSTO="T"
+                        RECU_TX_RESP_CUSTO="TRANSPETRO"
+        
+    />
+    
+</dataset>

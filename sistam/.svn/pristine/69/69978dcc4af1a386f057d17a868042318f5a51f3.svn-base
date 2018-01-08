@@ -1,0 +1,32 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SISTAM - Agenciamento Marítimo</title>
+  </head>
+  <body>
+      
+      <h1>Manobras do Agenciamento</h1>      
+      <p>As manobras do agenciamento poderão ter a seguintes situações:</p>
+      
+      <div>
+          <ul>
+              <li><a href="#rn1"> Solicitada</a></li>
+              <li><a href="#rn2"> Emitida</a></li>
+              <li><a href="#rn3"> Cancelada</a></li>
+              <li><a href="#rn4"> Registrada</a></li>
+              <li><a href="#rn5"> Cancelada Fora de Prazo</a></li>
+              <li><a href="#rn6"> Encerrada</a></li>
+          </ul>
+      </div> 
+      
+      <h3 id="rn1">Solicitada</h3>
+      <h3 id="rn2">Emitida</h3>
+      <h3 id="rn3">Cancelada</h3>
+      <h3 id="rn4">Registrada</h3>
+      <h3 id="rn5">Cancelada Fora de Prazo</h3>
+      <h3 id="rn6">Encerrada</h3>
+    
+    
+    
+  </body>
+</html>

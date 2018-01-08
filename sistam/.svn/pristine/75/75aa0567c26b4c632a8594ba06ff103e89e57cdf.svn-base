@@ -1,0 +1,413 @@
+@media (max-width:320px){
+    header {
+        height:30px;
+    }
+    #logoSistema {
+        background-image: url('../imagens/MarcaPainel4.png');
+        background-repeat:no-repeat;
+        width: 67px;
+        height:20px;
+        padding: 0px;
+        margin: 3px 0px 0px 3px;
+    }
+    #logoPetrobras {
+        width:30px;
+        height:30px;
+        margin: 3px 3px 0px 0px;   
+    }
+    .texto .titulo {
+        font-size:0.4em;
+        width:180px;
+    }
+    .texto .subtitulo {
+        font-size: 0.4em;
+        line-height:0.4em;
+        width:160px;
+    }
+     #select-estilo {
+        font-size:0.4em;
+        line-height:0.4em;
+    }
+    section.paines table caption {
+        font-size:0.4em;
+    }
+    table thead th{
+        font-size:0.4em;
+    }
+    table tbody tr td{
+        font-size:0.4em;
+    }
+    input, textarea, keygen, select, button, isindex {
+        font-size:0.4em;
+    }
+    select{width:50px;}
+    
+    .no-phone{display:none;}
+    
+    .colLp{width:1%;}
+    #atracados .colEmbarcacao{width:22%}
+    #fundeados .colEmbarcacao,
+    #esperados .colEmbarcacao{width:4%}
+    .colViagem{width:6%}
+    .colEta, .colHoraOficial, .colAtracao{width:16%}
+    .colProcedencia{width:3%}
+    .colCalado{width:4%}
+}
+
+@media (min-width:321px) and (max-width:480px){
+    header {
+        height:45px;
+    }
+    #logoSistema {
+        background-image: url('../imagens/MarcaPainel3.png');
+        background-repeat:no-repeat;
+        width: 100px;
+        height:30px;
+        padding: 0px;
+        margin: 3px 0px 0px 3px;
+    }
+    #logoPetrobras {
+        width:30px;
+        height:30px;
+        margin: 3px 3px 0px 0px;   
+    }
+    .texto .titulo {
+        font-size:0.5em;
+        width:100px;
+    }
+    .texto .subtitulo {
+        font-size: 0.5em;
+        line-height:0.5em;
+        width:90px;
+    }
+     #select-estilo {
+        font-size:0.5em;
+        line-height:0.5em;
+    }
+    section.paines table caption {
+        font-size:0.5em;
+    }
+    table thead th{
+        font-size:0.5em;
+    }
+    table tbody tr td{
+        font-size:0.5em;
+    }
+    input, textarea, keygen, select, button, isindex {
+        font-size:0.5em;
+    }
+    
+    select{width:50px;}
+    
+    .no-phone-wide{display:none;}
+
+    .colLp{width:1%;}
+    #atracados .colEmbarcacao{width:28%}
+    #fundeados .colEmbarcacao,
+    #esperados .colEmbarcacao{width:4%}
+    .colViagem{width:6%}
+    .colEta, .colHoraOficial, .colAtracao{width:21%}
+    .colProcedencia{width:3%}    
+}
+
+@media (min-width:481px) and (max-width:768px){
+     header {
+        height:45px;
+    }
+    #logoSistema {
+        background-image: url('../imagens/MarcaPainel3.png');
+        background-repeat:no-repeat;
+        width: 100px;
+        height:30px;
+        padding: 0px;
+        margin: 3px 0px 0px 3px;
+    }
+    #logoPetrobras {
+        width:30px;
+        height:30px;
+        margin: 3px 3px 0px 0px;   
+    }
+    .texto .titulo {
+        font-size:0.7em;
+        width:160px;
+    }
+    .texto .subtitulo {
+        font-size: 0.7em;
+        line-height:0.7em;
+        width:120px;
+    }
+    #select-estilo {
+        font-size:0.7em;
+        line-height:0.7em;
+    }
+    section.paines table caption {
+        font-size:0.6em;
+    }
+    table thead th{
+        font-size:0.5em;
+    }
+    table tbody tr td{
+        font-size:0.5em;
+    }
+    input, textarea, keygen, select, button, isindex {
+        font-size:0.5em;
+    }
+    
+    select{width:50px;}
+    
+    .no-tablet{display:none;}
+    
+    .colLp{width:1%;}
+    #atracados .colEmbarcacao{width:28%}
+    #fundeados .colEmbarcacao,
+    #esperados .colEmbarcacao{width:4%}
+    .colViagem{width:3%}
+    .colEta, .colHoraOficial, .colAtracao{width:21%}
+    .colProcedencia{width:3%} 
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .texto .titulo {
+        font-size:1.1em;
+        width: 280px;
+    }
+    .texto .subtitulo {
+        font-size:1.0em;
+        line-height:1.2em;
+        width: 220px;
+    }
+    #select-estilo {
+        font-size:1.0em;
+        line-height:1.2em;
+    }
+    section.paines table caption {
+        font-size:0.8em;
+    }
+    table thead th{
+        font-size:0.7em;
+    }
+    table tbody tr td{
+        font-size:0.7em;
+    }
+    input, textarea, keygen, select, button, isindex {
+        font-size:0.8em;
+    }
+    
+    select{width:80px;}
+    
+    .no-tablet-wide{display:none;}
+    
+    .colLp{width:1%;}
+
+    #atracados .colEmbarcacao{width:18%}
+    #fundeados .colEmbarcacao,
+    #esperados .colEmbarcacao{width:4%}
+
+    .colViagem{width:3%}
+    .colEta, .colHoraOficial, .colAtracao{width:4%}
+    .colProcedencia{width:3%}
+
+    #esperados .colResumoCarga{width:50%}
+
+    .colLocalizacaoAtual,
+    .colLocalizacaoAtual{width:12%}
+
+    #fundeados .colResumoCarga,
+    #atracados .colResumoCarga{width:38%}
+
+    .colResumoQuantidade{width:16%;}
+
+    .colObservacao{width:15%}
+    .colDestino{}
+
+}
+
+@media (min-width:1025px) and (max-width:1280px){
+    .texto .titulo {
+        font-size:1.2em;
+        width: 280px;
+    }
+    .texto .subtitulo {
+        font-size:1.2em;
+        line-height:1.2em;
+        width: 280px;
+    }
+    #select-estilo {
+        font-size:0.8em;
+        line-height:0.8em;
+    }
+    section.paines table caption {
+        font-size:1.2em;
+    }
+    table thead th{
+        font-size:0.8em;
+    }
+    table tbody tr td{
+        font-size:0.8em;
+    }
+    input, textarea, keygen, select, button, isindex {
+        font-size:0.8em;
+    }
+    .colEmbarcacao{width:5%}
+    .colViagem{width:3%}
+    .colEta, .colHoraOficial, .colAtracao{width:12%}
+    .colProcedencia{width:5%}
+
+    #esperados .colResumoCarga{width:38%}
+
+    .colLocalizacaoAtual,
+    .colLocalizacaoAtual{width:8%}
+
+    #fundeados .colResumoCarga,
+    #atracados .colResumoCarga{width:30%}
+
+    .colResumoQuantidade{width:16%;}
+
+    .colObservacao{width:15%}
+    
+    .divNavioSaido{width:35%;}
+    .divNavioDesviado{width:35%;}
+    
+    .divNavioSaido .colEmbarcacao{width:1%;}
+    .divNavioSaido .colViagem{width:1%;}
+    .divNavioSaido .colSaida{width:20%;}
+    .divNavioSaido .colEtaSaidos{width:18%;}
+    .divNavioSaido .colDestino{}
+
+    .divNavioDesviado .colEmbarcacao{width:90%;}
+    .divNavioDesviado .colDestino{}
+    
+}
+
+@media (min-width:1281px) and (max-width:1440px){
+    .texto .titulo {
+        font-size:1.2em;
+        width: 280px;
+    }
+    .texto .subtitulo {
+        font-size:1.2em;
+        line-height:1.2em;
+        width: 260px;
+    }
+  
+    section.paines table caption {
+        
+    }
+    .tituloTipoNavio{   
+        font-size:1.0em;
+    }
+
+    .paginacao{
+        font-size:0.6em;
+    }
+    table thead th{
+        font-size:0.8em;
+    }
+    table tbody tr td{
+        font-size:0.8em;
+    }
+    input, textarea, keygen, button, isindex {
+        font-size:1.2em;
+    }
+    
+    select{
+        font-size:0.8em;
+    }
+    
+    .colEmbarcacao{width:5%}
+    .colViagem{width:5%}
+    .colEta, .colHoraOficial, .colAtracao{width:7%}
+    .colProcedencia{width:5%}
+
+    #esperados .colResumoCarga{width:45%}
+
+    .colLocalizacaoAtual,
+    .colLocalizacaoAtual{width:15%}
+
+    #fundeados .colResumoCarga,
+    #atracados .colResumoCarga{width:30%}
+
+    .colResumoQuantidade{width:14%;}
+
+    .colObservacao{width:13%}
+    
+    .divNavioSaido{width:39%;}
+    .divNavioDesviado{width:32%;}
+    
+    .divNavioSaido .colEmbarcacao{width:23%;}
+    .divNavioSaido .colViagem{width:13%;}
+    .divNavioSaido .colSaida{width:18%;}
+    .divNavioSaido .colEtaSaidos{width:13%;}
+    .divNavioSaido .colDestino{}
+
+    .divNavioDesviado .colEmbarcacao{width:90%;}
+    .divNavioDesviado .colDestino{}
+    
+}
+
+@media (min-width:1441px){
+    .texto .titulo {
+        font-size:1.2em;
+        width: 380px;
+    }
+    .texto .subtitulo {
+        font-size:1.2em;
+        line-height:1.2em;
+        width: 360px;
+    }
+    
+    section.paines table caption {
+        
+    }
+    .tituloTipoNavio{   
+        font-size:1.0em;
+    }
+
+    .paginacao{
+        font-size:0.6em;
+    }
+    table thead th{
+        font-size:0.8em;
+    }
+    table tbody tr td{
+        font-size:0.8em;
+    }
+    input, textarea, keygen, button, isindex {
+        font-size:1.2em;
+    }
+    
+    select{
+        font-size:0.8em;
+    }
+    
+    .colEmbarcacao{width:5%}
+    .colViagem{width:5%}
+    .colEta, .colHoraOficial, .colAtracao{width:7%}
+    .colProcedencia{width:5%}
+
+    #esperados .colResumoCarga{width:45%}
+
+    .colLocalizacaoAtual,
+    .colLocalizacaoAtual{width:15%}
+
+    #fundeados .colResumoCarga,
+    #atracados .colResumoCarga{width:30%}
+
+    .colResumoQuantidade{width:14%;}
+
+    .colObservacao{width:13%}
+    
+    .divNavioSaido{width:39%;}
+    .divNavioDesviado{width:32%;}
+    
+    .divNavioSaido .colEmbarcacao{width:23%;}
+    .divNavioSaido .colViagem{width:13%;}
+    .divNavioSaido .colSaida{width:18%;}
+    .divNavioSaido .colEtaSaidos{width:13%;}
+    .divNavioSaido .colDestino{}
+
+    .divNavioDesviado .colEmbarcacao{width:90%;}
+    .divNavioDesviado .colDestino{}
+    
+}
+

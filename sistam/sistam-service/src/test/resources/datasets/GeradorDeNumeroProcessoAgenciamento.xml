@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+    <NUMERACAO_AGENCIAMENTO  AGEN_SQ_AGENCIA="1"
+                             NUAG_NR_ANO_PROCESSO="2013"
+                             NUAG_CD_AGENCIAMENTO="7"/>
+    
+    <!--<PONTO_ATRACACAO_SIGO POAT_CD_ID ="6"
+                          POAT_NM_COMPLETO = "CAIS COMERCIAL"
+                          POOP_CD_ID = "SEAL"
+                          TPOA_CD_TIPO = "6"
+                          TPOA_NM_COMPLETO = "CAIS"
+                          POAT_MD_TPB = "50000"
+                          POAT_MD_CAL_MAX = "10,5"
+                          POAT_MD_COMPRIM =" 210"
+                          POAT_MD_LATITUDE = "09 - 40 - S"
+                          POAT_MD_LONGITUDE = "035 - 43 - W"
+                          POAT_MD_LATITUDE2 = "null"
+                          POAT_MD_LONGITUDE2 = "null"
+                          POOP_NM_COMPLETO = "SEAL"
+                          POOP_CD_ID_LOCAL_OPER = "MACEIO"
+                          CLPO_CD_ID = "DT"
+                          CLPO_NM_COMPLETO = "TERMINAL TRANSPETRO"
+                          POAT_NM_CURTO = "CAIS"
+                          POAT_TX_OBSERVACAO = "null"                          
+    />
+    
+   
+
+      <AGENCIA_SIGO       PORT_CD_ID ="ZOCO"
+                          PORT_NM_COMPLETO = "ZONA COMUN-ARGENTINA"
+                          PAIS_NM_COMPLETO = "ARGENTINA"
+                          AGEN_CD_ID = "8450"
+                          AGEN_NM_COMPLETO = "MARÍTIMA MERIDIAN S.A - BUENOS AIRES"
+                          AGEN_TX_ENDERECO = "Rua Lola Moura 421 - 6. Piso - Of. 602 - (1107) - BUENOS AIRES - ARGENTINA"
+                          PAIS_CD_IBGE = "011"
+                          AGEN_TX_TELEFONE ="+54 11 4300 2340"
+                          AGEN_TX_FAX = "+54 11 4307 3438"
+                          AGEN_TX_TLX = "null"
+                          AGEN_TX_EMAIL = "mmsa@meridian.com.ar / admin@meridian.com.ar"
+                          AGEN_TX_WEBSITE = "www.meridian.com.ar"
+                          AGEN_TX_OBSERVACAO = "NO PREFUND FEE."
+                          AGEN_TX_MATRIZ = "8450"
+                          AGEN_TX_CODP = "null"
+                          AGEN_CD_HUB = "8450"
+                          AGEN_IN_TIPO = "0"
+                          AGEN_IN_BLIST = "0"   
+                          AGCO_CD_ID = "4949"
+                          AGCO_NM_AGENTE = "PABLO ROCHA"                       
+                          AGCO_NM_DEPARTAMENTO = "OPERACTIONS"                                              
+                          AGCO_TX_TELEFONE = "null"                                                                     
+                          AGCO_TX_CELULAR = "+54 911 4141 1608"                                                                                            
+                          AGCO_TX_EMAIL = "null"    
+                          AGEN_CD_MATRIZ = "8450"
+                          AGEN_NM_MATRIZ = "MARÍTIMA MERIDIAN S.A - BUENOS AIRES"                                                                                                                                      
+                          AGEN_NM_HUB = "MARÍTIMA MERIDIAN S.A - BUENOS AIRES"                                                                                                                                                                                                                                                                            
+                          AGPO_IN_PRINCIPAL = "1"                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    />-->
+    
+</dataset>

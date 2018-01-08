@@ -1,0 +1,71 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SISTAM - Agenciamento Marítimo</title>
+  </head>
+  <body>
+      
+      <h1>Comunicação para Capitania dos Portos</h1>      
+      <p>Nesta opção, são di</p>
+     
+      <div>
+          <h3 id="rn0">Principais funções</h3>
+          <ul>
+              <li><a href="#rn1"> Como acessar?</a></li>
+              <li><a href="#rn2">Parte de Entrada</a></li>
+              <li><a href="#rn3">Notificação de Previsão de Chegada</a></li>
+              <li><a href="#rn4">Declaração Geral</a></li>
+              <li><a href="#rn5">Termo de Responsabilidade</a></li>
+              <li><a href="#rn6">Pedido de Despacho</a></li>
+              <li><a href="#rn7">Parte de Saída</a></li>
+              <li><a href="#rn8">Passe de Saída</a></li>
+              <li><a href="#rn9">Registro de Movimentação</a></li>
+              <li><a href="#rn10">Registro de Alteração de Destino</a></li>
+          </ul>
+      </div> 
+      <h3 id="rn1">Como acessar?</h3>
+      <p></p>
+      
+      
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn2">Parte de Entrada</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn3">Notificação de Previsão de Chegada</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+    
+      <h3 id="rn4">Declaração Geral</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn5">Termo de Responsabilidade</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn6">Pedido de Despacho</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn7">Parte de Saída</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn8">Passe de Saída</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn9">Registro de Movimentação</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+      <h3 id="rn10">Registro de Alteração de Destino</h3>
+      <p> bla bla bla  </p>
+      <br><a href="#rn0">Voltar ao topo</a>
+      
+   
+      
+  </body>
+</html>

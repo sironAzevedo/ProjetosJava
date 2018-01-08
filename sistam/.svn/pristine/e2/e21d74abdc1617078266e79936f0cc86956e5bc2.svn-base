@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="br.com.petrobras.fcorp.swing.base.action.GenericAction" name="actionSalvar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/icons/disk.png"/>
+        </Property>
+        <Property name="methodName" type="java.lang.String" value="salvar"/>
+        <Property name="target" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="this" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Salvar"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="0"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="panelGeral" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="panelGeral" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="panelGeral">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="panelGeral" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="panelBotao" max="32767" attributes="0"/>
+                      <Component id="panelInformacoes" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="panelInformacoes" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="panelBotao" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="panelInformacoes">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Informa&#xe7;&#xf5;es"/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="panelInformacoes" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="labelDtValidade1" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelCertificado" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelDtValidade2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="nrCLP" alignment="0" pref="194" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="campoValidade" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="campoHoraValidade" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="campoDataEmissao" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="campoHoraEmissao" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelCertificado" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nrCLP" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelDtValidade1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoDataEmissao" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoHoraEmissao" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labelDtValidade2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoValidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoHoraValidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelCertificado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nr. Certificado:"/>
+                <Property name="name" type="java.lang.String" value="labelCertificado" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelDtValidade1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Data de Emiss&#xe3;o:"/>
+                <Property name="name" type="java.lang.String" value="labelDtValidade1" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SDateChooser" name="campoDataEmissao">
+              <Properties>
+                <Property name="timeChooser" type="br.com.petrobras.fcorp.swing.components.STimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="campoHoraEmissao"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="campoDataEmissao" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="date" source="Form" sourcePath="${model.certificado.data}" target="campoDataEmissao" targetPath="date" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SLabel" name="labelDtValidade2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Validade:"/>
+                <Property name="name" type="java.lang.String" value="labelDtValidade2" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SDateChooser" name="campoValidade">
+              <Properties>
+                <Property name="timeChooser" type="br.com.petrobras.fcorp.swing.components.STimeChooser" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="campoHoraValidade"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="campoValidade" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="date" source="Form" sourcePath="${model.certificado.dataValidade}" target="campoValidade" targetPath="date" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.SNumericTextField" name="nrCLP">
+              <Properties>
+                <Property name="decimalPlaces" type="java.lang.Short" value="0"/>
+                <Property name="integerPlaces" type="java.lang.Short" value="8"/>
+                <Property name="numberClass" type="java.lang.Class" value="java.lang.Long"/>
+                <Property name="name" type="java.lang.String" value="nrCLP" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="longValue" source="Form" sourcePath="${model.certificado.numeroCertificado}" target="nrCLP" targetPath="longValue" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STimeChooser" name="campoHoraEmissao">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="campoHoraEmissao" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="br.com.petrobras.fcorp.swing.components.STimeChooser" name="campoHoraValidade">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="campoHoraValidade" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="br.com.petrobras.fcorp.swing.components.SPanel" name="panelBotao">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="panelBotao" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+          <SubComponents>
+            <Component class="br.com.petrobras.fcorp.swing.components.SButton" name="sButton1">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                  <ComponentRef name="actionSalvar"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="sButton1" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

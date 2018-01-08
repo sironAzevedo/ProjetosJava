@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+    
+    <EMPRESA_MARITIMA
+            EMMA_SQ_EMPRESA_MARITIMA="1"
+            EMMA_NR_CNPJ="111111"
+            EMMA_NM_RAZAO_SOCIAL="OTHON"
+            EMMA_TX_EMAIL="sistam@sistam.com"
+            EMMA_TX_NR_TELEFINE="71-11111111"
+            AGEN_SQ_AGENCIA="1"
+            EMMA_TX_CIDADE="Salvador"
+            EMMA_CD_ESTADO="BA" 
+    />
+    
+     <EMPRESA_MARITIMA
+            EMMA_SQ_EMPRESA_MARITIMA="2"
+            EMMA_NR_CNPJ="222222"
+            EMMA_NM_RAZAO_SOCIAL="SISTAM BONINAL"
+            EMMA_TX_EMAIL="sistam@sistam.com"
+            EMMA_TX_NR_TELEFINE="71-11111111"
+            AGEN_SQ_AGENCIA="1"
+            EMMA_TX_CIDADE="Salvador"
+            EMMA_CD_ESTADO="BA" 
+    />
+     
+      <EMPRESA_MARITIMA
+            EMMA_SQ_EMPRESA_MARITIMA="3"
+            EMMA_NR_CNPJ="333333"
+            EMMA_NM_RAZAO_SOCIAL="GRAND HOTEL STELLA MARIS"
+            EMMA_TX_EMAIL="sistam@sistam.com"
+            EMMA_TX_NR_TELEFINE="71-11111111"
+            AGEN_SQ_AGENCIA="1"
+            EMMA_TX_CIDADE="Salvador"
+            EMMA_CD_ESTADO="BA" 
+    />
+    
+    <EMPRESA_SERVICO
+            EMSE_SQ_EMPRESA_SERVICO="1"
+            EMSE_IN_SERVICO="H"
+            EMSE_NM_SERVICO="SISTAM"
+            EMMA_SQ_EMPRESA_MARITIMA="1"
+    />
+    
+    <EMPRESA_SERVICO
+            EMSE_SQ_EMPRESA_SERVICO="2"
+            EMSE_IN_SERVICO="P"
+            EMSE_NM_SERVICO="SISTAM"
+            EMMA_SQ_EMPRESA_MARITIMA="2"
+    />
+    
+    <EMPRESA_SERVICO
+            EMSE_SQ_EMPRESA_SERVICO="3"
+            EMSE_IN_SERVICO="H"
+            EMSE_NM_SERVICO="SISTAM"
+            EMMA_SQ_EMPRESA_MARITIMA="3"
+    />
+    
+    <RESPONSAVEL_CUSTO
+        RECU_SQ_RESP_CUSTO="1"
+        RECU_SG_RESP_CUSTO="PT"
+        RECU_TX_RESP_CUSTO="PETROBRAS"
+    />
+    
+    <RESPONSAVEL_CUSTO
+        RECU_SQ_RESP_CUSTO="2"
+        RECU_SG_RESP_CUSTO="TR"
+        RECU_TX_RESP_CUSTO="TRANSPETRO"
+    />
+    
+    <RESPONSAVEL_CUSTO
+        RECU_SQ_RESP_CUSTO="3"
+        RECU_SG_RESP_CUSTO="GE"
+        RECU_TX_RESP_CUSTO="GAS E ENERGIA"
+    />
+    
+    <RESPONSAVEL_CUSTO
+        RECU_SQ_RESP_CUSTO="4"
+        RECU_SG_RESP_CUSTO="SC"
+        RECU_TX_RESP_CUSTO="SEM CUSTO"
+    /> 
+  
+    
+</dataset>

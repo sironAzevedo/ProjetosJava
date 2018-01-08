@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioMensalTaxas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e6fcb3ff-b5b0-4f12-a054-63a68442066b">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="IMAGEM_PETROBRAS" class="java.net.URL"/>
+	<parameter name="FILTRO" class="br.com.petrobras.sistam.common.valueobjects.FiltroTaxa"/>
+	<parameter name="IMAGEM_NP1" class="java.net.URL"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="valor" class="java.lang.Double">
+		<fieldDescription><![CDATA[valor]]></fieldDescription>
+	</field>
+	<field name="tipoTaxa" class="br.com.petrobras.sistam.common.enums.TipoTaxa">
+		<fieldDescription><![CDATA[tipoTaxa]]></fieldDescription>
+	</field>
+	<field name="responsavelCusto" class="br.com.petrobras.sistam.common.entity.ResponsavelCustoEntity">
+		<fieldDescription><![CDATA[responsavelCusto]]></fieldDescription>
+	</field>
+	<variable name="SOMA_VALOR_GRUPO" class="java.lang.Double" resetType="Group" resetGroup="ResponsavelCusto" calculation="Sum">
+		<variableExpression><![CDATA[$F{valor}]]></variableExpression>
+	</variable>
+	<variable name="SOMA_VALOR_GERAL" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{valor}]]></variableExpression>
+	</variable>
+	<variable name="DATA_ATUAL" class="java.util.Date">
+		<variableExpression><![CDATA[new Date()]]></variableExpression>
+	</variable>
+	<group name="ResponsavelCusto">
+		<groupExpression><![CDATA[$F{responsavelCusto}]]></groupExpression>
+		<groupHeader>
+			<band height="58">
+				<textField>
+					<reportElement uuid="9d789e7a-f3fe-4277-b6ba-be553bbe22c3" mode="Transparent" x="0" y="0" width="555" height="38"/>
+					<box leftPadding="2"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Taxas Portuárias " + $F{responsavelCusto}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="f5d9fba5-0f2a-4b60-a781-093871fcc393" mode="Transparent" x="0" y="38" width="432" height="20"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Despesa]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a9ea0d26-bbcf-42d5-b45e-752782464c3d" mode="Transparent" x="432" y="38" width="123" height="20"/>
+					<box leftPadding="0" rightPadding="0">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Valor  (R$)]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="23">
+				<textField pattern="#,##0.00" isBlankWhenNull="true">
+					<reportElement uuid="98a0365b-45a0-4338-a835-11e1389c4103" mode="Transparent" x="432" y="2" width="123" height="20"/>
+					<box leftPadding="0" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{SOMA_VALOR_GRUPO}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="c75e802b-ae7a-45c9-9c76-0589abcbfc13" mode="Transparent" x="0" y="2" width="432" height="20"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Valor Total (R$):]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3ee9985e-8452-4366-962f-92727d4dd974" mode="Transparent" x="0" y="0" width="555" height="45"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório Taxas Portuárias - Consolidado Mensal]]></text>
+			</staticText>
+			<image onErrorType="Icon">
+				<reportElement uuid="88388ee7-5a46-425e-9e7b-146da76321e5" mode="Transparent" x="0" y="7" width="85" height="48"/>
+				<imageExpression><![CDATA[$P{IMAGEM_PETROBRAS}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="82600a94-67ae-4d52-bb3f-0260dbd97e43" mode="Transparent" x="0" y="60" width="45" height="32"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Agência:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="a76db580-d103-4017-849a-3066af512575" mode="Transparent" x="45" y="60" width="133" height="32"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{FILTRO}.getAgencia()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f37ab783-3328-4fe2-ab73-9e4cc854acf5" mode="Transparent" x="178" y="60" width="53" height="32"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Porto:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fe623785-9f8c-4eb7-9fb3-812777e2dd86" mode="Transparent" x="231" y="60" width="181" height="32"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{FILTRO}.getPorto()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MM/yyyy">
+				<reportElement uuid="2107be8e-a8c7-4927-8810-2aaa36f1811b" mode="Transparent" x="484" y="60" width="71" height="32"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{FILTRO}.getDataPagamentoInicial()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7474faf6-c09c-446b-be9f-7834e7f01546" mode="Transparent" x="412" y="60" width="72" height="32"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Período:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="b9c13d28-082c-4ae6-94e1-670cc245087c" mode="Opaque" x="0" y="92" width="555" height="1"/>
+			</line>
+			<image onErrorType="Icon">
+				<reportElement uuid="88388ee7-5a46-425e-9e7b-146da76321e5" mode="Transparent" x="495" y="0" width="59" height="59"/>
+				<imageExpression><![CDATA[$P{IMAGEM_NP1}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement uuid="107baedd-4740-4862-9221-73894fe2f7d3" mode="Transparent" x="0" y="0" width="432" height="20"/>
+				<box leftPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoTaxa}.toString()]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement uuid="a47d9962-f651-4a23-8889-a75f6424054c" mode="Transparent" x="432" y="0" width="123" height="20"/>
+				<box leftPadding="0" rightPadding="2">
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="24">
+			<textField>
+				<reportElement uuid="55c76fee-9818-42b7-b85d-d45c9f3723a3" mode="Transparent" x="220" y="0" width="294" height="23"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pag. "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="31d8b5cc-3ef2-41e4-8f6d-865a0c1c73d5" mode="Transparent" x="514" y="0" width="40" height="23"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c1507d6d-eaac-4ca9-8731-e5dbd25c16be" mode="Transparent" x="0" y="0" width="99" height="23"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data de Impressão:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH:mm">
+				<reportElement uuid="345fcea0-dc1a-45f4-97fd-98114c29c09d" mode="Transparent" x="99" y="0" width="121" height="23"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{DATA_ATUAL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="49dae11a-abbc-46c0-91e1-5311b87f534d" mode="Transparent" x="355" y="3" width="110" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Total Geral (R$):]]></text>
+			</staticText>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="eaf01273-e856-4cba-b935-54ff403025e2" mode="Transparent" x="465" y="3" width="90" height="20"/>
+				<box leftPadding="0" rightPadding="2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SOMA_VALOR_GERAL}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="bcc5b378-2caf-408c-825a-427caffba005" mode="Opaque" x="0" y="1" width="555" height="1"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

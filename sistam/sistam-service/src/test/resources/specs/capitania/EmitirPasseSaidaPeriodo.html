@@ -1,0 +1,77 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <h1>Emitir Formulário de Passe de Saída por Período</h1>
+
+        <br>
+            Como <b>agente marítimo</b>, pretendo emitir o formulário de Passe de Saída por Período de uma viagem de uma embarcação para dar informações para a capitania.
+        </br><br>  O formulário de Passe de Saída por Período deve conter as informações: Local, processo de despacho, DUV, nome da embarcação, bandeira, nome do comandante(saída), válido até, local e data. 
+        </br>
+            
+        <br><br> O formulário será exibido com alguns campos em branco:processo de despacho, válido até.</br></br>
+    
+        <br>O formulário será emitido respeitando as regras abaixo:</br>
+        
+        <br></br>
+                     
+        
+       
+            <b>Regras:</b>
+            <ul>
+                Para emitir o formulário de Passe de Saída por Período é necessário que estejam preenchidas obrigatoriamente as informações de nome do comandante de saída e o local (órgão do despacho).
+               Se o <b>agente marítimo</b> não preencher alguma informação obrigatória, é exibida mensagem informando sobre a necessidade do preenchimento.
+               
+            </ul>
+      
+ 
+     
+
+            <div class="square">
+
+
+                <h3>Exemplo 1</h3>
+               
+                       
+             <ul>
+                Seja a viagem DF 99 da embarcação ZUMBI DOS PALMARES.  
+                Se o <b>agente marítimo</b> não preencher o nome do comandante de saída para essa viagem, o sistema emitirá a mensagem: 
+                “Informe o comandante de saída.”
+                <br><br></br></br>
+                Para cada informação obrigatória não preenchida, o sistema emitirá mensagem especificando qual precisa ser informada.
+                </ul>
+            
+             </div>
+            
+            <ul>     
+                       
+            O <b> agente marítimo</b> tem a opção de informar uma data específica para gerar o formulário. Caso não deseje informar uma data específica, o sistema emitirá o formulário com a data atual.
+               
+            </ul>
+            <div class="square">
+                <h3>Exemplo 2</h3>
+                <ul>
+                 Hoje, é 04/11/2015. Se o <b>agente marítimo</b> desejar emitir o formulário de passe de saída por período da  viagem DF 99 da embarcação ZUMBI DOS PALMARES informando a data 03/11/2015, o formulário será impresso com a data 03/11/2015.  
+                               
+                </ul>
+            </div>
+
+
+            <div class="square">
+
+                <h3>Exemplo 3</h3>
+                <ul>
+                             
+                Hoje, é 04/11/2015. Se o <b>agente marítimo</b> desejar emitir o formulário de passe de saída por período da viagem DF 99 da embarcação ZUMBI DOS PALMARES sem preencher uma data específica, o formulário será impresso com a data 04/11/2015.  
+
+                </ul>
+
+            </div>
+      
+
+    </body>
+</html>

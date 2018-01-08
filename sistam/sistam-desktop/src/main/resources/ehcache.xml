@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd" updateCheck="false" dynamicConfig="false">
+    <cache name="objetos" 
+           eternal="true" 
+           overflowToDisk="false"
+           maxElementsInMemory="100" 
+           maxElementsOnDisk="0"/>
+</ehcache>

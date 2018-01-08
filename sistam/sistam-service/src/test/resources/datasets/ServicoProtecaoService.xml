@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="STAM">
+
+    <AGENCIA  AGEN_SQ_AGENCIA="1"
+              AGEN_NM_AGENCIA="Salvador"
+              AGEN_SG_AGENCIA="SAL"
+              AGEN_TX_ENDERECO="Av. Antônio Carlos Magalhães, 1113   Sala 204 - Ed.  Ademar de Queiroz - Pituba - 41825-903" 
+              AGEN_TX_TELEFONE="7133483441" 
+              AGEN_TX_EMAIL="agsalvador@petrobras.com.br" 
+              AGEN_TX_CIDADE="SALVADOR"
+              AGEN_CD_ESTADO="BA" 
+              AGEN_CD_TIMEZONE="America/Bahia"
+    />
+    
+    <AGENCIA  AGEN_SQ_AGENCIA="2"
+              AGEN_NM_AGENCIA="Fortaleza"
+              AGEN_SG_AGENCIA="FOR"
+              AGEN_TX_ENDERECO="Av. Leite Barbosa, s/n , 60180-420   MUCURIPE" 
+              AGEN_TX_TELEFONE="77-88776659" 
+              AGEN_TX_EMAIL="agfortaleza@petrobras.com.br" 
+              AGEN_TX_CIDADE="FORTALEZA"
+              AGEN_CD_ESTADO="CE" 
+              AGEN_CD_TIMEZONE="America/Fortaleza" 
+    />
+        
+    <EMPRESA_MARITIMA
+        EMMA_SQ_EMPRESA_MARITIMA="1"
+        EMMA_NR_CNPJ="333333"
+        EMMA_NM_RAZAO_SOCIAL="SISTAM RIO"
+        EMMA_TX_EMAIL="sistam@sistam.com"
+        EMMA_TX_NR_TELEFINE="71-11111111"
+        AGEN_SQ_AGENCIA="1"
+        EMMA_TX_CIDADE="Salvador"
+        EMMA_CD_ESTADO="BA" 
+    />
+    
+    <EMPRESA_SERVICO
+        EMSE_SQ_EMPRESA_SERVICO="1"
+        EMSE_IN_SERVICO="P"
+        EMSE_NM_SERVICO="SISTAM"
+        EMMA_SQ_EMPRESA_MARITIMA="1"
+    />    
+    
+    <EMBARCACAO  EMBA_CD_ID="0098"
+                 EMBA_IN_CLASSIFICACAO="1"
+                 EMBA_IN_TEM_HELIPORTO="N"
+                 EMBA_NM_COMPLETO="DEVON" 
+                 EMBA_NM_APELIDO="DEVON" 
+                 EMBA_TX_IMO="9454010" 
+                 EMBA_IN_TIPO_EMBARCACAO="N"
+                 PAIS_CD_IBGE="019"
+    />
+    
+    <PAIS 
+        PAIS_CD_IBGE="019"
+        PAIS_NM_COMPLETO="BRASIL"	
+    />
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="1"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="1"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="SALV" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+    />
+
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="2"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="2"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="SALV" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+    />
+
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="3"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2013" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="2"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2012-12-18"
+                   AGEC_CD_VIAGEM="014 ST"
+                   PORT_CD_ID="SALV" 
+                   AGEC_DT_INCLUSAO="2012-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+    />
+    
+    
+        
+    <PROTECAO_SERVICO
+        PRSE_SQ_PROTECAO="1"
+        PRSE_DT_SERVICO="2014-01-10"
+        PRSE_IN_ATENDIMENTO_SERVICO="1"
+        PRSE_TX_OBSERVACAO="Obsrvação 1"
+        AGEC_SQ_AGENCIAMENTO="1"
+    />
+    
+    <PROTECAO_SERVICO
+        PRSE_SQ_PROTECAO="2"
+        PRSE_DT_SERVICO="2014-01-10"
+        PRSE_IN_ATENDIMENTO_SERVICO="1"
+        PRSE_TX_OBSERVACAO="Obsrvação 1"
+        AGEC_SQ_AGENCIAMENTO="2"
+    />
+    
+    <PROTECAO_SERVICO
+        PRSE_SQ_PROTECAO="3"
+        PRSE_DT_SERVICO="2014-05-10"
+        PRSE_IN_ATENDIMENTO_SERVICO="1"
+        PRSE_TX_OBSERVACAO="Obsrvação 1"
+        AGEC_SQ_AGENCIAMENTO="2"
+    />
+
+    <PROTECAO_SERVICO
+        PRSE_SQ_PROTECAO="4"
+        PRSE_DT_SERVICO="2014-05-10"
+        PRSE_IN_ATENDIMENTO_SERVICO="2"
+        PRSE_TX_OBSERVACAO="Obsrvação 1"
+        AGEC_SQ_AGENCIAMENTO="1"
+    />
+    
+    <PROTECAO_SERVICO
+        PRSE_SQ_PROTECAO="5"
+        PRSE_DT_SERVICO="2014-05-10"
+        PRSE_IN_ATENDIMENTO_SERVICO="3"
+        PRSE_TX_OBSERVACAO="Obsrvação 1"
+        AGEC_SQ_AGENCIAMENTO="3"
+    />
+    
+    <PROTECAO_SERVICO
+        PRSE_SQ_PROTECAO="6"
+        PRSE_DT_SERVICO="2014-06-10"
+        PRSE_IN_ATENDIMENTO_SERVICO="3"
+        PRSE_TX_OBSERVACAO="Obsrvação 1"
+        AGEC_SQ_AGENCIAMENTO="3"
+    />
+        
+    <SERVICO_MEDICO_ODONTOLOGICO
+        PRSE_SQ_PROTECAO="1"
+        SEMO_NM_TRIPULANTE="Maria Lucia"
+    />
+    
+    <SERVICO_MEDICO_ODONTOLOGICO
+        PRSE_SQ_PROTECAO="2"
+        SEMO_NM_TRIPULANTE="João Luis"
+    />
+    
+    <SERVICO_MEDICO_ODONTOLOGICO
+        PRSE_SQ_PROTECAO="3"
+        SEMO_NM_TRIPULANTE="Pedro Lopes"        
+    />
+    
+    <SERVICO_HOSPEDAGEM
+        PRSE_SQ_PROTECAO="4"
+        EMSE_SQ_EMPRESA_SERVICO="1"
+        SEHO_DT_CHEGADA="2014-05-10"
+        SEHO_DT_SAIDA="2014-05-10"
+        SEHO_TX_AUTORIZACAO="teste"
+        
+    />
+
+    <SERVICO_TRANSPORTE
+        PRSE_SQ_PROTECAO="5"
+        SETR_DT_HORA_SERVICO="2014-05-10"
+        SETR_TX_ORIGEM="TESTE"
+        SETR_TX_DESTINO="teste"
+        SETR_TX_AUTORIZACAO="teste"
+        SETR_TX_VOO="teste"
+        SETR_IN_TIPO_TRANSPORTE="1"
+        EMSE_SQ_EMPRESA_SERVICO="1"
+        
+    />
+    
+    <SERVICO_ACESSO_PESSOA
+        PRSE_SQ_PROTECAO="6"
+        SEAP_IN_TIPO_SOLI_TRANSITO="A"
+        SEAP_IN_TIPO_ACESSO="A"
+        SEAP_IN_TIPO_CATEGORIA="P"
+        SEAP_IN_TIPO_NACIONALIDADE="B"
+        SEAP_IN_COMPANHIA_DOCAS="S"
+        SEAP_IN_TERMINAL="N"
+        SEAP_TX_EMPRESA_PROTECAO="Hotel Barra"
+        SEAP_NR_CNPJ="05864866000164"
+        SEAP_TX_NR_TELEFONE_EMPRESA="21423423423"
+    />
+    
+    <HOSPEDE
+        HOSP_SQ_HOSPEDE = "1"
+        HOSP_NM_HOSPEDE = "TESTE"
+        HOSP_TX_DOCUMENTO = "121212"
+        HOSP_TX_NR_CPF = "234234"
+        PRSE_SQ_PROTECAO = "4"
+        HOSP_IN_ATIVO = "S"
+    />
+    
+    <PASSAGEIRO
+        PASS_SQ_PASSAGEIRO = "1"
+        PASS_NM_PASSAGEIRO = "TESTE"
+        PASS_TX_DOCUMENTO = "121212"
+        PASS_TX_NR_CPF = "234234"
+        PRSE_SQ_PROTECAO = "5"
+        PASS_IN_ATIVO = "S"
+    />
+
+    <PESSOA
+        PESS_SQ_PESSOA="80"
+        PESS_NM_PESSOA="Joao"
+        PESS_CD_CPF="47008722338"
+    />
+    
+    <PESSOA_ACESSO
+        PEAC_SQ_PESSOA="1"
+        PEAC_NM_RESPONSAVEL="RESPONSAVEL PELA PESSOA"
+        PEAC_NR_VOLUME="1"
+        PEAC_TX_BAGAGEM="DESCRICAO DA BAGAGEM"
+        PEAC_IN_GERADO_PF="N"
+        PEAC_IN_GERADO_RF="N"
+        PEAC_IN_ATIVO="S"
+        PRSE_SQ_PROTECAO="6"
+        PEAC_NM_PESSOA="Joao"
+        PEAC_CD_CPF="47008722338"
+    />
+    
+    
+    <EMPRESA_PROTECAO
+        EMPR_SQ_EMPRESA_PROTECAO="1502"
+        EMPR_NR_CNPJ="05864866000164"
+        EMPR_NM_RAZAO_SOCIAL="Hotel Barra"
+        EMPR_TX_NR_TELEFONE="7199887755"
+        EMPR_TX_EMAIL="contato@hbarra.com.br"
+        EMPR_TX_CIDADE="Salvador"
+        EMPR_CD_ESTADO="BA"
+    />
+    
+    <EMPRESA_PROTECAO_SERVICO
+        EMPS_SQ_EMP_PROTECAO_SERVICO="9910"
+        EMPR_SQ_EMPRESA_PROTECAO="1502"
+        EMPS_IN_TIPO_SERVICO_PROTECAO="1"
+    />            
+    
+    
+    
+    <AGENCIAMENTO  AGEC_SQ_AGENCIAMENTO="20"
+                   AGEC_CD_AGENCIAMENTO="1"
+                   AGEC_NR_ANO_PROCESSO="2014" 
+                   EMBA_CD_ID="0098" 
+                   AGEC_IN_STATUS_EMBARCACAO="1" 
+                   AGEC_IN_SITUACAO_PROCESSO="2"
+                   AGEC_IN_EXCLUIDO="N"
+                   AGEN_SQ_AGENCIA="1"
+                   PORT_CD_ID_ORIGEM="SALV"
+                   AGEC_DT_ETA="2014-12-18"
+                   AGEC_CD_VIAGEM="018 ST"
+                   PORT_CD_ID="SALV" 
+                   AGEC_DT_INCLUSAO="2014-12-18" 
+                   AGEC_CD_CHAVE_CADASTRADOR="STAM" 
+                   AGEC_NM_CADASTRADOR="SISTAM" 
+    />
+    
+    <PROTECAO_SERVICO
+        PRSE_SQ_PROTECAO="20"
+        PRSE_DT_SERVICO="2014-03-11"
+        PRSE_IN_ATENDIMENTO_SERVICO="1"
+        PRSE_TX_OBSERVACAO="Obsrvação 1"
+        AGEC_SQ_AGENCIAMENTO="20"
+    />
+    
+    <SERVICO_SUPRIMENTO
+        PRSE_SQ_PROTECAO="20"
+        EMMA_SQ_EMPRESA_MARITIMA="1"
+        EMSE_SQ_EMPRESA_SERVICO="1"
+        SESU_DT_INICIO_OPERACAO="2014-03-10 10:05:00"
+        SESU_DT_FIM_OPERACAO="2014-03-30 12:10:00"
+        SESU_TX_CENTRO_CUSTO="Centro A"
+        SESU_TX_CENTRO_CUSTO_DO="Centro B"
+        SESU_TX_JUSTIFICATIVA_DO="Justificado"
+        SESU_VL_ANTERIOR_DO="10"
+        SESU_VL_HR_EXCEDENTE="20"
+        SESU_VL_OGMO="30"
+        SESU_VL_OGMO_DOBRA="40"
+        SESU_VL_OPER_PORTUARIO="50"
+        SESU_VL_TOTAL_MERCADORIAS="60"
+        SESU_VL_TOTAL_OP_PORTUARIA="70"
+        SESU_VL_TRANSP_MARITIMO="80"
+        SESU_VL_TRANSP_RODOVIARIO="90"
+    />
+
+    <SUPRIMENTO_TRANSITO
+        SUTR_SQ_SOLICITACAO="200"
+        PRSE_SQ_PROTECAO="20"
+        SUTR_IN_COMPANHIA_DOCAS="S"
+        SUTR_IN_TERMINAL="S"
+        SUTR_TX_TERMINAL="Transpetro"
+        SUTR_IN_FORMULARIO_GERADO="S"
+        SUTR_IN_TIPO_ACESSO="S"
+        SUTR_IN_TIPO_MATERIAL="M"
+    />
+    
+    <SUPRIMENTO_TRANSITO_EMPRESA
+        SUTE_SQ_EMPRESA="2001"
+        SUTR_SQ_SOLICITACAO="200"
+        SUTE_TX_EMPRESA="Hotel Barra"
+        SUTE_NR_CNPJ="05864866000164"
+        SUTE_QN_VOLUMES="10"
+        SUTE_TX_NOTA_FISCAL_GTRM="abc"
+        SUTE_VL_MERCADORIAS="15"
+        SUTE_TX_PESO_BRUTO="20 Kg"
+    />
+    
+    <PORTO_SIGO
+        PORT_CD_ID="SALV"
+        PORT_NM_COMPLETO="AGUIRRE"
+        PORT_NM_APELIDO="AGUIRRE"
+        PAIS_CD_IBGE="035"
+        PORT_NR_FUSO="-4"
+    />
+    
+</dataset>

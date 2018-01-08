@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioMovimentacaoEmbarcacaoResumido" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aedf103f-7feb-439e-a951-11ebc5edbf35">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="IMAGEM_PETROBRAS" class="java.net.URL"/>
+	<parameter name="AGENCIA" class="java.lang.String"/>
+	<parameter name="DATA_IMPRESSAO" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["J:\\SVN\\SISTAM\\trunk\\fontes\\sistam\\sistam-desktop\\src\\main\\jasperreports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AGENCIA_PORTO" class="java.lang.String"/>
+	<parameter name="IMAGEM_NP1" class="java.net.URL"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="naviosAtracados" class="java.util.List">
+		<fieldDescription><![CDATA[naviosAtracados]]></fieldDescription>
+	</field>
+	<field name="naviosCancelados" class="java.util.List">
+		<fieldDescription><![CDATA[naviosCancelados]]></fieldDescription>
+	</field>
+	<field name="naviosEsperados" class="java.util.List">
+		<fieldDescription><![CDATA[naviosEsperados]]></fieldDescription>
+	</field>
+	<field name="naviosFundeados" class="java.util.List">
+		<fieldDescription><![CDATA[naviosFundeados]]></fieldDescription>
+	</field>
+	<field name="naviosSaidos" class="java.util.List">
+		<fieldDescription><![CDATA[naviosSaidos]]></fieldDescription>
+	</field>
+	<field name="naviosDesviados" class="java.util.List">
+		<fieldDescription><![CDATA[naviosDesviados]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="78" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="badea29d-1580-4035-90bc-922f219436c1" mode="Transparent" x="0" y="0" width="555" height="43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório Resumido de Movimentações de Embarcações]]></text>
+			</staticText>
+			<image onErrorType="Icon">
+				<reportElement uuid="7df4cf99-39d7-440e-8728-03a481112f35" mode="Transparent" x="0" y="11" width="77" height="32"/>
+				<imageExpression><![CDATA[$P{IMAGEM_PETROBRAS}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="9ca26c63-f966-4f36-ae88-c610b8b4f5d0" mode="Transparent" x="1" y="56" width="45" height="13"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Agência:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8e77f7b8-6d99-42e5-8ab2-18f5d06146d3" mode="Opaque" x="1" y="74" width="555" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6843a140-36aa-4f25-9c28-58ab16a1fe9d" mode="Transparent" x="46" y="56" width="133" height="13"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AGENCIA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a0ee9019-830f-418d-a703-0704f71f3d74" mode="Transparent" x="268" y="56" width="133" height="13"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AGENCIA_PORTO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8c61ad20-b6d4-4e21-a0f7-60e0f58ad83d" mode="Transparent" x="223" y="56" width="45" height="13"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Porto:]]></text>
+			</staticText>
+			<image onErrorType="Icon">
+				<reportElement uuid="88388ee7-5a46-425e-9e7b-146da76321e5" mode="Transparent" x="495" y="0" width="59" height="59"/>
+				<imageExpression><![CDATA[$P{IMAGEM_NP1}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="129" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="86e02f35-32cb-4c3e-96fd-2f68aaca51ad" mode="Transparent" x="0" y="1" width="554" height="21">
+					<printWhenExpression><![CDATA[!$F{naviosAtracados}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="TIPO_AGENCIAMENTO">
+					<subreportParameterExpression><![CDATA["CARGA"]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{naviosAtracados})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioMovimentacaoEmbarcacaoAtracadosResmido.jasper")]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="77aa0977-d583-4c82-b26b-eac49c466ed0" positionType="Float" mode="Transparent" x="0" y="22" width="554" height="21">
+					<printWhenExpression><![CDATA[!$F{naviosFundeados}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="TIPO_AGENCIAMENTO">
+					<subreportParameterExpression><![CDATA["PROTEÇÃO"]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{naviosFundeados})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioMovimentacaoEmbarcacaoFundeadosResumido.jasper")]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="83988ef8-24b8-4190-9ae6-5a6d54f81b4c" positionType="Float" mode="Transparent" x="0" y="43" width="554" height="21">
+					<printWhenExpression><![CDATA[!$F{naviosEsperados}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{naviosEsperados})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioMovimentacaoEmbarcacaoEsperadosResumido.jasper")]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="3cb5d4d6-7507-4bd1-a6c1-e4cc9124476e" positionType="Float" mode="Transparent" x="0" y="64" width="554" height="21">
+					<printWhenExpression><![CDATA[!$F{naviosSaidos}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="STATUS_EMBARCACAO">
+					<subreportParameterExpression><![CDATA["SAÍDOS"]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{naviosSaidos})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioMovimentacaoEmbarcacaoSaidosResumido.jasper")]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="a34198e2-3710-4fee-9c8d-0d24b112aae4" positionType="Float" mode="Transparent" x="0" y="85" width="554" height="21">
+					<printWhenExpression><![CDATA[!$F{naviosDesviados}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="STATUS_EMBARCACAO">
+					<subreportParameterExpression><![CDATA["DESVIADOS"]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{naviosDesviados})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioMovimentacaoEmbarcacaoSaidosResumido.jasper")]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="beca49e9-407c-483c-85aa-af17cdce1387" positionType="Float" mode="Transparent" x="0" y="106" width="554" height="21">
+					<printWhenExpression><![CDATA[!$F{naviosCancelados}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{naviosCancelados})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioMovimentacaoEmbarcacaoCanceladosResumidos.jasper")]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="51">
+			<textField>
+				<reportElement uuid="5500a3df-0eac-4d3d-a9e5-4206404477b1" mode="Transparent" x="221" y="28" width="294" height="23"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pag. "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="604ee9e3-8f23-4cb7-be72-cdffb887b399" mode="Transparent" x="515" y="28" width="40" height="23"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="23ec7208-8c02-45aa-9a11-a87cd829cc0c" mode="Transparent" x="1" y="28" width="99" height="23"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data de Impressão:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH:mm">
+				<reportElement uuid="64ac8f66-92f4-4123-9a71-d60da10037b6" mode="Transparent" x="100" y="28" width="121" height="23"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{DATA_IMPRESSAO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

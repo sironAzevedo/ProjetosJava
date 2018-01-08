@@ -1,0 +1,135 @@
+body {
+    background-color: #005197;
+}
+
+header{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003562', endColorstr='#005197')!important; /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#003562), to(#005197))!important; /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #003562,  #005197)!important; /* for firefox 3.6+ */
+}
+
+
+table caption{
+    border:1px solid #005197;    
+}
+
+table thead th {
+border: 1px solid #005197;
+}
+
+table tbody tr td {
+        color: black;
+        border:1px solid #005197;
+}
+
+section.paines table caption {
+    background-color:#fff;
+}
+
+
+.texto {
+    color: white;
+}
+
+#esperados table thead th{
+    background-color:#b9cde5;
+    color:#000;
+}
+
+#esperados table tbody tr td {
+    color:#000;
+}
+
+#esperados table tbody tr:nth-child(odd) td {
+    background-color:#e9edf4;
+}
+
+#esperados table tbody tr:nth-child(even) td {
+    background-color:#cadcf2;
+}
+
+
+#fundeados table thead th{
+    background-color:#d7e4bd;
+    color:#000;
+    
+}
+
+#fundeados table tbody tr td {
+    color:#000;
+}
+
+#fundeados table tbody tr:nth-child(odd) td {
+    background-color:#eff3ea;
+    
+}
+
+#fundeados table tbody tr:nth-child(even) td {
+    background-color:#e3f2c3;
+    
+}
+
+
+#atracados table thead th{
+    background-color:#fcd5b5;
+    color:#000;
+}
+
+#atracados table tbody tr td {
+    color:#000;
+}
+
+#atracados table tbody tr:nth-child(odd) td {
+    background-color:#fef1e6;
+}
+
+#atracados table tbody tr:nth-child(even) td {
+    background-color:#f7ddc8;
+}
+
+
+#saidos table thead th{
+    background-color:#ffe9ad;
+    color:#000;
+}
+
+#saidos table tbody tr td {
+    color:#000;
+}
+
+#saidos table tbody tr:nth-child(odd) td {
+    background-color:#fffaee;
+}
+
+#saidos table tbody tr:nth-child(even) td {
+    background-color:#faebc0;
+}
+
+
+#desviados table thead th{
+    background-color:#cebedf;
+    color:#000;
+}
+
+#desviados table tbody tr td {
+    color:#000;
+}
+
+#desviados table tbody tr:nth-child(odd) td {
+    background-color:#f6edff;
+}
+
+#desviados table tbody tr:nth-child(even) td {
+    background-color:#e2d5f0;
+}
+
+/*
+#atracados table tbody tr.pp td:nth-child(1), 
+#saidos table tbody tr.pp td:nth-child(1),
+#desviados table tbody tr.pp td:nth-child(1),
+*/
+#fundeados table tbody tr.pp td:nth-child(1),
+#esperados table tbody tr.pp td:nth-child(1){
+    color:#f00;
+    font-weight:bold;
+}

@@ -1,0 +1,1054 @@
+# Descri\u00e7\u00e3o de m\u00e9todos de neg\u00f3cio
+SistamService.confirmarLogon=Carregando dados de autentica\u00e7\u00e3o...
+SistamService.buscarDadosDeAutenticacao=Carregando dados de autentica\u00e7\u00e3o...
+SistamService.buscarPontoOperacionalPorPorto=Buscando pontos operacionais...
+SistamService.buscarPontoAtracacaoPorPontoOperacional=Buscando pontos de atraca\u00e7\u00e3o...
+
+SistamService.buscarPortosPorId=Buscando dados do porto...
+SistamService.buscarPortos=Buscando portos...
+SistamService.buscarPorto=Buscando porto...
+SistamService.salvarPortoComplemento=Salvando informa\u00e7\u00e3o complementar do porto...
+SistamService.salvarPortoComplemento.success=Informa\u00e7\u00e3o complementar salva com sucesso!
+SistamService.buscarPortoComplemento=Buscando informa\u00e7\u00f5es complementares do porto...
+SistamService.buscarPortosNacionaisComComplementos=Buscando porto nacionais...
+SistamService.excluirPortoComplemento=Excluindo informa\u00e7\u00e3o complementar...
+SistamService.excluirPortoComplemento.success=Informa\u00e7\u00e3o complementar exclu\u00edda com sucesso!
+SistamService.buscarPierPorPontoOperacional=Buscando piers...
+SistamService.buscarPontosAtracacaolPorPorto=Buscando pontos de atraca\u00e7\u00e3o...
+SistamService.buscarPontoOperacionalPorId=Buscando ponto operacional...
+SistamService.buscarOperacoesPorAgenciamento=Buscando opera\u00e7\u00f5es do agenciamento...
+SistamService.buscarManobrasPorAgenciamento=Buscando manobras do agenciamento...
+SistamService.buscarOperacaoPorId=Buscando dados da opera\u00e7\u00e3o...
+SistamService.buscarPendenciasDoAgenciamento=Obtendo pend\u00eancias do agenciamento...
+SistamService.buscarAgenciamentoPorId=Obtendo dados do agenciamento...
+SistamService.buscarAgenciamentoParaDesvioDeRota=Buscando agenciamento...
+SistamService.buscarUltimasEscalasDaEmbarcacao=Buscando escalas...
+
+SistamService.criarNovoAgenciamento=Criando novo agenciamento...
+SistamService.criarNovoAgenciamento.success=Agenciamento criado com sucesso!
+SistamService.criarPendencia=Criando pend\u00eancia...
+SistamService.criarPendencia.success=Pend\u00eancia criada com sucesso!
+
+SistamService.buscarAgenciamentosPorFiltro=Buscando agenciamentos...
+SistamService.obterUsuariosPorAgenciaEPapel=Buscando usu\u00e1rio por agencia e papel...
+
+SistamService.programarManobra=Programando manobra...
+
+#Agenciamento Service
+SistamService.verificarSeAgenciamentoJaFoiCriado=Verificando agenciamento...
+SistamService.buscarCancelamentoDoAgenciamento=Buscando cancelamento...
+SistamService.buscarCancelamentoDoAgenciamento=Buscando cancelamento...
+SistamService.cancelarAgenciamento=Cancelando agenciamento...
+SistamService.cancelarAgenciamento.success=Agenciamento cancelado com sucesso!
+SistamService.buscarDadosRelatorioMovimentacaoEmbarcacao=Buscando dados para relat\u00f3rio...
+SistamService.buscarAgenciamentosPorFiltroRelatorioTimesheet=Buscando agenciamentos para relat\u00f3rio...
+SistamService.gerarArquivosZipComPdfsAgrupadosPorStatusEmbarcacao=Gerando PDFs por situa\u00e7\u00e3o da embarca\u00e7\u00e3o para relat\u00f3rio...
+
+#Pend\u00eancias Service
+SistamService.resolverPendenciaManual=Resolvendo pend\u00eancias...
+SistamService.resolverPendenciasDoAgenciamento.success=Pend\u00eancias resolvidas com sucesso!
+SistamService.excluirPendencia=Excluindo pend\u00eancia...
+SistamService.excluirPendencia.success=Pend\u00eancia exclu\u00edda com sucesso!
+
+
+#Certificados Service
+SistamService.buscarCertificadoValidoPorTipo=Buscando certificados v\u00e1lidos...
+SistamService.salvarCertificado=Salvando certificado...
+SistamService.salvarCertificados=Salvando certificados...
+
+#Desvio Service
+SistamService.salvarDesvio=Salvando desvio...
+SistamService.salvarDesvio.success=Desvio salvo com sucesso!
+
+#Anexos Service
+SistamService.salvarAnexos=Salvando anexos...
+SistamService.salvarAnexos.success=Anexos salvos com sucesso!
+SistamService.buscarArquivoDoAnexo=Buscando arquivo...
+SistamService.excluirAnexo=Excluindo anexo...
+SistamService.excluirAnexo.success=Anexo exclu\u00eddo com sucesso!
+
+#Manobras Service
+SistamService.buscarManobrasParaRelatorio=Buscando manobras...
+SistamService.salvarManobra=Salvando manobra...
+SistamService.movimentarManobra=Movimentando manobra...
+SistamService.movimentarManobra.success=Manobra movimentada com sucesso!
+SistamService.salvarServicoManobra=Salvando servi\u00e7o...
+SistamService.salvarServicoManobra.success=Servi\u00e7o salvo com sucesso!
+SistamService.registrarManobra=Registrando manobra...
+SistamService.registrarManobra.success=Manobra registrada com sucesso!
+SistamService.excluirServicoManobra=Excluindo servi\u00e7o da manobra...
+SistamService.excluirServicoManobra.success=Servi\u00e7o exclu\u00eddo com sucesso!
+SistamService.solicitarServicoManobra=Enviando solicita\u00e7\u00e3o de servi\u00e7o de manobra...
+SistamService.solicitarServicoManobra.success=Solicita\u00e7\u00f5es enviadas com sucesso!
+SistamService.buscarServicoManobrasPorId=Buscando servi\u00e7o...
+SistamService.buscarManobrasPorId=Buscando manobra...
+SistamService.buscarManobrasEncerradasOuRegistradasOuPreRegistradasPorAgenciamento=Buscando manobras do agenciamento...
+SistamService.salvarResponsavel=Salvando respons\u00e1vel...
+SistamService.salvarResponsavel.success=Respons\u00e1vel salvo com sucesso!
+SistamService.buscarServicoResponsavelPorId=Buscando respons\u00e1vel...
+SistamService.excluirResponsavel=Excluindo respons\u00e1vel...
+SistamService.excluirResponsavel.success=Respons\u00e1vel exclu\u00eddo com sucesso!
+SistamService.cancelarManobraForaDoProazo=Cancelando manobra...
+SistamService.cancelarManobraDentroPrazo=Cancelando manobra...
+SistamService.buscarServicosPorEmpresaETipo=Buscando servi\u00e7os...
+SistamService.encerrarManobra=Encerrando manobra...
+SistamService.encerrarManobra.success=Manobra encerrada com sucesso!
+SistamService.validarSalvarParada=Validando a nova parada da manobra...
+SistamService.excluirParada=Excluindo a parada da manobra...
+SistamService.excluirParada.success=Parada exclu\u00edda com sucesso!
+SistamService.salvarParada=Salvando a parada da manobra...
+SistamService.salvarParada.success=Parada salva com sucesso!
+
+#Notes Web Service
+SistamService.enviarEmailComEmbarcacoesPorStatusParaRelatorioTimesheet=Enviando e-mail com embarca\u00e7\u00f5es do agenciamento para relat\u00f3rio...
+SistamService.enviarEmailComEmbarcacoesPorStatusParaRelatorioTimesheet.success=E-mail do Relat\u00f3rio Timesheet enviado com sucesso!
+SistamService.enviarEmailComEmbarcacoesPorFrotaParaRelatorioTimesheet=Enviando e-mail com embarca\u00e7\u00f5es do agenciamento para relat\u00f3rio...
+SistamService.enviarEmailComEmbarcacoesPorFrotaParaRelatorioTimesheet.success=E-mail do Relat\u00f3rio Timesheet enviado com sucesso!
+SistamService.enviarEmailParaRelatorioTimesheet=Enviando e-mail com embarca\u00e7\u00f5es do agenciamento para relat\u00f3rio...
+SistamService.enviarEmailParaRelatorioTimesheet.success=E-mail do Relat\u00f3rio Timesheet enviado com sucesso!
+SistamService.enviarEmailSolicitacaoHospedagem=Enviando e-mail de Solicita\u00e7\u00e3o de Hospedagem...
+SistamService.enviarEmailSolicitacaoHospedagem.success=E-mail Solicita\u00e7\u00e3o de Hospedagem enviada com sucesso!
+SistamService.enviarFormularioSolicitacaoTransporte=Enviando e-mail de Solicita\u00e7\u00e3o de Transporte...
+SistamService.enviarFormularioSolicitacaoTransporte.success=E-mail Solicita\u00e7\u00e3o de Transporte enviada com sucesso!
+
+#Operacao Service
+SistamService.salvarOperacao=Salvando opera\u00e7\u00e3o...
+SistamService.salvarOperacao.success=Opera\u00e7\u00e3o salva com sucesso!
+SistamService.buscarOperacoesPorAgenciamento=Buscando opera\u00e7\u00f5es...
+SistamService.buscarOperacaoPorId=Buscando opera\u00e7\u00e3o...
+SistamService.salvarDocumentacaoOperacao=Salvando documenta\u00e7\u00e3o da opera\u00e7\u00e3o...
+SistamService.salvarDocumentacaoOperacao.success=Documenta\u00e7\u00e3o da opera\u00e7\u00e3o salva com sucesso!
+SistamService.buscarDocumentacaoOperacaoPorAgenciamento=Buscando documenta\u00e7\u00e3o da opera\u00e7\u00e3o...
+SistamService.buscarDocumentacaoOperacaoPorId=Buscando documenta\u00e7\u00e3o da opera\u00e7\u00e3o...
+SistamService.buscarOperacoesPorAgenciamentoETipo=Buscando produtos para documenta\u00e7\u00e3o...
+SistamService.salvarDocumentacaoProduto=Salvando produto da documenta\u00e7\u00e3o...
+SistamService.salvarDocumentacaoProduto.success=Produto da documenta\u00e7\u00e3o salva com sucesso!
+SistamService.excluirDocumentacaoProduto=Excluindo produto da documenta\u00e7\u00e3o...
+SistamService.excluirDocumentacaoProduto.success=Produto da documenta\u00e7\u00e3o exclu\u00eddo com sucesso!
+SistamService.excluirOperacao=Excluindo produto da opera\u00e7\u00e3o...
+SistamService.excluirOperacao.success=Produto da opera\u00e7\u00e3o exclu\u00eddo com sucesso!
+SistamService.excluirDocumentacaoOperacao=Excluindo documenta\u00e7\u00e3o...
+SistamService.excluirDocumentacaoOperacao.success=Documenta\u00e7\u00e3o exclu\u00edda com sucesso!
+SistamService.buscarDocumentosParaRelatorioSiscomex=Buscando opera\u00e7\u00f5es...
+
+SistamService.salvarDocumentacaoLongoCurso=Salvando documenta\u00e7\u00e3o...
+SistamService.salvarDocumentacaoLongoCurso.success=Documenta\u00e7\u00e3o salva com sucesso!
+SistamService.excluirDocumentacaoLongoCurso=Excluindo documenta\u00e7\u00e3o...
+SistamService.excluirDocumentacaoLongoCurso.success=Documenta\u00e7\u00e3o exclu\u00edda com sucesso!
+SistamService.buscarDocumentacoesLongoCursoPorOperacao=Buscando documenta\u00e7\u00f5es...
+
+
+#Common Service
+SistamService.salvarOperacaoProduto.buscarServicosPorEmpresaETipo=Buscando servi\u00e7os...
+
+SistamService.salvarAgenciamento=Salvando agenciamento...
+SistamService.salvarEmbarcacao=Salvando embarca\u00e7\u00e3o...
+SistamService.salvarEmbarcacao.success=Embarca\u00e7\u00e3o salva com sucesso!
+SistamService.solicitarApoioManobra=Solicitando apoio...
+SistamService.buscarEmpresasMaritimasPorAgenciaTipoServico=Buscando empresas...
+
+#Taxas Service
+SistamService.salvarTaxa=Salvando taxa...
+SistamService.salvarTaxa.success=Taxa salva com sucesso!
+SistamService.excluirTaxa=Excluindo taxa...
+SistamService.excluirTaxa.success=Taxa exclu\u00edda com sucesso!
+SistamService.buscarTaxasValorAcumulado=Buscando valores acumulados...
+SistamService.buscarTaxasOrdenadasPorTipo=Buscando taxas...
+SistamService.buscarTaxaPorAgenciamentoETipo=Buscando taxas...
+SistamService.buscarTaxasPorFiltro=Buscando taxas...
+
+
+#Documento Service
+SistamService.excluirDocumento=Excluindo documento...
+SistamService.excluirDocumento.success=Documento exclu\u00eddo com sucesso!
+SistamService.salvarDocumento=Salvando documento...
+SistamService.salvarDocumento.success=Documento salvo com sucesso!
+SistamService.registrarEmissaoDeDocumento=Registrando emiss\u00e3o do documento...
+SistamService.registrarEmissaoDeDocumentoDaManobra=Registrando emiss\u00e3o do documento...
+SistamService.buscarDocumentoDoAgenciamentoPorTipo=Buscando documentos...
+SistamService.buscarDocumentosDoAgenciamento=Buscando documentos...
+SistamService.buscarDocumentoAnexoUnicoPorAgenciamento=Buscando documentos...
+SistamService.buscarDocumentoNaoProtocolado=Buscando documentos...
+SistamService.buscarDocumentoPorTipoAgenciamentoCtacPortoDestino=Buscando documentos...
+SistamService.informarProtocoloDoDocumento=Informando protocolo...
+SistamService.informarProtocoloDoDocumento.success=Protocolo informado com sucesso!
+SistamService.buscarDocumentoPorId=Buscando documento...
+
+#Visita Service
+SistamService.buscarVisitasParaRelatorio=Buscando visitas...
+SistamService.buscarTransportesPorFiltroRelatorio=Buscando transportes utilizados nas visitas...
+SistamService.buscarVisitasDoAgenciamento=Buscando visitas...
+SistamService.salvarVisita=Salvando visita...
+SistamService.salvarVisita.success=Visita salva com sucesso!
+SistamService.excluirVisita=Excluindo visita...
+SistamService.excluirVisita.success=Visita exclu\u00edda com sucesso!
+SistamService.validarSalvarTransporte=Validando novo transporte...
+SistamService.salvarTransporte=Salvando transporte...
+SistamService.salvarTransporte.success=Transporte salvo com sucesso!
+SistamService.excluirTransporte=Excluindo transporte...
+SistamService.excluirTransporte.success=Transporte exclu\u00eddo com sucesso!
+
+#Servi\u00e7o de Prote\u00e7\u00e3o Service
+SistamService.buscarServicoSuprimentoTransitoEmpresaParaRelatorio=Buscando servi\u00e7o de suprimento as embarca\u00e7\u00f5es...
+SistamService.instanciarPessoasDaEmpresa=Buscando pessoas da empresa...
+SistamService.salvarServicoProtecao=Salvando servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.salvarServicoProtecao.success=Servi\u00e7o de prote\u00e7\u00e3o salvo com sucesso!
+SistamService.salvarServicoExecutado=Salvando servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.salvarServicoExecutado.success=Servi\u00e7o de prote\u00e7\u00e3o salvo com sucesso!
+SistamService.buscarServicosProtecaoDoAgenciamento=Buscando servi\u00e7os de prote\u00e7\u00e3o...
+SistamService.excluirServicosProtecao=Excluindo servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.excluirServicosProtecao.success=Servi\u00e7o de prote\u00e7\u00e3o exclu\u00eddo com sucesso!
+
+#Servi\u00e7o M\u00e9dico Odontol\u00f3gico
+SistamService.salvarServicoMedicoOdontologico=Salvando servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.salvarServicoMedicoOdontologico.success=Servi\u00e7o de prote\u00e7\u00e3o salvo com sucesso!
+SistamService.excluirServicoMedicoOdontologico=Excluindo servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.excluirServicoMedicoOdontologico.success=Servi\u00e7o de prote\u00e7\u00e3o exclu\u00eddo com sucesso!
+
+#Servi\u00e7o Transporte
+SistamService.salvarServicoTransporte=Salvando servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.salvarServicoTransporte.success=Servi\u00e7o de prote\u00e7\u00e3o salvo com sucesso!
+SistamService.buscarServicoTransporte=Buscando servi\u00e7os de prote\u00e7\u00e3o...
+SistamService.excluirServicoTransporte=Excluindo servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.excluirServicoTransporte.success=Servi\u00e7o de prote\u00e7\u00e3o exclu\u00eddo com sucesso!
+
+#Empresa mar\u00edtima Service
+SistamService.salvarEmpresa=Salvando empresa...
+SistamService.salvarEmpresa.success=Empresa salva com sucesso!
+SistamService.salvarServicoDaEmpresa=Salvando servi\u00e7o...
+SistamService.salvarServicoDaEmpresa.success=Servi\u00e7o salvo com sucesso!
+SistamService.excluirServicoDaEmpresa=Excluindo servi\u00e7o...
+SistamService.excluirServicoDaEmpresa.success=Servi\u00e7o exclu\u00eddo com sucesso!
+SistamService.validarSalvarServicoDaEmpresa=Validando servi\u00e7o...
+SistamService.buscarEmpresasPorFiltro=Buscando empresas...
+SistamService.excluirEmpresa=Excluindo empresa...
+SistamService.excluirEmpresa.success=Empresa exclu\u00edda com sucesso!
+
+#Porto Service
+SistamService.buscarPontoAtracacaoPorAgencia=Buscando pontos de atraca\u00e7\u00e3o...
+SistamService.buscarPortosPorAgencia=Buscando portos...
+SistamService.salvarPontoAtracacao=Salvando ponto de atraca\u00e7\u00e3o...
+SistamService.salvarPontoAtracacao.success=Ponto de atraca\u00e7\u00e3o salvo com sucesso.
+SistamService.buscarAgenciasPortosPorAgencia=Buscando portos...
+SistamService.salvarAgenciaPorto=Salvando porto...
+SistamService.salvarAgenciaPorto.success=Porto salvo com sucesso!
+SistamService.salvarPortoCOmplemento=Salvando informa\u00e7\u00f5es do porto...
+SistamService.salvarPortoCOmplemento.success=Informa\u00e7\u00f5es salvas com sucesso!
+SistamService.buscarPortosComplementosPorPorto=Buscando informa\u00e7\u00f5es do porto...
+SistamService.buscarPortosComplemento=Buscando informa\u00e7\u00f5es dos portos...
+
+#Agencia Service
+SistamService.uscarOrgaosDespachoPorAgencia=Buscando \u00f3rg\u00e3os da ag\u00eancia...
+SistamService.salvarAgenciaOrgaoDespacho=Salvando \u00f3rg\u00e3o da ag\u00eancia...
+SistamService.salvarAgenciaOrgaoDespacho.success=\u00d3rg\u00e3o salvo com sucesso!
+SistamService.excluirAgenciaOrgaoDespacho=Excluindo \u00f3rg\u00e3o da ag\u00eancia...
+SistamService.excluirAgenciaOrgaoDespacho.success=\u00d3rg\u00e3o da ag\u00eancia exclu\u00eddo com sucesso!
+SistamService.salvarDestinatario=Salvando destinat\u00e1rio...
+SistamService.salvarDestinatario.success=Destinat\u00e1rio salvo com sucesso!
+SistamService.buscarDestinatariosDaAgencia=Buscando destinat\u00e1rios...
+SistamService.excluirDestinatario=Excluindo destinat\u00e1rio...
+SistamService.excluirDestinatario.success=Destinat\u00e1rio exclu\u00eddo com sucesso!
+
+#Embarcacao Service
+SistamService.buscarEmbarcacoesPorFiltro=Buscando embarca\u00e7\u00f5es...
+
+#Datas
+data.inicio.nao.deve.ser.posterior.a.data.fim=A data inicial n\u00e3o deve ser posterior a data final.
+data.fim.nao.deve.ser.anterior.a.data.inicio=A data final n\u00e3o deve ser anterior a data inicial.
+
+
+# Mensagens do sistema
+logon.seguro=Autenticando no controle de acesso...
+
+usuario.senha.rejeitados=Nome de usu\u00e1rio ou senha inv\u00e1lidos.
+
+# Mensagens dos componentes
+SistamLookupTextfield.historico.excluido=Registro n\u00e3o encontrado - Verifique se ele foi exclu\u00eddo da aplica\u00e7\u00e3o.
+PortoInput.nenhumPortoEncontrado=Nenhum porto encontrado!
+PaisInput.nenhumPaisEncontrado=Nenhum pa\u00eds encontrado!
+AgenciaInput.nenhumaAgenciaEncontrada=Nenhuma ag\u00eancia encontrada!
+consulta.lookup=Informe, pelo menos, 3 caracteres para prosseguir a consulta.
+consulta.lookup.porto.pais=Informe, pelo menos, 3 caracteres ou o selecione um Pa\u00eds para prosseguir a consulta.
+
+EmbarcacaoInput.nenhumaEmbarcacaoEncontrada=Nenhuma embarca\u00e7\u00e3o encontrada!
+
+TimeZoneInput.nenhum.timezone.encontrado=Nenhum TimeZone encontrado!
+
+agenciamento.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar agenciamento.
+agenciamento.informe.area.navegacao=Informe a \u00e1rea de navega\u00e7\u00e3o do agenciamento! 
+agenciamento.informe.calado.saida.re=Informe o calado de sa\u00edda a r\u00e9! 
+agenciamento.informe.calado.saida.vante=Informe o calado de sa\u00edda a vante! 
+agenciamento.informe.data.eta.porto.destino=Informe o ETA no pr\u00f3x. porto! 
+agenciamento.nulo=Ocorreu um problema ao salvar o Agenciamento! \n Por favor, feche a tela e tente novamente.
+agenciamento.informe.porto.origem=Informe o porto origem do agenciamento.
+agenciamento.informe.tipo.armador=Informe o tipo de armador do agenciamento.
+agenciamento.informe.tipo.frota=Informe o tipo da frota do agenciamento.
+agenciamento.informe.tipo.contrato=Informe o tipo de contrato do agenciamento.
+agenciamento.informe.tipo.agenciamento=Informe o tipo do agenciamento.
+agenciamento.informe.porto.atual=Informe o porto atual do agenciamento.
+agenciamento.informe.eta=Informe o ETA.
+agenciamento.informe.ets=Informe o ETS.
+agenciamento.informe.embarcacao=Informe a embarca\u00e7\u00e3o.
+agenciamento.informe.viagem=Informe a viagem.
+agenciamento.informe.agencia=Informe a ag\u00eancia.
+agenciamento.informe.numero.pasageiros=Informe o nr. passageiros na chegada.
+agenciamento.informe.numero.tripulantes=Informe o nr. tripulantes na chegada.
+agenciamento.informe.numero.pasageiros.saida=Informe o nr. passageiros na sa\u00edda.
+agenciamento.informe.numero.tripulantes.saida=Informe o nr. tripulantes na sa\u00edda.
+agenciamento.informe.numero.oficiais=Informe o n\u00famero de oficiais.
+agenciamento.informe.conduz.carga=Informe se conduz carga.
+agenciamento.informe.isento=Informe se \u00e9 isento.
+agenciamento.informe.contato=Informe o contato.
+agenciamento.informe.porto.destino=Informe porto de destino.
+agenciamento.informe.data.inclusao=Informe a data de inclus\u00e3o.
+agenciamento.informe.nome.cadastrador=Informe nome do cadastrador.
+agenciamento.informe.status.embarcacao=Informe o status da embarca\u00e7\u00e3o.
+agenciamento.informe.chave.cadastrador=Informe a chave do cadastrador.
+agenciamento.informe.situacao.processo=Informe a situa\u00e7\u00e3o do processo.
+agenciamento.informe.ano.processo=Informe o ano do processo.
+agenciamento.viagem.informe.comandante=Informe o comandante na chegada.
+agenciamento.viagem.informe.nacionalidade=Informe a nac. do comandante na chegada.
+agenciamento.viagem.informe.comandante.saida=Informe o comandante na sa\u00edda.
+agenciamento.viagem.informe.nacionalidade.saida=Informe a nac. do comandante na sa\u00edda.
+agenciamento.porto.destino.ou.destino.intermediario.obrigatorio=Informe o porto destino ou o destino intermedi\u00e1rio da embarca\u00e7\u00e3o.
+agenciamento.ets.obrigatoria=Informe a ETS.
+agenciamento.hora.oficial.saida.obrigatoria=Informe a hora oficial de sa\u00edda.
+agenciamento.hora.oficial.saida.menor.hora.oficial.chegada=A data e hora oficial de sa\u00edda n\u00e3o deve ser menor a data e hora oficial de chegada.
+agenciamento.hora.oficial.chegada.maior.data.atual=A data e hora oficial de chegada n\u00e3o deve ser maior que a data e hora atual.
+agenciamento.hora.oficial.saida.maior.data.atual=A data e hora oficial de sa\u00edda n\u00e3o deve ser maior que a data e hora atual.
+agenciamento.hora.oficial.chegada.menor.data.eta=A data e hora oficial de chegada \u00e9 menor do que 5 dias em rela\u00e7\u00e3o a data do ETA.
+
+agenciamento.desvio.status.embarcacao.deve.ser.saido.ou.desviado=Apenas agenciamentos onde a situa\u00e7\u00e3o da embarca\u00e7\u00e3o seja Sa\u00eddo ou Desviado podem ter a rota desviada.
+agenciamento.desvio.novo.porto.deve.ser.informado=O novo porto destino deve ser informado.
+agenciamento.desvio.novo.porto.deve.diferente.porto.anterior=O novo porto destino efetivo deve ser diferente do porto destino anterior.
+agenciamento.desvio.motivo.deve.ser.informado=O motivo do desvio deve ser informado.
+agenciamento.desvio.status.embarcacao.saido.ou.desviado=O desvio de rota s\u00f3 \u00e9 poss\u00edvel para agenciamentos com situa\u00e7\u00e3o Sa\u00eddo ou Desviado.
+agenciamento.desvio.data.deve.ser.informada=Data do desvio deve ser informada.
+agenciamento.cancelar.somente.esperado=O agenciamento s\u00f3 pode ser cancelado se estiver na situa\u00e7\u00e3o ESPERADO.
+agenciamento.cancelamento.motivo.deve.ser.informado=O motivo do cancelamento deve ser informado.
+agenciamento.cancelamento.observacao.motivo.deve.ser.informado=A observa\u00e7\u00e3o do cancelamento deve ser informada.
+agenciamento.cancelado.nao.pode.ser.alterado=Um agenciamento cancelado n\u00e3o pode ser alterado.
+agenciamento.informe.area.navegacao=Informe a \u00e1rea de navega\u00e7\u00e3o.
+agenciamento.informe.area.navegacao.saida=Informe a \u00e1rea de navega\u00e7\u00e3o de sa\u00edda.
+agenciamento.busca.por.filtro.nao.pode.ser.nulo=Filtro n\u00e3o pode ser nulo.
+agenciamento.busca.por.filtro.pelo.menos.um=Pelo menos um filtro deve ser informado.
+agenciamento.escala.marcante.ja.existente=A Escala (Mercante) j\u00e1 foi informada no Agenciamento {0}. Favor informar outra.
+
+
+#Anexos
+anexo.agenciamento.obrigatorio=Informe o agenciamento.
+anexo.pasta.obrigatorio=Informe a pasta.
+anexo.nome.obrigatorio=Informe o nome do anexo.
+anexo.extensao.obrigatorio=Informe a extens\u00e3o.
+anexo.tamanho.obrigatorio=Informe o tamanho.
+anexo.espaco.insuficiente.no.agenciamento=Opera\u00e7\u00e3o n\u00e3o realizada! O tamanho do anexo ultrapassa o espa\u00e7o dispon\u00edvel para este agenciamento.
+anexo.arquivo.vazio=Opera\u00e7\u00e3o n\u00e3o realizada! N\u00e3o \u00e9 poss\u00edvel anexar um arquivo vazio.
+anexo.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para na funcionalidade de Anexos.
+anexo.lista.vazia=Informe pelo menos um anexo.
+anexo.erro.ao.ler.arquivo=Ocorreu erro ao ler o arquivo. Favor tentar novamente.
+anexo.erro.ao.abrir.arquivo=Ocorreu erro ao abrir o arquivo. Favor tentar novamente.
+anexo.nome.arquivo.grande=Nome do arquivo muito grande. M\u00e1ximo de 60 caracteres.
+
+certificado.sem.data=Informe a data do certificado.
+certificado.sem.tipo=Informe o tipo do certificado.
+certificado.sem.embarcacao=O certificado precisa est\u00e1 associado a uma embarca\u00e7\u00e3o.
+certificado.livre.pratica.sem.agenciamento=Certificado de Livre Pr\u00e1tica deve est\u00e1 associado a um agenciamento.
+certificado.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar certificados.
+
+
+documento.informe.agenciamento=Informe o agenciamento.
+documento.informe.tipo=Informe o tipo.
+documento.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar documento.
+documento.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir documento.
+documento.informe.data.emissao=Informe a data de emiss\u00e3o.
+documento.informe.nome.emitente=Informe o emitente.
+documento.informe.representante.legal=Informe o representante legal.
+documento.exclusao.nao.permitida.documento.protocolado=Opera\u00e7\u00e3o n\u00e3o realizada! N\u00e3o \u00e9 poss\u00edvel excluir um documento protocolado.
+documento.informe.manobra=Informe a manobra.
+documento.informe.data.protocolo=Informe a data do protocolo.
+documento.manobra.encerrada.nao.associada=Uma manobra encerrada deve ser associada ao documento de Registro de Movimenta\u00e7\u00e3o.
+documento.ja.existe.documento.do.mesmo.tipo=J\u00e1 existe documento do mesmo tipo cadastrado.
+documento.operacao.nao.associada=Um produto deve ser associada ao documento Bill of Lading.
+
+embarcacao.classificacao.obrigatoria=Informe a classifica\u00e7\u00e3o.
+embarcacao.bandeira.obrigatoria=Informe a bandeira.
+embarcacao.heliporto.obrigatorio=Informe se possui heliporto.
+embarcacao.embarcacao.obrigatoria=Informe a embarca\u00e7\u00e3o.
+embarcacao.tipo.obrigatorio=Informe o tipo.
+embarcacao.nome.obrigatorio=Informe o nome.
+embarcacao.apelido.obrigatorio=Informe o apelido.
+embarcacao.imo.obrigatorio=Informe o IMO.
+embarcacao.irin.obrigatorio=Informe o IRIN.
+embarcacao.dtConstrucao.obrigatorio=Informe a data de constru\u00e7\u00e3o.
+embarcacao.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar embarca\u00e7\u00e3o.
+embarcacao.arqueacao.bruta.obrigatorio=Informe a arquea\u00e7\u00e3o bruta.
+embarcacao.dwt.obrigatorio=Informe o DWT.
+embarcacao.armador.obrigatorio=Informe o armador.
+embarcacao.proprietario.obrigatorio=Informe o propriet\u00e1rio.
+embarcacao.email.invalido=E-mail inv\u00e1lido!
+embarcacao.obrigatoria=Selecione uma embarca\u00e7\u00e3o!
+embarcacao.filtro.obrigatorio=Informe, pelo menos, uma op\u00e7\u00e3o de filtro!
+embarcacao.nome.maior=Informe, pelo menos, 3 caracteres para consultar!
+embarcacao.codigo.obrigatorio=Informe o c\u00f3digo.
+
+
+liberacaoAnvisa.informe.numero.certificado=Informe o nr. certificado.
+liberacaoAnvisa.informe.validade.certificado=Informe validade do certificado.
+liberacaoAnvisa.informe.data.emissao.certificado=Informe a dt. emiss\u00e3o do certificado.
+liberacaoAnvisa.informe.porto.emissao.certificado=Informe o porto de emiss\u00e3o do certificado.
+
+liberacaoAnvisa.informe.livre.pratica.sem.obito=N\u00e3o foi informado \u00f3bito a bordo.
+liberacaoAnvisa.informe.livre.pratica.compartimento.obrigatorio=Informe o(s) compartimento(s) com mortandade de roedores.
+liberacaoAnvisa.informe.livre.pratica.sem.mortandade=N\u00e3o foi informado mortandade a bordo para o(s) compartimento(s) listado(s).
+liberacaoAnvisa.informe.livre.pratica.medicamento.obrigatorio=Informe o(s) medicamento(s) consumido a bordo.
+liberacaoAnvisa.informe.livre.pratica.sem.consumo.medicamento=N\u00e3o foi informado consumo para o(s) medicamento(s) listado(s).
+liberacaoAnvisa.informe.livre.pratica.sem.desinsetizacao=N\u00e3o foi informado desinsetiza\u00e7\u00e3o para o produto listado.
+liberacaoAnvisa.informe.livre.pratica.produto.obrigatorio=Informe o produto da desinsetiza\u00e7\u00e3o a bordo.
+liberacaoAnvisa.informe.livre.pratica.data.obrigatorio=Informe a data da desinsetiza\u00e7\u00e3o a bordo.
+liberacaoAnvisa.informe.livre.pratica.dados.tratamento.efluentes.armazenamento.obrigatorio=Informe capacidade de armazenamento de efluentes sanit\u00e1rios.
+liberacaoAnvisa.informe.livre.pratica.dados.tratamento.efluentes.retencao.obrigatorio=Informe a autonomia de reten\u00e7\u00e3o de efluentes sanit\u00e1rios.
+liberacaoAnvisa.informe.livre.pratica.sem.dados.tratamento.efluentes=N\u00e3o foi informado tratamento de efluentes a bordo para os dados listados.
+liberacaoAnvisa.informe.livre.pratica.representante.obrigatorio=Informe o representante da ag\u00eancia.
+liberacaoAnvisa.informe.tipo.relatorio.obrigatorio=Informe o tipo do certificado que ser\u00e1 solicitado.
+liberacaoAnvisa.informe.data.deposito.obrigatorio=Informe a data do dep\u00f3sito.
+liberacaoAnvisa.informe.finalidade.obrigatoria=Informe a finalidade.
+liberacaoAnvisa.informe.dados.subst.agua.lastro.latitude.obrigatoria=Informe a latitude da substitui\u00e7\u00e3o da \u00e1gua do lastro.
+liberacaoAnvisa.informe.dados.subst.agua.lastro.longitude.obrigatoria=Informe a longitude da substitui\u00e7\u00e3o da \u00e1gua do lastro.
+liberacaoAnvisa.informe.dados.subst.agua.lastro.obrigatoria=Informe o(s) dados(s) de substitui\u00e7\u00e3o da \u00e1gua do lastro a bordo.
+liberacaoAnvisa.informe.sem.dados.subst.agua.lastro=N\u00e3o foi informado substitui\u00e7\u00e3o da \u00e1gua do lastro a bordo para os dados listados.
+liberacaoAnvisa.informe.livre.pratica.sem.dados.acidentes=N\u00e3o foi informado que houve acidente(s) a bordo para os dados listados.
+liberacaoAnvisa.informe.livre.pratica.acidentes.obrigatorio=Informe o(s) tipo(s) de acidente(s) a bordo.
+liberacao.anvisa.ccsb.precisa.estar.marcado=Deve ser informado que possui CCSB/CICSB v\u00e1lido e seus dados preenchidos.
+liberacao.anvisa.cncsb.precisa.estar.marcado=Deve ser informado que possui CNCSB/CNICSB v\u00e1lido e seus dados preenchidos.
+liberacao.anvisa.livre.pratica.precisa.estar.marcado=Deve ser informado que possui CLP v\u00e1lido e seus dados preenchidos.
+liberacao.anvisa.posto.portuario=Informe o posto portu\u00e1rio.
+liberacao.anvisa.data.documento=Informe a data do documento.
+
+
+#Comunica\u00e7\u00e3o Capitania
+comunicacao.capitania.selecione.data.ultima.inspecao=Selecione a data da \u00faltima inspe\u00e7\u00e3o.
+comunicacao.capitania.selecione.pais.ultima.inspecao=Selecione o pa\u00eds da \u00faltima inspe\u00e7\u00e3o.
+comunicacao.capitania.selecione.validade.declaracao.conformidade.ou.provisoria=Informe a data de validade da \n -Declara\u00e7\u00e3o de Conformidade ou \n -Declara\u00e7\u00e3o Provis\u00f3ria.
+comunicacao.capitania.parte.entrada.informe.localizacao.porto=Informe a localiza\u00e7\u00e3o no porto.
+comunicacao.capitania.parte.entrada.informe.responsavel=Informe o respons\u00e1vel.
+comunicacao.capitania.porto.destino.obrigatorio=Informe o porto destino.
+comunicacao.capitania.data.chegada.estimada=Informe o ETA pr\u00f3x. porto.
+comunicacao.capitania.calado.saida.avante=Informe o calado de sa\u00edda \u00e0 vante.
+comunicacao.capitania.calado.saida.re=Informe o calado de sa\u00edda \u00e0 r\u00e9.
+comunicacao.capitania.data.saida=Informe a hora oficial de sa\u00edda.
+comunicacao.capitania.parte.saida.informe.area.navegacao=Informe a \u00e1rea de navega\u00e7\u00e3o.
+comunicacao.capitania.parte.entrada.informe.area.navegacao=Informe a \u00e1rea de navega\u00e7\u00e3o de chegada.
+comunicacao.capitania.parte.entrada.informe.area.navegacao.saida=Informe a \u00e1rea de navega\u00e7\u00e3o de sa\u00edda.
+comunicacao.capitania.parte.saida.informe.area.navegacao.saida=Informe a \u00e1rea de navega\u00e7\u00e3o de sa\u00edda.
+comunicacao.capitania.registro.movimentacao.selecione.manobra=Selecione a manobra.
+comunicacao.capitania.informe.ao.to=Informe o campo Ao (To).
+comunicacao.capitania.embarcacao.nao.foi.desviada=Embarca\u00e7\u00e3o n\u00e3o foi desviada.
+comunicacao.informe.posicao.navio.no.porto=Informe a posi\u00e7\u00e3o da embarca\u00e7\u00e3o no porto.
+comunicacao.informe.observacao=Informe a observa\u00e7\u00e3o.
+comunicacao.capitania.informe.sociedade.classificatoria=Informe a sociedade classificat\u00f3ria da embarca\u00e7\u00e3o.
+comunicacao.informe.validade.procuracao=Informe a validade da procura\u00e7\u00e3o.
+comunicacao.capitania.informe.processo.despacho=Informe o processo de despacho.
+comunicacao.capitania.informe.data.estimada.saida=Informe a data estimada de sa\u00edda.
+comunicacao.capitania.informe.data=Informe a data/hora de 'Suspender at\u00e9'.
+comunicacao.capitania.informe.escala.mercante=Informe a escala (mercante).
+comunicacao.capitania.informe.valor.tuf.dolar=Informe o Valor (US$) da TUF.
+comunicacao.capitania.informe.tuf=Pagamento TUF n\u00e3o cadastrado corretamente.
+comunicacao.capitania.informe.data.dolar=Informe a data.
+comunicacao.capitania.informe.tpb=Informe TPB.
+comunicacao.capitania.aviso.entrada.informe.localizacao.porto=Informe a localiza\u00e7\u00e3o no porto.
+comunicacao.capitania.aviso.entrada.informe.tipo.embarcacao=Informe se o navio graneleiro ou combinado  igual ou superior a 18 anos e a carga igual ou maior a 1,78 ton/m\u00b3 ?.
+
+solicitacao.manobra.nula =Manobra n\u00e3o pode ser nula.
+solicitacao.manobra.lista.servicos.nula =Lista de servi\u00e7os n\u00e3o pode ser nula.
+solicitacao.manobra.lista.servicos.vazia =Lista de servi\u00e7os n\u00e3o pode ser vazia.
+solicitacao.manobra.empresa.com.email.vazio.ou.nulo=Existe empresa com e-mail vazio ou nulo.
+solicitacao.manobra.empresa.com.email.invalido=Existe empresa com e-mail inv\u00e1lido.
+solicitacao.manobra.agencia.com.email.vazio.ou.nulo=O e-mail da ag\u00eancia est\u00e1 vazio ou nulo.
+solicitacao.manobra.servico.ja.solicitado=Este servi\u00e7o j\u00e1 foi solicitado.
+
+manobra.agenciamento.obrigatorio=Manobra n\u00e3o est\u00e1 associada a nenhum agenciamento.
+manobra.status.obrigatorio=Informe o status da manobra.
+manobra.servico.exclusao.negada.data.envio.preenchida=Servi\u00e7o n\u00e3o pode ser exclu\u00eddo, pois j\u00e1 foi enviada a solicita\u00e7\u00e3o.
+manobra.informe.servico.empresa.obrigatoria=Informe a empresa respons\u00e1vel pelo servi\u00e7o.
+manobra.informe.servico.tipo.obrigatorio=Informe tipo do servi\u00e7o para a manobra.
+manobra.informe.servico.selecao.exclusao.obrigatoria=Selecione o servi\u00e7o que deseja excluir.    
+manobra.finalidade.obrigatorio=Informe a finalidade.
+manobra.informe.campo.obrigatorio=Informe a manobra.
+manobra.informe.responsavel.obrigatorio=Informe o respons\u00e1vel pelo custo da manobra.
+manobra.informe.situacao.embarcacao.obrigatorio=Informe a situa\u00e7\u00e3o da embarca\u00e7\u00e3o ap\u00f3s a movimenta\u00e7\u00e3o.
+manobra.informe.ponto.atracacao.origem=Informe o ponto inicial da movimenta\u00e7\u00e3o.
+manobra.informe.ponto.atracacao.destino=Informe o ponto final da movimenta\u00e7\u00e3o.
+manobra.informe.ponto.atracacao.origem_destino=Informe o ponto inicial e final da movimenta\u00e7\u00e3o.
+manobra.sem.permissao.enviar.solicitacao.manobra=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para enviar solicita\u00e7\u00e3o de manobra.
+manobra.ja.movimentada.nao.pode.registrar=Opera\u00e7\u00e3o n\u00e3o realizada! A Finalidade dessa manobra foi alterada, sendo que essa Embarca\u00e7\u00e3o j\u00e1 foi movimentada.
+manobra.sem.permissao.informar.manobra=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para informar manobra.
+manobra.sem.permissao.excluir.manobra=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir manobra.
+manobra.informe.orgao.despacho=Informe o \u00f3rg\u00e3o de despacho.
+manobra.informe.numero.duv=Informe o nr. do DUV deste agenciamento.
+manobra.selecione.tipoEnvio=Selecione o tipo de envio.
+manobra.salvar.manobraFinalizada=Opera\u00e7\u00e3o n\u00e3o realizada! A manobra j\u00e1 foi finalizada.
+manobra.salvar.manobraCancelada=Opera\u00e7\u00e3o n\u00e3o realizada! A manobra j\u00e1 foi cancelada.
+manobra.salvar.manobraMovimentada=Opera\u00e7\u00e3o n\u00e3o realizada! A manobra j\u00e1 foi movimentada.
+manbra.salvar.maisDeUmServicoComAMesmaEmpresaETipo=Opera\u00e7\u00e3o n\u00e3o realizada! H\u00e1 mais de um servi\u00e7o com a mesma empresa e tipo.
+manobra.nao.permite.excluir.sem.status.programada=A manobra j\u00e1 foi solicitada e n\u00e3o pode ser exclu\u00edda!
+manobra.alterar.finalidade.nao.permitido=Manobra com status {0} n\u00e3o permite a altera\u00e7\u00e3o da finalidade.
+manobra.alterar.ponto.inicial.nao.permitido=Manobra com status {0} n\u00e3o permite a altera\u00e7\u00e3o do ponto inicial.
+manobra.alterar.ponto.final.nao.permitido=Manobra com status {0} n\u00e3o permite a altera\u00e7\u00e3o do ponto final.
+manobra.incluir.servico.com.servico.ja.incluso=Opera\u00e7\u00e3o n\u00e3o realizada! Esse servi\u00e7o j\u00e1 foi inclu\u00eddo para a empresa informada.
+manobra.incluir.servico.manobra.obrigatoria=Informe a manobra.
+manobra.excluir.servico.manobra.ja.solicitado=Opera\u00e7\u00e3o n\u00e3o realizada! O servi\u00e7o j\u00e1 foi solicitado.
+manobra.so.pode.solicitar.apoio.status.programada.solicitada=A solicita\u00e7\u00e3o de apoio \u00e0 manobra s\u00f3 pode ser enviada se a manobra estiver nos estados PROGRAMADA ou SOLICITADA.
+manobra.informe.data.inicio=Informe a data in\u00edcio.
+manobra.informe.data.fim=Informe a data fim.
+manobra.informe.data.termino=Informe a data t\u00e9rmino.
+manobra.clado.re.obrigatorio=Informe o calado \u00e0 r\u00e9.
+manobra.clado.vante.obrigatorio=Informe o calado \u00e0 vante.
+embarcacao.informe.tipo=Informe o tipo desta embarca\u00e7\u00e3o.
+manobra.responsavel.servico.duplicado=Respons\u00e1vel pelo servi\u00e7o j\u00e1 inclu\u00eddo na manobra.
+manobra.informe.ponto.inicial=Informe o ponto inicial.
+manobra.informe.ponto.final=Informe o ponto final.
+manobra.informe.data.partida=Informe a data de partida.
+manobra.informe.data.chegada=Informe a data de chegada.
+manobra.informe.data.inicio=Informe a data de in\u00edcio.
+manobra.informe.data.fim=Informe a data de fim.
+manobra.informe.motivo.cancelamento=Informe o motivo do cancelamento.
+manobra.informe.porto.destino=Informe o porto destino.
+manobra.informe.eta=Informe o ETA do pr\u00f3ximo porto.
+manobra.ja.solicitada.ou.registrada.nao.pode.ser.excluida=Manobra j\u00e1 solicitada ou registrada n\u00e3o pode ser exclu\u00edda.
+manobra.somente.status.solicitada.pode.ser.cancelada.dentro.prazo=Manobra s\u00f3 pode ser cancelada dentro do prazo com status SOLICITADA.
+manobra.cancelar.dentro.prazo.sem.motivo=Para cancelar a manobra o motivo deve ser informado.
+manobra.sem.permissao.cancelar.dentro.prazo=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para cancelar manobra dentro do prazo.
+manobra.informe.pelo.menos.um.servico=Informe pelo menos um servi\u00e7o para a manobra.
+manobra.encerrar.apenas.as.registradas=Opera\u00e7\u00e3o n\u00e3o realizada! Apenas manobras registradas podem ser encerradas.
+
+servico.manobra.com.data.passada.nao.permitido.em.manobra.registrada=N\u00e3o \u00e9 permitido registrar manobra com data de servi\u00e7o no passado.
+servico.responsavel.data.inicio.maior.data.termino=Data in\u00edcio n\u00e3o pode ser maior que a data de t\u00e9rmino.
+
+#Manobra - Parada
+manobra.parada.status.nao.permite.salvar=O status da manobra n\u00e3o permite salvar parada.
+manobra.parada.manobra.nao.pode.ser.nula=Manobra n\u00e3o pode ser nula.
+manobra.parada.informe.data.chegada=Informe data de chegada.
+manobra.parada.informe.data.saida=Informe data de sa\u00edda.
+manobra.parada.informe.ponto.atracacao=Informe ponto de atraca\u00e7\u00e3o.
+manobra.parada.sem.permissao.salvar.parada=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar parada.
+manobra.parada.sem.permissao.excluir.parada=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir parada.
+
+#Opera\u00e7\u00e3o
+operacao.informe.obrigatorio=Informe a opera\u00e7\u00e3o.
+operacao.informe.tipo.obrigatorio= Informe um tipo de opera\u00e7\u00e3o.
+operacao.informe.quantidade.obrigatorio=Informe a quantidade do produto.
+operacao.informe.produto.obrigatorio=Informe o produto da opera\u00e7\u00e3o.
+operacao.erro.agenciamento.nulo=Ocorreu um problema ao salvar a opera\u00e7\u00e3o. \n Tente mais tarde.
+operacao.erro.sem.produtos=Opera\u00e7\u00e3o deve conter produtos relacionados.
+operacao.erro.sem.operacao.com.produto=Uma opera\u00e7\u00e3o do tipo sem opera\u00e7\u00e3o n\u00e3o pode conter informa\u00e7\u00f5es de produtos.
+operacao.informe.data.inicio=Informe a data in\u00edcio.
+operacao.informe.data.fim=Informe a data fim.
+operacao.produto.informe.pelo.menos.um.produto=Informe pelo menos um produto.
+operacao.data.inicio.deve.ser.anterior.data.fim=A data in\u00edcio deve ser anterior a data fim.
+operacao.data.fim.deve.ser.posterior.data.inicio=A data fim deve ser posterior a data in\u00edcio.
+operacao.informe.produto=Informe o produto.
+operacao.informe.quantidade.estimada=Informe a quantidade estimada.
+operacao.informe.tipo.operacao=Informe a opera\u00e7\u00e3o.
+operacao.informe.unidade.medida=Informe a unidade de medida.
+operacao.usuario.sem.permissao=O usu\u00e1rio n\u00e3o tem permiss\u00e3o para salvar opera\u00e7\u00e3o.
+operacao.usuario.sem.permissao.excluir=O usu\u00e1rio n\u00e3o tem permiss\u00e3o para excluir a opera\u00e7\u00e3o.
+operacao.operacao.nao.pode.ser.excluida.existe.documento=Opera\u00e7\u00e3o n\u00e3o pode ser exclu\u00edda pois o BL j\u00e1 foi emitido.
+
+#Documenta\u00e7\u00e3o da opera\u00e7\u00e3o
+documentacao.operacao.usuario.sem.permissao=O usu\u00e1rio n\u00e3o tem permiss\u00e3o para salvar documenta\u00e7\u00e3o da opera\u00e7\u00e3o.
+documentacao.operacao.usuario.sem.permissao.excluir=O usu\u00e1rio n\u00e3o tem permiss\u00e3o para excluir documenta\u00e7\u00e3o da opera\u00e7\u00e3o.
+documentacao.operacao.agenciamento.nulo=A documenta\u00e7\u00e3o n\u00e3o est\u00e1 associada a nenhum agenciamento.
+documentacao.operacao.informe.tipo.operacao=Tipo da opera\u00e7\u00e3o n\u00e3o informado. Feche a tela e abra novamente!
+documentacao.operacao.informe.manifesto.eletronico=Informe o manifesto eletr\u00f4nico.
+documentacao.operacao.informe.porto.destino=Informe o porto de destino da carga.
+documentacao.operacao.informe.agencia.origem=Informe a ag\u00eancia origem da carga.
+documentacao.operacao.porto.deve.ser.nacional=O porto informado deve ser nacional.
+
+#Controle de fiscaliza\u00e7\u00e3o \u00fanico
+controle.fiscalizacao.unico.infome.tipo.entrada = Selecione o tipo de formul\u00e1rio.
+controle.fiscalizacao.unico.entrada.saida = Informe a entrada ou a sa\u00edda. 
+controle.fiscalizacao.unico.armador.cnpj = Informe o cnpj.
+controle.fiscalizacao.unico.agente.armador = Informe o agente armador.
+controle.fiscalizacao.unico.escalas = Informe a escala.
+controle.fiscalizacao.unico.produto.carga = informe o produto da carga.
+controle.fiscalizacao.unico.transito = Informe o transito.
+controle.fiscalizacao.unico.clandestino.impedidos = Informe a quantidade de clandestino/impedidos.
+controle.fiscalizacao.unico.porto.entrada.brasil = Informe o porto de entrada no Brasil.
+controle.fiscalizacao.unico.informe.area.navegacao.entrada = Informe a \u00e1rea de navega\u00e7\u00e3o de chegada da embarca\u00e7\u00e3o.
+controle.fiscalizacao.unico.informe.area.navegacao.saida = Informe a \u00e1rea de navega\u00e7\u00e3o de sa\u00edda da embarca\u00e7\u00e3o.
+controle.fiscalizacao.unico.informe.numero.passe.entrada = Informe o n\u00famero do passe de entrada.
+controle.fiscalizacao.unico.informe.operacao = Informe a opera\u00e7\u00e3o.
+controle.fiscalizacao.unico.informe.data.entrada.porto = Informe a data de entrada no porto.
+controle.fiscalizacao.unico.informe.tipo.requerimento = Informe o tipo de requerimento.
+
+#Produto da documentacao
+documentacao.produto.operacao.null=Selecione o produto.
+documentacao.produto.documentacao.operacao.null=O produto da documenta\u00e7\u00e3o n\u00e3o est\u00e1 associado a nenhuma documenta\u00e7\u00e3o. 
+documentacao.produto.informe.conhecimento.eletronico=Informe o conhecimento eletr\u00f4nico (CE).
+documentacao.produto.informe.ctac=Informe o CTAC.
+ctac.porto.embarque=Informe o porto de embarque.
+ctac.porto.endereco.embarque=Informe o endere\u00e7o de embarque.
+ctac.porto.endereco.desembarque=Informe o endere\u00e7o de desembarque.
+
+#Documenta\u00e7\u00e3o Longo Curso
+documentacao.longo.curso.operacao.nula=A documenta\u00e7\u00e3o n\u00e3o est\u00e1 associada a nenhuma opera\u00e7\u00e3o.
+documentacao.longo.curso.informe.porto=Informe o porto.
+documentacao.longo.curso.informe.manifesto.eletronico=Informe o manifesto eletr\u00f4nico.
+documentacao.longo.curso.informe.conhecimento.eletronico=Informe o conhecimento eletr\u00f4nico.
+documentacao.longo.curso.informe.cidade=Informe a cidade.
+documentacao.longo.curso.pais.deve.ser.diferente.brasil=Pa\u00eds deve ser diferente de Brasil.
+documentacao.longo.curso.usuario.sem.permissao=Usu\u00e1rio n\u00e3o tem permiss\u00e3o para salvar documenta\u00e7\u00e3o de longo curso.
+documentacao.longo.curso.usuario.sem.permissao.excluir=Usu\u00e1rio n\u00e3o tem permiss\u00e3o para excluir documenta\u00e7\u00e3o de longo curso.
+documentacao.longo.curso.tamanho.max.lista.ce.atingido=N\u00e3o \u00e9 poss\u00edvel adicionar mais CE. Tamanho m\u00e1ximo da lista atingido.
+
+#Pend\u00eancia
+pendencia.usuario.sem.permissao.excluir=Usu\u00e1rio sem permiss\u00e3o para excluir pend\u00eancia.
+pendencia.agenciamento.obrigatorio=Informe o agenciamento.
+pendencia.tipo.obrigatorio=Informe o tipo.
+pendencia.ja.resolvida=Opera\u00e7\u00e3o n\u00e3o realizada! A pend\u00eancia informada j\u00e1 foi resolvida.
+pendencia.documento.obrigatorio=Informe o documento.
+pendencia.taxa.obrigatoria=Informe a taxa.
+    
+servico.manobra.manobra.obrigatoria=A manobra \u00e9 obrigat\u00f3ria.
+servico.manobra.informe.tipo=Informe o tipo.
+servico.manobra.informe.empresa=Informe a empresa.
+servico.manobra.informe.data.programada=Informe a data programada.
+servico.manobra.servico.ja.adicionado.na.manobra=Opera\u00e7\u00e3o n\u00e3o realizada! Este servi\u00e7o da empresa informada j\u00e1 foi adicionado na manobra.
+servico.manobra.informe.pelo.menos.um.responsavel=Informe pelo menos um respons\u00e1vel para o(s) servi\u00e7o(s). 
+servico.manobra.manobra.deve.ter.pelo.menos.um.servico=A manobra deve ter pelo menos um servi\u00e7o! Adicione outro antes de excluir o servi\u00e7o selecionado.
+
+servico.responsavel.servico.manobra.obrigatorio=O servi\u00e7o da manobra \u00e9 obrigat\u00f3rio.
+servico.responsavel.informe.nome=Informe o nome.
+servico.responsavel.informe.data.inicio.real=Informe a data in\u00edcio real.
+servico.responsavel.informe.data.termino.real=Informe a data t\u00e9rmino real.
+servico.responsavel.responsavel.ja.adicionado=Opera\u00e7\u00e3o n\u00e3o realizada! O respons\u00e1vel j\u00e1 foi adicionado.
+servico.responsavel.servico.deve.ter.pelo.menos.um.responsavel=O servi\u00e7o deve ter pelo menos um respons\u00e1vel! Adicione outro antes de excluir o respons\u00e1vel selecionado.
+
+#Taxa
+taxa.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar taxa.
+taxa.sem.agenciamento=A taxa n\u00e3o est\u00e1 associada a nenhum agenciamento.
+taxa.sem.valor=Informe o valor da taxa.
+taxa.sem.data.pagamento=Informe a data de pagamento.
+taxa.sem.responsavel.custo=Informe o respons\u00e1vel pelo custo.
+taxa.sem.numero.necessidade.liberacao=Informe o n\u00famero da necessidade de libera\u00e7\u00e3o SAP.
+taxa.sem.tipo.taxa=Informe o tipo da taxa.
+taxa.anvisa.obrigatoria=Informe o pagamento da Taxa de Livre Pr\u00e1tica (ANVISA)!
+
+acesso.sem.permissao=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para executar a a\u00e7\u00e3o.
+
+ProdutoInput.nenhumProdutoEncontrado=Produto n\u00e3o encontrado.
+   
+embarcacao.nr.registro.obrigatorio=Informe o nr. do certificado de registro.
+embarcacao.dt.registro.obrigatorio=Informe a data de registro.
+embarcacao.porto.registro.obrigatorio=Informe o porto de registro.
+
+#Agencia
+agencia.nome.obrigatorio=Informe o nome.
+agencia.endereco.obrigatorio=Informe o endere\u00e7o.
+agencia.email.obrigatorio=Informe o e-mail.
+agencia.telefone.obrigatorio=Informe o telefone.
+agencia.cidade.obrigatorio=Informe a cidade.
+agencia.cnpj.obrigatorio=Informe o CNPJ.
+
+acesso.usuario.sem.permissao=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para acessar o sistema.
+
+#Relat\u00f3rio Taxas
+relatorio.taxas.agencia.obrigatoria=Informe a ag\u00eancia.
+relatorio.taxas.porto.obrigatorio=Informe o porto.
+relatorio.taxas.mes.ano.obrigatorio=Informe o m\u00eas/ano.
+relatorio.taxas.periodo.obrigatorio=Informe o per\u00edodo.
+relatorio.taxas.obrigatorio=Selecione, pelo menos, uma taxa.
+relatorio.taxas.nao.existe.dados=N\u00e3o existem registros para os filtros selecionados
+
+#Relatorio agenciamento
+relatorio.agenciamento.agencia.obrigatoria=Informe a ag\u00eancia.
+relatorio.agenciamento.periodo.obrigatorio=Informe o per\u00edodo.
+relatorio.agenciamento.periodo.inconsistente=Per\u00edodo inconsistente.
+relatorio.agenciamento.ciclo.atendimento.obrigatorio=Informe o ciclo de atendimento.
+relatorio.agenciamento.ciclo.atendimento.maior.que.zero=O ciclo deve ser maior que 0.
+
+#Visita
+visita.agenciamento.obrigatorio=O agenciamento \u00e9 obrigat\u00f3rio.
+visita.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar visita.
+visita.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir visita.
+visita.agente.obrigatorio=Informe o agente.
+visita.chave.agente.obrigatorio=Informe a chave do agente.
+visita.nome.agente.obrigatorio=Informe o nome do agente.
+visita.data.inicio.obrigatoria=Informe a data in\u00edcio.
+visita.data.termino.obrigatoria=Informe a data t\u00e9rmino.
+
+#Transporte
+transporte.visita.obrigatorio=A visita \u00e9 obrigat\u00f3ria.
+transporte.informe.tipo.transporte=Informe o tipo de transporte.
+transporte.informe.o.custo=Informe o custo.
+transporte.informe.responsavel.custo=Informe o respons\u00e1vel pelo custo.
+transporte.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar transporte.
+transporte.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir transporte.
+
+#Servi\u00e7o de Prote\u00e7\u00e3o
+servico.protecao.agenciamento.obrigatorio=Agenciamento obrigat\u00f3rio.
+servico.protecao.servico.executado.obrigatorio=Informe o servi\u00e7o executado.
+servico.protecao.data.execucao.obrigatorio=Informe a data de solicita\u00e7\u00e3o.
+servico.protecao.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.protecao.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+servico.protecao.data.cancelamento.obrigatoria=Informe a data do cancelamento.
+servico.protecao.justificativa.cancelamento.obrigatoria=Informe a justificativa do cancelamento.
+servico.protecao.observacao.obrigatoria.na.alteracao=Na altera\u00e7\u00e3o \u00e9 obrigat\u00f3rio informar a observa\u00e7\u00e3o.
+
+#Servi\u00e7o M\u00e9dico Odontol\u00f3gico
+servico.medico.odontologico.servico.protecao.obrigatorio=Informe o Servi\u00e7o Executado.
+servico.medico.odontologico.nome.tripulante.obrigatorio=Informe o Nome do Tripulante.
+servico.medico.odontologico.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.medico.odontologico.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+
+#Servi\u00e7o Transporte
+servico.transporte.servico.protecao.obrigatorio=Informe o Servi\u00e7o Executado.
+servico.transporte.nome.tripulante.obrigatorio=Informe o Nome do Tripulante.
+servico.transporte.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.transporte.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+servico.transporte.sem.permissao.enviar.email=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para enviar e-mail.
+servico.transporte.nome.empresa.obrigatorio=Informe a Empresa.
+servico.transporte.data.hora.servico.obrigatorio=Informe a Data.
+servico.transporte.origem.obrigatorio=Informe a Origem.
+servico.transporte.destino.obrigatorio=Informe o Destino.
+servico.transporte.autorizacao.obrigatorio=Informe a Autoriza\u00e7\u00e3o.
+servico.transporte.voo.obrigatorio=Informe o Voo.
+servico.transporte.tipo.transporte.obrigatorio=Informe o Tipo Transporte.
+servico.transporte.terrestre.obrigatorio.passageiros=Para o transporte do tipo TERRESTRE \u00e9 obrigat\u00f3rio informar os passageiros.
+servico.transporte.fluvial.obrigatorio.passageiros=Para o transporte do tipo FLUVIAL \u00e9 obrigat\u00f3rio informar os passageiros.
+servico.transporte.aereo.obrigatorio.passageiros=Para o transporte do tipo AEREO \u00e9 obrigat\u00f3rio informar os passageiros.
+servico.transporte.observacao.obrigatorio=Informe a observa\u00e7\u00e3o.
+
+#Empresa mar\u00edtima
+empresa.maritima.agencia.obrigatoria=Informe a ag\u00eancia.
+empresa.maritima.empresa.obrigatoria=Informe a empresa.
+empresa.maritima.cnpj.obrigatorio=Informe o CNPJ.
+empresa.maritima.email.obrigatorio=Informe o e-mail.
+empresa.maritima.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+empresa.maritima.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.empresa.maritima.tipo.obrigatorio=Informe o tipo do servi\u00e7o.
+servico.empresa.maritima.nome.obrigatorio=Informe o nome.
+servico.empresa.maritima.obrigatorio=Informe a empresa.
+
+#Agencia
+agencia.nome.obrigatorio=Informe o nome.
+agencia.endereco.obrigatorio=Informe o endere\u00e7o.
+agencia.email.obrigatorio=Informe o e-mail.
+agencia.telefone.obrigatorio=Informe o telefone.
+agencia.cidade.obrigatorio=Informe a cidade.
+agencia.cnpj.obrigatorio=Informe o CNPJ.
+agencia.sigla.obrigatoria=Informe a sigla.
+agencia.estado.obrigatorio=Informe o estado.
+agencia.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar ag\u00eancia.
+agencia.sem.permissao.incluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para incluir ag\u00eancia.
+
+#Destinat\u00e1rios da Ag\u00eancia
+destinatario.sem.permissao.salvar=Usu\u00e1rio sem permiss\u00e3o para salvar o destinat\u00e1rio.
+destinatario.sem.permissao.excluir=Usu\u00e1rio sem permiss\u00e3o para excluir o destinat\u00e1rio.
+destinatario.nome.obrigatorio=Informe o nome.
+destinatario.email.obrigatorio=Informe o e-mail.
+destinatario.agencia.obrigatoria=Informe a ag\u00eancia.
+
+#Agencia Contato
+agencia.contato.agencia.nao.pode.ser.nula=O contato deve estar associado a uma ag\u00eancia.
+agencia.contato.nome.obrigatorio=Informe o nome.
+agencia.contato.cpf.obrigatorio=Informe o CPF.
+agencia.contato.sem.permissao.salvar=Usu\u00e1rio n\u00e3o tem permiss\u00e3o para salvar contatos da ag\u00eancia.
+agencia.contato.sem.permissao.excluir=Usu\u00e1rio n\u00e3o tem permiss\u00e3o para excluir contatos da ag\u00eancia.
+
+#Agencia Org\u00e3o Despacho
+agencia.orgao.despacho.agencia.nao.pode.ser.nula=O \u00f3rg\u00e3o deve estar associado a uma ag\u00eancia.
+agencia.orgao.despacho.nome.obrigatorio=Informe o nome.
+agencia.orgao.despacho.sem.permissao.salvar=Usu\u00e1rio n\u00e3o tem permiss\u00e3o para salvar \u00f3rg\u00e3os da ag\u00eancia.
+agencia.orgao.despacho.sem.permissao.excluir=Usu\u00e1rio n\u00e3o tem permiss\u00e3o para excluir \u00f3rg\u00e3os da ag\u00eancia.
+
+#Ponto de Atraca\u00e7\u00e3o
+ponto.atracacao.porto.obrigatorio=Informe o porto.
+ponto.atracacao.ponto.operacional.obrigatorio=Informe o ponto operacional.
+ponto.atracacao.nome.obrigatorio=Informe o nome.
+ponto.atracacao.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar ponto de atraca\u00e7\u00e3o.
+
+#Agencia Porto
+agencia.porto.agencia.obrigatoria=Informe a ag\u00eancia.
+agencia.porto.porto.obrigatoria=Informe o porto.
+agencia.porto.municipio.obrigatorio=Informe o munic\u00edpio.
+agencia.porto.estado.obrigatorio=Informe o estado.  
+agencia.porto.sem.permissao.para.salvar=Usu\u00e1rio sem permiss\u00e3o para salvar porto.
+  
+
+#Porto Complemento
+porto.complemento.porto.obrigatorio=Informe o porto.
+porto.complemento.endereco.obrigatorio=Informe o endere\u00e7o.
+porto.complemento.cidade.obrigatoria=Informe a cidade.
+porto.complemento.estado.obrigatorio=Informe o estado.
+porto.complemento.inscricao.estadual.obrigatoria=Informe a inscri\u00e7\u00e3o estadual.
+porto.complemento.cnpj.obrigatoria=Informe o cnpj.
+porto.complemento.sem.permissao.salvar=Usu\u00e1rio sem permiss\u00e3o para salvar as informa\u00e7\u00f5es do porto.
+porto.complemento.porto.deve.ser.nacional=Informe um porto nacional.
+porto.embarque.complemento.obrigatorio=As informa\u00e7\u00f5es complementares do porto de embarque devem ser informadas.
+porto.desembarque.complemento.obrigatorio=As informa\u00e7\u00f5es complementares do porto destino da carga devem ser informadas.
+
+#Mesagens de unique, pk e fk
+STAM.PK_AGCO=Este CPF j\u00e1 est\u00e1 cadastrado como representante legal.
+STAM.FK_OPPR_DOPR=Opera\u00e7\u00e3o n\u00e3o realizada! A opera\u00e7\u00e3o selecionada j\u00e1 est\u00e1 associada a um documento.
+STAM.FK_OPER_DOLC=Opera\u00e7\u00e3o n\u00e3o realizada! A opera\u00e7\u00e3o selecionada j\u00e1 est\u00e1 associada a um documento.
+STAM.FK_EMSE_EMSM=Opera\u00e7\u00e3o n\u00e3o realizada! O servi\u00e7o selecionado j\u00e1 est\u00e1 associado a uma manobra. 
+STAM.FK_EMSE_SETR=Opera\u00e7\u00e3o n\u00e3o realizada! O servi\u00e7o selecionado j\u00e1 est\u00e1 associado a uma solicita\u00e7\u00e3o de transporte.
+STAM.FK_EMSE_SEHO=Opera\u00e7\u00e3o n\u00e3o realizada! O servi\u00e7o selecionado j\u00e1 est\u00e1 associado a uma solicita\u00e7\u00e3o de hospedagem.
+STAM.UN_OPER=Este produto j\u00e1 est\u00e1 cadastrado para esta opera\u00e7\u00e3o.
+STAM.UN_DOPR_PROD_DOC=Este produto j\u00e1 est\u00e1 cadastrado para esta documenta\u00e7\u00e3o.
+STAM.FK_OPPR_OPCA=N\u00e3o \u00e9 poss\u00edvel alterar a opera\u00e7\u00e3o.
+STAM.FK_OPPR_OPDE=N\u00e3o \u00e9 poss\u00edvel alterar a opera\u00e7\u00e3o.
+STAM.FK_EMMA_EMAN=Opera\u00e7\u00e3o n\u00e3o realizada! A Empresa selecionada est\u00e1 associada a uma manobra. 
+STAM.FK_EMMA_EMSE=Para prosseguir, exclua o(s) servi\u00e7os desta empresa! 
+STAM.FK_VISI_VITR=Para prosseguir, exclua o(s) transporte(s) desta visita!
+STAM.FK_AGCO_AGDO=Opera\u00e7\u00e3o n\u00e3o realizada! O Representante Legal j\u00e1 est\u00e1 associado a um documento.
+STAM.FK_OPPR_AGDO=Opera\u00e7\u00e3o n\u00e3o pode ser exclu\u00edda pois j\u00e1 existe documento associado.
+STAM.FK_OPER_DOOP=N\u00e3o \u00e9 poss\u00edvel excluir opera\u00e7\u00e3o que tenha produto(s) associado(s) a documenta\u00e7\u00e3o.
+
+
+#Informa\u00e7\u00f5es de Relat\u00f3rio
+informacoes.relatorio.data.emissao.obrigatoria=Informe a data de emiss\u00e3o.
+
+#Acompanhamento do agenciamento
+acompanhamento.agenciamento.nulo=O acompanhamento n\u00e3o est\u00e1 vinculado a nenhum agenciamento.
+acompanhamento.informe.data=Informe a data do acompanhamento.
+acompanhamento.informe.cadastrador=Informe o cadastrador do acompanhamento.
+acompanhamento.informe.texto=Informe o texto do acompanhamento.
+acompanhamento.sem.permissao.salvar=Usu\u00e1rio sem permiss\u00e3o para salvar acompanhamento do agenciamento.
+
+#Hospede
+hospede.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar h\u00f3spede.
+hospede.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir h\u00f3spede.
+hospede.nome.obrigatorio=Informe o nome do h\u00f3spede
+hospede.informe.cpf.ou.rgmatcirpass=Informe o cpf ou N\u00ba do Documento do h\u00f3spede.
+hospede.cpf.ja.existente=O CPF j\u00e1 foi informado para outro h\u00f3spede. Favor informar outro.
+hospede.documento.ja.existente=O N\u00ba do Documento j\u00e1 foi informado para outro h\u00f3spede. Favor informar outro.
+hospede.sem.hospedagem=H\u00f3spede n\u00e3o est\u00e1 relacionado a nenhum servi\u00e7o de hospedagem
+
+#Servi\u00e7o Hospedagem
+SistamService.salvarServicoHospedagem=Salvando servi\u00e7o de prote\u00e7\u00e3o...
+SistamService.salvarServicoHospedagem.success=Servi\u00e7o de prote\u00e7\u00e3o salvo com sucesso!
+SistamService.buscarServicoProtecaoPorId = Buscando dados do servi\u00e7o de hospedagem.
+servico.hospedagem.servico.protecao.obrigatorio=Informe o Servi\u00e7o Executado.
+servico.hospedagem.hotel.obrigatorio=Informe o hotel.
+servico.hospedagem.data.chegada.obrigatorio=Informe a data de chegada.
+servico.hospedagem.observacao.obrigatorio=Informe a observa\u00e7\u00e3o.
+servico.hospedagem.data.saida.obrigatorio=Informe a data de sa\u00edda.
+servico.hospedagem.hospede.pelo.menos.um=Informe pelo menos um h\u00f3spede.
+servico.hospedagem.data.chegada.nao.deve.ser.serposterior.data.saida=A data de chegada n\u00e3o deve ser posterior a data de sa\u00edda.
+servico.hospedagem.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.hospedagem.sem.permissao.enviar.email=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para enviar e-mail.
+
+#Envio e-mail
+envio.email.lotacao.empresa.obrigatorio =Informe Lota\u00e7\u00e3o/Empresa.
+envio.email.centro.custo.obrigatorio=Selecione Centro de Custo.
+envio.email.destino.informe.pelo.menos.um=Informe pelo menos um e-mail para o envio.
+
+#Passageiro
+passageiro.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar passageiro.
+passageiro.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir passageiro.
+passageiro.nome.obrigatorio=Informe o nome do passageiro
+passageiro.informe.cpf.ou.rgmatcirpass=Informe o cpf ou N\u00ba do Documento do passageiro.
+passageiro.cpf.ja.existente=O CPF j\u00e1 foi informado para outro passageiro. Favor informar outro.
+passageiro.documento.ja.existente=O N\u00ba do Documento j\u00e1 foi informado para outro passageiro. Favor informar outro.
+passageiro.sem.transporte=Passageiro n\u00e3o est\u00e1 relacionado a nenhum servi\u00e7o de transporte
+
+#Retirada de Res\u00edduos/Lixo
+servico.retirada.residuo.lixo.servico.protecao.obrigatorio=Informe o Servi\u00e7o Executado.
+servico.retirada.residuo.lixo.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.retirada.residuo.lixo.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+servico.retirada.residuo.lixo.data.inicio.operacao.obrigatorio=Informe a Data/Hora In\u00edcio da Opera\u00e7\u00e3o.
+servico.retirada.residuo.lixo.data.termino.operacao.obrigatorio=Informe a Data/Hora T\u00e9rmino da Opera\u00e7\u00e3o.
+servico.retirada.residuo.lixo.data.inicio.maior.data.termino=Data/Hora In\u00edcio da Opera\u00e7\u00e3o n\u00e3o pode ser maior que a Data/Hora T\u00e9rmino da Opera\u00e7\u00e3o.
+servico.retirada.residuo.lixo.empresa.requerente.obrigatorio=Informe a Empresa Requerente.
+servico.retirada.residuo.lixo.empresa.responsavel.transbordo.obrigatorio=Informe a Empresa Respons\u00e1vel Transbordo.
+servico.retirada.residuo.lixo.embarcacao.transbordo.obrigatorio=Informe a Embarca\u00e7\u00e3o Transbordo.
+servico.retirada.residuo.lixo.transportadora.rodoviaria.obrigatorio=Informe a Transportadora Rodovi\u00e1ria.
+servico.retirada.residuo.lixo.tipo.residuo.obrigatorio=Informe o Tipo de Res\u00edduo.
+servico.retirada.residuo.lixo.caracterizacao.obrigatorio=Informe a Caracteriza\u00e7\u00e3o.
+servico.retirada.residuo.lixo.estado.fisico=Informe o Estado F\u00edsico.
+servico.retirada.residuo.lixo.classificacao=Informe a Classifica\u00e7\u00e3o do C\u00f3digo (ABNT NBR 10.004).
+servico.retirada.residuo.lixo.codigo.onu=Informe o C\u00f3digo ONU.
+servico.retirada.residuo.lixo.quantidade.residuo=Informe a Quantidade de Res\u00edduos.
+servico.retirada.residuo.lixo.unidade.medida=Informe a Unidade de Medida.
+servico.retirada.residuo.lixo.local.armazenagem=Informe o Local de armazenagem tempor\u00e1ria dos res\u00edduos.
+servico.retirada.residuo.lixo.lon.Armazenagem=Informe o L.O.N\u00ba na armazenagem tempor\u00e1ria dos res\u00edduos.
+servico.retirada.residuo.lixo.descricao.cadri=Informe o CADRI na armazenagem tempor\u00e1ria dos res\u00edduos.
+servico.retirada.residuo.lixo.local.destino.final=Informe o Local do destino final do res\u00edduo.
+servico.retirada.residuo.lixo.lon.destinofinal=Informe o L.O.N\u00b0 no destino final do res\u00edduo.
+servico.retirada.residuo.lixo.cadri.destino.final=Informe o CADRI no destino final do res\u00edduo.
+servico.retirada.residuo.lixo.valor.servico=Informe o Valor do Servi\u00e7o.
+servico.retirada.residuo.lixo.observacao.obrigatoria.na.alteracao=Na altera\u00e7\u00e3o \u00e9 obrigat\u00f3rio informar a observa\u00e7\u00e3o.
+servico.retirada.residuo.lixo.sem.permissao.enviar.email=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para enviar e-mail. 
+
+#Servi\u00e7o Suprimento
+SistamService.buscarServicoSuprimentoPorId=Buscando servi\u00e7o de suprimento as embarca\u00e7\u00f5es...
+servico.suprimento.servico.protecao.obrigatorio=Informe o Servi\u00e7o Executado.
+servico.suprimento.selecione.pelo.um.suprimento=Selecione pelo menos um suprimento.
+servico.suprimento.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+servico.suprimento.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.suprimento.data.inicio.operacao.obrigatorio=Informe a Data/Hora In\u00edcio da Opera\u00e7\u00e3o 
+servico.suprimento.data.termino.operacao.obrigatorio=Informe a Data/Hora T\u00e9rmino da Opera\u00e7\u00e3o 
+servico.suprimento.data.inicio.maior.data.termino=Data/Hora In\u00edcio da Opera\u00e7\u00e3o n\u00e3o pode ser maior que a Data/Hora T\u00e9rmino.
+servico.suprimento.empresa.obrigatorio=Informe a Empresa
+servico.suprimento.embarcacao.obrigatorio=Informe a Embarca\u00e7\u00e3o
+servico.suprimento.observacao.obrigatoria.na.alteracao=Na altera\u00e7\u00e3o \u00e9 obrigat\u00f3rio informar a observa\u00e7\u00e3o.
+
+#Servi\u00e7o Suprimento Transito
+servico.suprimento.transito.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.suprimento.transito.local.acesso.obrigatorio=Informe o Local(is) de Acesso
+servico.suprimento.transito.local.acesso.descricao.terminal.obrigatorio=Informe o Local de Acesso no Terminal
+servico.suprimento.transito.tipo.acesso.obrigatorio=Informe o Tipo de Acesso
+servico.suprimento.transito.tipo.material.obrigatorio=Informe o Tipo de Material
+servico.suprimento.transito.pelo.menos.um.fornecedor=Informe pelo menos um fornecedor
+servico.suprimento.transito.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+
+#Servi\u00e7o Suprimento Fornecedor
+servico.suprimento.fornecedor.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+servico.suprimento.fornecedor.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.suprimento.fornecedor.empresa.obrigatorio=Informe a Empresa
+servico.suprimento.fornecedor.peso.bruto.obrigatorio=Informe o Peso Bruto
+servico.suprimento.fornecedor.volume.obrigatorio=Informe o Volume
+servico.suprimento.fornecedor.nota.fiscal.obrigatorio=Informe o Doc/N\u00ba da Nota Fiscal
+servico.suprimento.fornecedor.valor.mercadoria.obrigatorio=Informe o Valor Mercadoria
+
+#Servi\u00e7o Suprimento Condutor
+servico.suprimento.condutor.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir.
+servico.suprimento.condutor.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.suprimento.condutor.nome.obrigatorio=Informe o Nome
+servico.suprimento.condutor.veiculo.obrigatorio=Informe o Ve\u00edculo
+servico.suprimento.condutor.placa.obrigatorio=Informe a Placa
+
+#Servi\u00e7o Acesso Pessoa
+servico.acessopessoa.servico.protecao.obrigatorio=Informe o Servi\u00e7o Executado.
+servico.acessopessoa.observacao.obrigatorio=Informe a observa\u00e7\u00e3o.
+servico.acessopessoa.pessoa.pelo.menos.um=Informe pelo menos uma pessoa.
+servico.acessopessoa.pessoa.nao.pertence.empresa.prestador=Quando a categoria for Prestador de Servi\u00e7o, n\u00e3o \u00e9 poss\u00edvel incluir pessoas de empresas distintas.
+servico.acessopessoa.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar.
+servico.acessopessoa.local.acesso.obrigatorio=Informe o Local de Acesso.
+servico.acessopessoa.descricao.terminal.obrigatorio=Informe Terminal.
+servico.acessopessoa.tipo.transito.obrigatorio=Informe o Tipo de Solicita\u00e7\u00e3o de Tr\u00e2nsito.
+servico.acessopessoa.tipo.acesso.obrigatorio=Informe o Tipo de Acesso.
+servico.acessopessoa.tipo.categoria.obrigatorio=Informe o Tipo de Categoria.
+servico.acessopessoa.tipo.nacionalidade.obrigatorio=Informe o Tipo de Nacionalidade.
+servico.acessopessoa.prestadorservico.empresa.obrigatorio=Informe a Empresa do Prestador de Servi\u00e7o.
+servico.acessopessoa.prestadorservico.atividadebordo.obrigatorio=Informe a Atividade de Bordo do Prestador de Servi\u00e7o.
+servico.acessopessoa.pessoas.documento.ja.existente=N\u00e3o \u00e9 permitido mais de uma pessoa com o mesmo N\u00ba do Documento.
+servico.acessopessoa.pessoas.cpf.ja.existente=N\u00e3o \u00e9 permitido mais de uma pessoa com o mesmo CPF.
+
+#Pessoa
+pessoa.sem.permissao.salvar=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para salvar pessoa.
+pessoa.sem.permissao.excluir=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para excluir pessoa.
+pessoa.nome.obrigatorio=Informe o Nome da pessoa.
+pessoa.obrigatorio=Informe o Nome.
+pessoa.informe.cpf.ou.rgcirpass=Informe o CPF ou N\u00ba do Documento da pessoa.
+pessoa.nome.ja.existente=O Nome j\u00e1 foi informado para outra pessoa. Favor informar outro.
+pessoa.cpf.ja.existente=O CPF j\u00e1 foi informado para outra pessoa. Favor informar outro.
+pessoa.documento.ja.existente=O N\u00ba do Documento j\u00e1 foi informado para outra pessoa. Favor informar outro.
+pessoa.sem.acessopessoa=Pessoa n\u00e3o est\u00e1 relacionado a nenhum servi\u00e7o de acesso a pessoa.
+pessoa.responsavel.obrigatorio=Informe o Respons\u00e1vel.
+pessoa.data.nascimento.obrigatorio=Informe o Nascimento.
+pessoa.nacionalidade.obrigatorio=Informe a Nacionalidade.
+pessoa.nacionalidade.brasileiro=A pessoa deve ser de nacionalidade BRASILEIRA.
+pessoa.nacionalidade.estrangeiro=A pessoa deve ser de nacionalidade ESTRANGEIRA.
+pessoa.bagagem.obrigatorio=Ao informar a quantidade de Volumes \u00e9 obrigat\u00f3rio informar a Descri\u00e7\u00e3o da Bagagem.
+pessoa.volumes.obrigatorio=<html>Ao informar a Descri\u00e7\u00e3o da Bagagem \u00e9 obrigat\u00f3rio informar a quantidade de <br>Volumes.</html>
+pessoa.volumes.maior.que.zero=Volumes deve ter um valor maior que zero.
+
+#Policia federal
+policia.federal.selecione.pelo.menos.uma.pessoa=Selecione pelo menos uma pessoa.
+policia.federal.apenas.menos.uma.pessoa = Selecione apenas uma pessoa.
+policia.federal.nome.visitante.obrigatorio=Informe o nome do visitante.
+policia.federal.parentesco.visitante.obrigatorio=Informe o parentesco do visitante.
+policia.federal.data.nascimento.visitante.obrigatorio=Informe a data de nascimento do visitante.
+policia.federal.tipo.documento.visitante.obrigatorio=Informe o tipo de documento.
+policia.federal.numero.documento.visitante.obrigatorio=Informe o n\u00famero do documento.
+
+#Receita Federal
+receita.federal.selecione.pelo.menos.uma.pessoa=Selecione pelo menos uma pessoa.
+receita.federal.numerodocumento.obrigatorio=Informe N\u00ba do Documento
+receita.federal.veiculo.modelo.obrigatorio=Informe o Modelo
+receita.federal.veiculo.placa.obrigatorio=Informe a Placa
+
+#Relatorio manobra
+relatorio.manobra.agencia.obrigatoria=Informe a ag\u00eancia mar\u00edtima.
+relatorio.manobra.periodo.obrigatoria=Informe o per\u00edodo.
+relatorio.manobra.periodo.invalido=Data in\u00edcio n\u00e3o pode ser maior que a data de fim.
+relatorio.manobra.nao.existe.dados=N\u00e3o existem registros para os filtros selecionados.
+
+#Relatorio Siscomex
+relatorio.siscomex.periodo.oficial.chegada.invalido=Data in\u00edcio da Hora Oficial de Chegada n\u00e3o pode ser maior que a data fim.
+relatorio.siscomex.periodo.oficial.saida.invalido=Data in\u00edcio da Hora Oficial de Sa\u00edda n\u00e3o pode ser maior que a data fim.
+relatorio.siscomex.periodo.inicio.operacao.invalido=Data in\u00edcio do In\u00edcio da Opera\u00e7\u00e3o n\u00e3o pode ser maior que a data fim.
+relatorio.siscomex.periodo.termino.operacao.invalido=Data in\u00edcio do Termino da Opera\u00e7\u00e3o n\u00e3o pode ser maior que a data fim.
+relatorio.siscomex.periodo.data.inclusao.invalido=Data in\u00edcio da Data de Inclus\u00e3o no Sistam n\u00e3o pode ser maior que a data fim.
+relatorio.siscomex.periodo.eta.invalido=Data in\u00edcio do ETA n\u00e3o pode ser maior que a data fim.
+relatorio.siscomex.periodo.chegada.porto.invalido=Data in\u00edcio da Data de Chegada no Porto n\u00e3o pode ser maior que a data fim.
+relatorio.siscomex.periodo.saida.porto.invalido=Data in\u00edcio da Data de Sa\u00edda no Porto n\u00e3o pode ser maior que a data fim.
+relatorio.manobra.nao.existe.dados=N\u00e3o existem registros para os filtros selecionados.
+
+#Relatorio Visita
+relatorio.visita.agencia.obrigatoria=Informe a ag\u00eancia.
+relatorio.visita.periodo.obrigatoria=Informe o per\u00edodo.
+relatorio.visita.periodo.invalido=Data in\u00edcio n\u00e3o pode ser maior que a data de fim.
+relatorio.visita.nao.existe.dados=N\u00e3o existem registros para os filtros selecionados.
+
+#Relatorio Retirada Residuo Lixo
+relatorio.retirada.residuo.lixo.periodo.periodo.obrigatoria=Informe a data. 
+
+#Relatorio Siscomex
+relatorio.siscomex.nao.existe.dados=N\u00e3o existem registros para os filtros selecionados.
+
+#Relatorio Timesheet
+relatorio.timesheet.frota.obrigatoria=Informe a frota.
+relatorio.timesheet.sem.permissao.enviar.email=Usu\u00e1rio n\u00e3o possui permiss\u00e3o para enviar e-mail
+
+#Empresa Prote\u00e7\u00e3o
+empresa.protecao.cnpj.obrigatorio=Informe o CNPJ
+empresa.protecao.cnpj.existente=O CNPJ j\u00e1 foi informado para outra empresa. Favor informar outro.
+empresa.protecao.nome.obrigatorio=Informe a Empresa
+empresa.protecao.telefone.obrigatorio=Informe o(s) Telefone(s)
+empresa.protecao.email.obrigatorio=Informe o E-mail
+empresa.protecao.cidade.obrigatorio=Informe a Cidade
+empresa.protecao.estado.obrigatorio=Informe o Estado
+empresa.protecao.tipo.obrigatorio=Informe pelo menos um Tipo de Servi\u00e7o de Prote\u00e7\u00e3o onde a Empresa poder\u00e1 ser utilizada
+empresa.protecao.com.email.invalido=E-mail inv\u00e1lido
+
+empresa.protecao.lookup.nome.minlength=Informe, pelo menos, 3 caracteres no nome para prosseguir a consulta.
+empresa.protecao.lookup.nenhum.registro.encontrado=Nenhuma Empresa foi localizada.
+empresa.protecao.lookup.nome.ou.cnpj.obrigatorio=Informe, pelo menos, 3 caracteres no nome ou o CNPJ para prosseguir a consulta.
+
+SistamService.buscarEmpresaProtecaoPorId=Buscando empresa do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarEmpresaProtecaoPorCnpj=Buscando empresa do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarEmpresasProtecaoPorFiltro=Buscando empresas do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarEmpresasProtecao=Buscando empresas do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarEmpresasProtecaoAtiva=Buscando empresas ativas do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarEmpresasProtecaoPorTipoServico=Buscando empresas do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarEmpresasProtecaoAtivaPorTipoNomeCnpj=Buscando empresas do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.salvarEmpresaProtecao=Salvando empresa do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.salvarEmpresaProtecao.success=Empresa do Servi\u00e7o de Prote\u00e7\u00e3o salva com sucesso!
+
+#Pessoa Protecao
+pessoa.protecao.cpf.existente=O CPF j\u00e1 foi informado para outra pessoa. Favor informar outro.
+pessoa.protecao.documento.ou.cpf.obrigatorio=Informe o N\u00ba do Documento ou o CPF 
+pessoa.protecao.nome.obrigatorio=Informe o Nome
+pessoa.protecao.datanascimento.menorigual.dataatual=Data de Nascimento n\u00e3o pode ser maior que a data atual.
+
+pessoa.protecao.lookup.nome.obrigatorio=Informe, pelo menos, 3 caracteres no nome para prosseguir a consulta.
+pessoa.protecao.lookup.nome.ou.empresa.obrigatorio=Informe, pelo menos, 3 caracteres no nome ou a empresa para prosseguir a consulta.
+pessoa.protecao.lookup.nenhum.registro.encontrado=Nenhuma Pessoa foi localizada.
+
+SistamService.buscarPessoaProtecaoPorId=Buscando pessoa do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarPessoaProtecaoPorCpf=Buscando pessoa do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarPessoasProtecaoPorFiltro=Buscando pessoas do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.buscarPessoasProtecaoPorEmpresaNome=Buscando pessoas do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.salvarPessoaProtecao=Salvando pessoa do Servi\u00e7o de Prote\u00e7\u00e3o...
+SistamService.salvarPessoaProtecao.success=Pessoa do Servi\u00e7o de Prote\u00e7\u00e3o salva com sucesso!
+
+#Relatorio de Servico de Suprimentos aos Navios
+relatorio.suprimento.navios.agencia.obrigatoria=Informe a ag\u00eancia.
+relatorio.suprimento.navios.nao.existe.dados=N\u00e3o existem registros para os filtros selecionados.
+
+#Relat\u00f3rio Policia Federal Passe Sa\u00edda
+relatorio.policia.federal.passe.saida.tripulante.transito = A quantidade de Tripulantes em tr\u00e2nsito \u00e9 maior que a quantidade dos tripulante de chegada.

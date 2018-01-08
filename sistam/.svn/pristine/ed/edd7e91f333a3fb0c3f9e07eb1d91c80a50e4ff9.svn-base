@@ -1,0 +1,48 @@
+<html>
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+      <title>Sistema de Agenciamento Marítimo</title>
+  </head>
+  <body>
+      <h1>Iniciar Agenciamento</h1>
+      
+      <p>
+      Nesta opção, o agente poderá informar os dados necessários e iniciar um agenciamento.
+          
+      </p>
+      
+        <h2>Como acessar?</h2>
+        <p>Para acessar esta funcionalidade, basta clicar no menu: <img src="../../imgs/menuAgenciamento.jpg">, escolher a opção: <img src="../../imgs/menuNovo.jpg">
+          
+          </p>
+          <p>Após clicar no menu, a seguinte tela será exibida </p>
+          <img src="../../imgs/telaIniciarAgenciamento.jpg">
+          
+          <p>Todos os campos, exceto os de Saída da Embarcação são obrigatórios</p>
+          <h2>O que acontece depois que eu salvo o agenciamento?</h2>
+          <h3>Situação da Embarcação</h3>
+          <p>Sempre que um novo agenciamento é criada, a situação é alterada para "Esperado" </p>
+          
+          <h3>Escalas da Embarcação</h3>
+          <p>Ao salvar um agenciamento, o sistema obtém do SIGO II, as escalas dos últimos 30 dias desta embarcação</p>
+          <p>As escalas poderão ser alteradas, na aba "Informações Gerais" do agenciamento</p>
+          
+          <h3>Pendências </h3>
+          <p>As seguintes pendências serão geradas:</p>
+          <ul>
+              <li>Pagamento de Livre Prática</li>
+              <li>Despacho de Saída do Porto anterior</li>
+              <li>Se o porto anterior for estrangeiro, então a pendência Pagamento de FUNAPOL também é gerada</li>
+          </ul>
+    
+          <div>
+              <h2>Outros Opções</h2>
+              <ul>
+                  <li><a href="../LookUpEmbarcaco.html">Como selecionar a embarcação?</a></li>
+                  <li><a href="../LookUpPorto.html">Como selecionar o porto?</a></li>
+              </ul>
+          </div>
+    
+  </body>
+</html>

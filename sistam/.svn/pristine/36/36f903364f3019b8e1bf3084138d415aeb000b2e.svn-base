@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioAgenciamentoProdutividade" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ed39f0ba-bbb9-4ba3-b553-f57e06c9216b">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="240"/>
+	<parameter name="IMAGEM_PETROBRAS" class="java.net.URL"/>
+	<parameter name="AGENCIA" class="java.lang.String"/>
+	<parameter name="TIPO_CONTRATO" class="java.lang.String"/>
+	<parameter name="PERIODO_INICIO" class="java.lang.String"/>
+	<parameter name="PERIODO_FIM" class="java.lang.String"/>
+	<parameter name="DATA_IMPRESSAO" class="java.lang.String"/>
+	<parameter name="AGENCIA_PORTO" class="java.lang.String"/>
+	<parameter name="IMAGEM_NP1" class="java.net.URL"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="agenciamentosProtecao" class="java.util.List">
+		<fieldDescription><![CDATA[agenciamentosProtecao]]></fieldDescription>
+	</field>
+	<field name="agenciamentosCarga" class="java.util.List">
+		<fieldDescription><![CDATA[agenciamentosCarga]]></fieldDescription>
+	</field>
+	<field name="agenciamentosPlataforma" class="java.util.List">
+		<fieldDescription><![CDATA[agenciamentosPlataforma]]></fieldDescription>
+	</field>
+	<field name="totalEmbarcacoes" class="java.lang.Long">
+		<fieldDescription><![CDATA[totalEmbarcacoes]]></fieldDescription>
+	</field>
+	<field name="totalPlataforma" class="java.lang.Long">
+		<fieldDescription><![CDATA[totalPlataforma]]></fieldDescription>
+	</field>
+	<variable name="TOTAL_EMBARCACOES" class="java.lang.Double" calculation="Sum"/>
+	<variable name="TOTAL_ATENDIMENTOS_PLATAFORMA" class="java.lang.Double" calculation="Sum"/>
+	<variable name="TIPO_CARGA" class="java.lang.String"/>
+	<variable name="TIPO_PROTECAO" class="java.lang.String">
+		<initialValueExpression><![CDATA["Carga"]]></initialValueExpression>
+	</variable>
+	<variable name="TIPO_PLATAFORMA" class="java.lang.String">
+		<initialValueExpression><![CDATA["Carga"]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="113">
+			<staticText>
+				<reportElement uuid="40fa6992-1f5a-4853-a9e3-34849d2d570d" mode="Transparent" x="0" y="2" width="555" height="31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Produtividade da Agência]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="104aac61-65a2-4e9c-800d-c3788f73d351" mode="Transparent" x="-1" y="33" width="555" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Embarcações Agenciadas]]></text>
+			</staticText>
+			<image onErrorType="Icon">
+				<reportElement uuid="d08abaeb-83a0-4174-ae8b-d2e0e328f026" mode="Transparent" x="0" y="2" width="85" height="48"/>
+				<imageExpression><![CDATA[$P{IMAGEM_PETROBRAS}]]></imageExpression>
+			</image>
+			<image onErrorType="Icon">
+				<reportElement uuid="88388ee7-5a46-425e-9e7b-146da76321e5" mode="Transparent" x="495" y="-2" width="59" height="59"/>
+				<imageExpression><![CDATA[$P{IMAGEM_NP1}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="449d3f30-7735-4108-8adb-eb1972e518d6" mode="Transparent" x="0" y="77" width="45" height="13"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Agência:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="48afe1c2-24f3-4561-b795-d568cae1e43b" mode="Transparent" x="45" y="77" width="109" height="13"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AGENCIA}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e3a02ead-fee2-4f90-ba23-83460b8f6a3f" mode="Transparent" x="156" y="77" width="31" height="13"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Porto:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f944c96c-b8ad-4da1-82e0-964b31c1785c" mode="Transparent" x="186" y="77" width="66" height="13"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AGENCIA_PORTO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6f2de7c3-61f2-4479-942f-d24ba5310e60" mode="Transparent" x="254" y="77" width="43" height="13"/>
+				<box leftPadding="0" rightPadding="2">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Período:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="f502f669-7fd6-4d9e-b8fe-65b32c6c0b72" mode="Transparent" x="296" y="77" width="56" height="13"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PERIODO_INICIO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e30fc6bd-7c0e-4f20-b3ef-04ce3e09ce83" mode="Transparent" x="352" y="77" width="19" height="13"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[até]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="9476cdc0-1882-4cc8-a4d6-a58b926ad2a7" mode="Transparent" x="370" y="77" width="60" height="13"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PERIODO_FIM}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2c757b00-c77d-4c71-a3f8-9ec6bad17def" mode="Transparent" x="443" y="77" width="72" height="13"/>
+				<box leftPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Contrato:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="778e6e1f-2418-4704-aad4-0efadaada1ed" mode="Transparent" x="515" y="77" width="39" height="13"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TIPO_CONTRATO}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="c242857a-bab1-4abf-8361-a099b182cfa9" mode="Opaque" x="0" y="90" width="555" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="65" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="5c9c42bd-c1f1-4717-90bf-4f5b335af2ad" mode="Transparent" x="0" y="1" width="554" height="21"/>
+				<subreportParameter name="TIPO_AGENCIAMENTO">
+					<subreportParameterExpression><![CDATA["CARGA"]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{agenciamentosCarga})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioAgenciamentoProdutividade.jasper")]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="268b4870-e8bb-442b-936f-bb640560e76e" positionType="Float" mode="Transparent" x="0" y="22" width="554" height="21"/>
+				<subreportParameter name="TIPO_AGENCIAMENTO">
+					<subreportParameterExpression><![CDATA["PROTEÇÃO"]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{agenciamentosProtecao})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioAgenciamentoProdutividade.jasper")]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="268b4870-e8bb-442b-936f-bb640560e76e" positionType="Float" mode="Transparent" x="0" y="43" width="554" height="21"/>
+				<subreportParameter name="TIPO_AGENCIAMENTO">
+					<subreportParameterExpression><![CDATA["PLATAFORMAS"]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="TOTAL_PLATAFORMA">
+					<subreportParameterExpression><![CDATA[$F{totalPlataforma}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{agenciamentosPlataforma})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[getClass().getResource("/reports/SubrelatorioAgenciamentoProdutividadePlataforma.jasper")]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="24">
+			<textField>
+				<reportElement uuid="63b9345f-e33f-43e2-8fa8-a7ab8ea37355" mode="Transparent" x="220" y="0" width="294" height="23"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pag. "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="4bb80146-2366-4efe-b376-cd1081582f5f" mode="Transparent" x="514" y="0" width="40" height="23"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b98bf3ce-36c6-4dc1-b4d2-371157dff918" mode="Transparent" x="0" y="0" width="99" height="23"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data de Impressão:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH:mm">
+				<reportElement uuid="c136085c-0b3a-40f7-a21b-3ee00e7d12d3" mode="Transparent" x="99" y="0" width="121" height="23"/>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{DATA_IMPRESSAO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="74" splitType="Stretch">
+			<line>
+				<reportElement uuid="35203d12-883c-49d7-9648-c5b90d0c4d1d" mode="Opaque" x="0" y="1" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="4f550d55-8b25-4902-bf54-95f0970f7d72" mode="Transparent" x="280" y="2" width="187" height="22"/>
+				<box leftPadding="0" rightPadding="2">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total de Embarcações Agenciadas:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f3df5a94-b108-4d74-a6b2-2a5c650244fc" mode="Transparent" x="467" y="2" width="87" height="22"/>
+				<box leftPadding="2" rightPadding="2">
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalEmbarcacoes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f3df5a94-b108-4d74-a6b2-2a5c650244fc" mode="Transparent" x="467" y="23" width="87" height="22"/>
+				<box leftPadding="2" rightPadding="2">
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalPlataforma}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4f550d55-8b25-4902-bf54-95f0970f7d72" mode="Transparent" x="254" y="23" width="213" height="22"/>
+				<box leftPadding="0" rightPadding="2">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total de Atendimentos de Plataformas:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d857841-ed3e-4486-acf3-d5c81210a950" x="0" y="43" width="555" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[A produtividade de plataforma  reflete o total  de atendimentos realizados  durante o período solicitado, independente  de sua  situação no porto.]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

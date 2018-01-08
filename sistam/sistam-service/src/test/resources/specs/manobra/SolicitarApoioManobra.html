@@ -1,0 +1,104 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <h1>Solicitar Apoio para a Manobra</h1>
+        
+        <p>
+            Como <b>Agente Marítimo</b>, gostaria de <b>solicitar apoio das empresas que efetuarão a manobra</b> para <b> que os serviços sejam solicitados em tempo hábil</b>
+        </p>
+        
+        <div class="toc">
+            <h3>Regras de negócio:</h3>
+            <ul>
+                <li><a href="rn1">Listar Empresas dos Serviços Solicitados</a></li>
+                <li><a href="rn2">Enviar Solicitação, via email, para as Empresas</a></li>
+                <li><a href="rn3">Enviar Solicitação, via fax, para as Empresas</a></li>
+                <li><a href="rn4">Modelo da Mensagem Enviada</a></li>
+            </ul>
+        </div>
+        
+        <h3 id="rn1">Listar Empresas dos Serviços Solicitados</h3>
+        <p>
+            Devemos listar as empresas cadastradas nos serviços da manobra
+        </p>
+        <div class="example">
+            <h3>Exemplo</h3>
+            <p>Dado que existem os seguintes serviços cadastrados para uma Manobra </p>
+            <table>
+                <tr>
+                    <th>Tipo de Serviço</th>
+                    <th>Empresa</th>
+                    <th>Nome</th>
+                </tr>
+                <tr>
+                    <td>Rebocador</td>
+                    <td>Ocidental LTDA</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Rebocador</td>
+                    <td>Porto Chibatão Comércio LTDA</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Prático</td>
+                    <td>Manaus Pilotos</td>
+                    <td>José</td>
+                </tr>
+                <tr>
+                    <td>Prático</td>
+                    <td>Manaus Pilotos</td>
+                    <td>João</td>
+                </tr>
+                <tr>
+                    <td>Lancha</td>
+                    <td>Lancha Serv. </td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <p>Quando solicitar apoio a Manobra então, devemos exibir as Empresas</p>
+            <table>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Empresa</th>
+                    
+                </tr>
+                <tr>
+                    <td>Práticos</td>
+                    <td>Manaus Piltos</td>
+                </tr>
+                <tr>
+                    <td>Rebocadores</td>
+                    <td>Ocidental LTDA</td>
+                </tr>
+                <tr>
+                    <td>Rebocadores</td>
+                    <td>Porto Chibatão Comercio LTDA</td>
+                </tr>
+                <tr>
+                    <td>Lanchas</td>
+                    <td>Lancha Serv.</td>
+                </tr>
+            </table>
+                
+        </div>
+        <p></p>
+        
+              
+        <h3 id="rn2">Enviar Solicitação, via email, para as Empresas</h3>
+        <p>Para cada empresa selecionada devemos enviar a solicitação via email apenas quando a mesma possuir email cadastrado</p>
+        
+        <h3 id="rn3">Enviar Solicitação, via fax, para as Empresas</h3>
+        <p>Para cada empresa selecionada devemos enviar a solicitação via fax apenas quando a mesma possuir fax cadastrado</p>
+        
+        <h3 id="rn4">Modelo da Mensagem Enviada ??</h3>
+        <p>Devemos garantir que a mensagem enviada tenha o seguinte formato:</p>
+        
+        
+    </body>
+</html>

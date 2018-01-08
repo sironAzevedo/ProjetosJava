@@ -1,0 +1,36 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../../css/specs.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <h1>Controlar Documentação de Carga e Descarga </h1>
+        
+        <p>
+            Como <b>Agente Marítimo</b>, gostaria de <b>registrar informações sobre a documentação da carga </b>
+            para <b> controlar as operações de carga e descarga </b>
+        </p>
+        
+        <div class="toc">
+            <h3>Regras de negócio:</h3>
+            <ul>
+                <li><a href="#rn1">Controlar Documentação da Carga :: Operação Carga</a></li>
+                <li><a href="#rn2">Controlar Documentação da Carga :: Operação Descarga</a></li>
+            </ul>
+        </div>
+        
+        <h3 id="rn1">Controlar Documentação da Carga :: Operação Carga</h3>
+        <p>Quando a operação de carga for registrada, o <b>Agente Marítimo </b>
+            deve informar             
+        </p>
+        <h3 id="rn2">Controlar Documentação da Carga :: Operação Descarga</h3>
+        <p>
+            
+        </p>
+              
+             
+   
+    </body>
+</html>

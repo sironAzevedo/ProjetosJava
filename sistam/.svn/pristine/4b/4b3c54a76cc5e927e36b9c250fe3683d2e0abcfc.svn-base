@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FormularioControleFiscalizacaoUnico" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d43ddf15-49e0-41f6-b85c-c9068574befa">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="284"/>
+	<parameter name="IMAGEM_AGENCIA" class="java.net.URL"/>
+	<parameter name="AGENCIA_NOME" class="java.lang.String"/>
+	<parameter name="AGENCIA_SIGLA" class="java.lang.String"/>
+	<parameter name="COMANDANTE" class="java.lang.String"/>
+	<parameter name="TRIPULANTE" class="java.lang.String"/>
+	<parameter name="PASSAGEIRO" class="java.lang.String"/>
+	<parameter name="TEXTO_VALIDADE" class="java.lang.String"/>
+	<parameter name="DATA_DOCUMENTO" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="armadorCnpj" class="java.lang.String"/>
+	<field name="agenteArmador" class="java.lang.String"/>
+	<field name="nrEscala" class="java.lang.String"/>
+	<field name="produtoCarga" class="java.lang.String"/>
+	<field name="saidaTransito" class="java.lang.Integer"/>
+	<field name="clandestinoImpedidos" class="java.lang.Integer"/>
+	<field name="nomeEmbarcacao" class="java.lang.String"/>
+	<field name="nacionalidade" class="java.lang.String"/>
+	<field name="consignatarioCnpj" class="java.lang.String"/>
+	<field name="dataChegadaPorto" class="java.lang.String"/>
+	<field name="dataPartidaPorto" class="java.lang.String"/>
+	<field name="horaChegadaPorto" class="java.lang.String"/>
+	<field name="horaPartidaPorto" class="java.lang.String"/>
+	<field name="procedencia" class="java.lang.String"/>
+	<field name="destino" class="java.lang.String"/>
+	<field name="tonelagemLiquida" class="java.lang.String"/>
+	<field name="despachado" class="java.lang.String"/>
+	<field name="tipoControleFiscalizacaoUnico" class="br.com.petrobras.sistam.common.enums.TipoControleFiscalizacaoUnico">
+		<fieldDescription><![CDATA[tipoControleFiscalizacaoUnico]]></fieldDescription>
+	</field>
+	<field name="taxaPagaEntrada" class="java.lang.Boolean"/>
+	<field name="taxaPagaSaida" class="java.lang.Boolean"/>
+	<field name="controleFiscalizacaoUnicoEntradaSaida" class="br.com.petrobras.sistam.common.enums.TipoControleFiscalizacaoUnicoEntradaSaida">
+		<fieldDescription><![CDATA[controleFiscalizacaoUnicoEntradaSaida]]></fieldDescription>
+	</field>
+	<field name="armadorEmbarcacao" class="java.lang.String"/>
+	<field name="agenteConsignatarioCnpj" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="121">
+			<image onErrorType="Icon">
+				<reportElement uuid="ac87973c-2e61-464a-9ed9-fcac92ba64b3" stretchType="RelativeToBandHeight" mode="Transparent" x="248" y="0" width="93" height="71"/>
+				<imageExpression><![CDATA[$P{IMAGEM_AGENCIA}]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="a8d605a9-b1f4-416e-b386-f9eba91b76d5" x="0" y="91" width="556" height="29"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SR / "+$P{AGENCIA_SIGLA}+" - DELEGACIA DE POLÍCIA FEDERAL EM "+$P{AGENCIA_NOME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5420b140-694c-4573-bf73-ee69f48469dc" x="0" y="71" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DEPARTAMENTO DE POLÍCIA FEDERAL ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="e3d3ca84-6cdf-4465-9906-da726b3b35c6" x="158" y="16" width="230" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTROLE DE FISCALIZAÇÃO ÚNICO]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8968fbfd-b1b0-480a-936f-ab6bb7fa4cc7" x="394" y="32" width="63" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="8968fbfd-b1b0-480a-936f-ab6bb7fa4cc7" x="468" y="32" width="63" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="8968fbfd-b1b0-480a-936f-ab6bb7fa4cc7" x="462" y="13" width="6" height="20"/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="92" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="32" y="12" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4dd72a09-f837-493c-8769-e370553ff686" positionType="Float" x="32" y="12" width="18" height="20">
+					<printWhenExpression><![CDATA[$F{tipoControleFiscalizacaoUnico}.equals(br.com.petrobras.sistam.common.enums.TipoControleFiscalizacaoUnico.PASSE_ENTRADA)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="32" y="39" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4dd72a09-f837-493c-8769-e370553ff686" positionType="Float" x="34" y="39" width="18" height="20">
+					<printWhenExpression><![CDATA[$F{tipoControleFiscalizacaoUnico}.equals(br.com.petrobras.sistam.common.enums.TipoControleFiscalizacaoUnico.PASSE_SAIDA)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="32" y="66" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4dd72a09-f837-493c-8769-e370553ff686" positionType="Float" x="34" y="66" width="18" height="20">
+					<printWhenExpression><![CDATA[$F{tipoControleFiscalizacaoUnico}.equals(br.com.petrobras.sistam.common.enums.TipoControleFiscalizacaoUnico.REGISTRO_CABOTAGEM)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="265" y="12" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4dd72a09-f837-493c-8769-e370553ff686" positionType="Float" x="267" y="12" width="18" height="20">
+					<printWhenExpression><![CDATA[$F{taxaPagaEntrada}]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="265" y="39" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4dd72a09-f837-493c-8769-e370553ff686" positionType="Float" x="267" y="39" width="18" height="20">
+					<printWhenExpression><![CDATA[$F{taxaPagaSaida}]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="265" y="66" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4dd72a09-f837-493c-8769-e370553ff686" positionType="Float" x="267" y="66" width="18" height="20">
+					<printWhenExpression><![CDATA[$F{controleFiscalizacaoUnicoEntradaSaida}.equals(br.com.petrobras.sistam.common.enums.TipoControleFiscalizacaoUnicoEntradaSaida.ENTRADA)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="414" y="66" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4dd72a09-f837-493c-8769-e370553ff686" positionType="Float" x="416" y="66" width="18" height="20">
+					<printWhenExpression><![CDATA[$F{controleFiscalizacaoUnicoEntradaSaida}.equals(br.com.petrobras.sistam.common.enums.TipoControleFiscalizacaoUnicoEntradaSaida.SAIDA)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb6ac5ed-0284-45d3-948e-a1e54061c48b" x="63" y="12" width="126" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSE DE ENTRADA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb6ac5ed-0284-45d3-948e-a1e54061c48b" x="63" y="39" width="126" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSE DE SAÍDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb6ac5ed-0284-45d3-948e-a1e54061c48b" x="63" y="66" width="169" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REGISTRO DE CABOTAGEM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb6ac5ed-0284-45d3-948e-a1e54061c48b" x="296" y="12" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TAXA PAGA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb6ac5ed-0284-45d3-948e-a1e54061c48b" x="296" y="39" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TAXA PAGA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb6ac5ed-0284-45d3-948e-a1e54061c48b" x="296" y="66" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENTRADA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb6ac5ed-0284-45d3-948e-a1e54061c48b" x="445" y="66" width="57" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SAÍDA]]></text>
+			</staticText>
+		</band>
+		<band height="510">
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="12" width="118" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Nome da Embarcação:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="36" width="79" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Nacionalidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="85" width="110" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Consignatário/CNPJ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="61" width="70" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Comandante:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="109" width="115" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Agente Consignatário:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="133" width="89" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Armador/CNPJ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="158" width="89" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Agente Armador:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="182" width="126" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Data Chegada ao Porto:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="207" width="126" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Data Partida do Porto:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="232" width="48" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Escalas:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="257" width="101" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Produto da Carga:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="282" width="110" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Tonelagem Líquida:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="32" y="307" width="62" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Tripulantes:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="146" y="307" width="63" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Passageiros:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="263" y="307" width="50" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Trânsito:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="357" y="307" width="126" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Clandestinos/Impedidos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="268" y="182" width="68" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Procedência:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="268" y="207" width="54" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Destino:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="32" y="345" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="63" y="345" width="70" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Despachado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="139" y="345" width="15" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[às]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="194" y="345" width="15" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="248" y="345" width="15" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[hs]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement uuid="8968fbfd-b1b0-480a-936f-ab6bb7fa4cc7" x="449" y="419" width="6" height="10"/>
+			</line>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="248" y="370" width="15" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[hs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="194" y="370" width="15" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="f5dfedab-efe8-470c-8cdd-b10d29510d18" positionType="Float" x="32" y="370" width="20" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="63" y="370" width="70" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Redespacho]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="139" y="370" width="15" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[às]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="150" y="12" width="392" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomeEmbarcacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="111" y="36" width="372" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nacionalidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="102" y="61" width="392" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{COMANDANTE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="147" y="85" width="392" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consignatarioCnpj}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="121" y="133" width="392" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{armadorEmbarcacao}+$F{armadorCnpj}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="121" y="158" width="392" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{agenteArmador}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="158" y="182" width="94" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataChegadaPorto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="336" y="182" width="219" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{procedencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="322" y="207" width="233" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{destino}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="80" y="232" width="202" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nrEscala}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="158" y="207" width="94" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataPartidaPorto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="133" y="257" width="413" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{produtoCarga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="143" y="282" width="224" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tonelagemLiquida}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="94" y="307" width="37" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TRIPULANTE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="209" y="307" width="38" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PASSAGEIRO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="313" y="307" width="36" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saidaTransito}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="483" y="307" width="62" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{clandestinoImpedidos}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="8968fbfd-b1b0-480a-936f-ab6bb7fa4cc7" x="14" y="474" width="205" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="8968fbfd-b1b0-480a-936f-ab6bb7fa4cc7" x="341" y="476" width="205" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="14" y="476" width="205" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Comandante da embarcação]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a9ece7d8-a741-49b5-adc3-9f35102f162a" x="341" y="477" width="198" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Policial Visitador]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="905ccce7-03a9-48f5-a8de-75ac102658f9" x="348" y="416" width="100" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AGENCIA_NOME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a8d605a9-b1f4-416e-b386-f9eba91b76d5" x="457" y="416" width="19" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AGENCIA_SIGLA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3e1ec76e-e9db-4dfb-8ed8-f01c2e630011" x="431" y="345" width="115" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TEXTO_VALIDADE}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement uuid="7c76db65-6596-4b05-b5e0-9db4d9031ae5" x="478" y="416" width="77" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DATA_DOCUMENTO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0bd108a1-424b-4083-a659-d7e90ecce7ae" x="147" y="109" width="392" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{agenteConsignatarioCnpj}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
