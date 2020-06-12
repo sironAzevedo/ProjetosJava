@@ -26,7 +26,7 @@ public class email {
         Properties properties = new Properties();
         mailSMTPServer = "smtp.googlemail.com";
         mailSMTPServerPort = "465";
-        mailSenha = "edvaldo08121990";
+        mailSenha = "senha";
 
         properties.put("mail.transport.protocol", "smtp");
         properties.put("mail.smtp.starttls.enable", "true");

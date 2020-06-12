@@ -29,7 +29,7 @@ public class CommonsMail {
         email.setFrom("sirondba@gmail.com", "Siron"); // remetente
         email.setSubject("Mensagem de teste"); // assunto do e-mail 
         email.setMsg("Mensagem de teste, Mensagem de teste, Mensagem de teste"); //conteudo do e-mail//conteudo do e-mail
-        email.setAuthentication("sirondba@gmail.com", "edvaldo08121990");
+        email.setAuthentication("sirondba@gmail.com", "senha");
         email.setSmtpPort(465);
         email.setSSLOnConnect(true);
         email.setTLS(true);

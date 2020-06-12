@@ -12,6 +12,6 @@ package Enviar;
 public class enviar {
     public static void main(String[] args) {
         email e = new email();
-        e.sendEmail("sirondba@gmail.com", "siron.silva@spassu.com.br", "teste email", "primeiro teste email");
+        e.sendEmail("email", "email", "teste email", "primeiro teste email");
     }
 }
