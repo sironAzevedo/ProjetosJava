@@ -1,1 +1,0 @@
-Fontes de relatórios jasper devem ser adicionados neste diretório
