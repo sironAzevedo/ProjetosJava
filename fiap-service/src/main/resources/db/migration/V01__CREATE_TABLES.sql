@@ -1,0 +1,10 @@
+CREATE SCHEMA IF NOT EXISTS PUBLIC;
+
+CREATE TABLE TBL_STUDENT
+(
+    ID    VARCHAR (16) NOT NULL,
+    NAME  VARCHAR (255) NOT NULL,
+    EMAIL VARCHAR (255) NOT NULL,
+    UNIQUE(EMAIL),
+    constraint tb_student_pk primary key (ID)
+);
