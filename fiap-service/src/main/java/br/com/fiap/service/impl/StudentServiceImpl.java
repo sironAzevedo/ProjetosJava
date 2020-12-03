@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -34,7 +33,7 @@ public class StudentServiceImpl implements IStudentService {
 	}
 
 	@Override
-	@CachePut(cacheNames = StudentDTO.CACHE_NAME, key="#code")
+	@CacheEvict(cacheNames = StudentDTO.CACHE_NAME, allEntries = true)
 	public void update(String code, StudentDTO dto) {
 		this.findByCode(code);
 		Student student = StudentMapper.INSTANCE.toStudent(dto);
@@ -42,8 +41,8 @@ public class StudentServiceImpl implements IStudentService {
 	}
 
 	@Override
-	@CacheEvict(cacheNames = StudentDTO.CACHE_NAME, key="#code")
-	public void delete(final String code) {
+	@CacheEvict(cacheNames = StudentDTO.CACHE_NAME, allEntries = true)
+	public void delete(String code) {
 		StudentDTO result = this.findByCode(code);
 		repository.deleteById(result.getCode());
 	}
